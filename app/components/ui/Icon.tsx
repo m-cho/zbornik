@@ -1,0 +1,24 @@
+import FontAwesome6 from '@expo/vector-icons/FontAwesome6';
+import Ionicons from '@expo/vector-icons/Ionicons';
+import MaterialIcons from '@expo/vector-icons/MaterialCommunityIcons';
+
+type IconProps = {
+  name: string;
+  size?: number;
+  color?: string;
+};
+
+export default function Icon({ name, size, color }: IconProps) {
+  
+  return {
+    'home': <Ionicons name='home' size={size} color={color} />,
+    'cog-outline': <Ionicons name='settings-outline' size={size} color={color} />,
+    'arrow-back': <Ionicons name='arrow-back' size={size} color={color} />,
+
+    'book-bible': <FontAwesome6 name='book-bible' size={size} color={color} />,
+
+    'menu': <MaterialIcons name='menu' size={size} color={color} />,
+  }[name] ?? (
+    <MaterialIcons name='help-circle' size={size} color={color} />
+  );
+}
