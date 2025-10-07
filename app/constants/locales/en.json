@@ -2,7 +2,13 @@
   "welcome": "Welcome",
   "home": {
     "title": "Home",
-    "headerTitle": "Zbornik"
+    "headerTitle": "Zbornik",
+    "todayIs": "Today is"
+  },
+  "weekdays": ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+  "weekNames": {
+    "afterPascha": "%{count}. week after Pascha",
+    "afterPentecost": "%{count}. week after Pentecost"
   },
   "more": {
     "title": "More"
@@ -105,5 +111,13 @@
     "III John": "III John",
     "Jude": "Jude",
     "Revelation of John": "Revelation of John"
+  },
+  "prayerBook": {
+    "title": "Prayers",
+    "morningPrayers": "Morning Prayers",
+    "eveningPrayers": "Evening Prayers",
+    "everydayPrayers": "Everyday Prayers",
+    "prayerRules": "Prayer Rules",
+    "stSeraphimOfSarovPrayerRule": "Prayer Rule of St. Seraphim of Sarov"
   }
 }

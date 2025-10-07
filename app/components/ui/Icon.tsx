@@ -18,6 +18,8 @@ export default function Icon({ name, size, color }: IconProps) {
     'book-bible': <FontAwesome6 name='book-bible' size={size} color={color} />,
 
     'menu': <MaterialIcons name='menu' size={size} color={color} />,
+    'candle': <MaterialIcons name='candle' size={size} color={color} />,
+    'chevron-right': <MaterialIcons name='chevron-right' size={size} color={color} />,
   }[name] ?? (
     <MaterialIcons name='help-circle' size={size} color={color} />
   );

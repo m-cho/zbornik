@@ -2,7 +2,13 @@
   "welcome": "Добродошли",
   "home": {
     "title": "Почетна",
-    "headerTitle": "Зборник"
+    "headerTitle": "Зборник",
+    "todayIs": "Данас је"
+  },
+  "weekdays": ["Недеља", "Понедељак", "Уторак", "Среда", "Четвртак", "Петак", "Субота"],
+  "weekNames": {
+    "afterPascha": "%{count}. недеља по Васкрсу",
+    "afterPentecost": "%{count}. недеља по Духовима"
   },
   "more": {
     "title": "Више"
@@ -106,5 +112,13 @@
     "III John": "III Посланица Јованова",
     "Jude": "Посланица Апостола Јуде",
     "Revelation of John": "Откровење Јованово"
+  },
+  "prayerBook": {
+    "title": "Молитвеник",
+    "morningPrayers": "Јутарње молитве",
+    "eveningPrayers": "Вечерње молитве",
+    "everydayPrayers": "Свакодневне молитве",
+    "prayerRules": "Молитвена правила",
+    "stSeraphimOfSarovPrayerRule": "Молитвено правило Св. Серафима Саровског"
   }
 }

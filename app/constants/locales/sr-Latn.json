@@ -2,7 +2,13 @@
   "welcome": "Dobrodošli",
   "home": {
     "title": "Početna",
-    "headerTitle": "Zbornik"
+    "headerTitle": "Zbornik",
+    "todayIs": "Danas je"
+  },
+  "weekdays": ["Nedelja", "Ponedeljak", "Utorak", "Sreda", "Četvrtak", "Petak", "Subota"],
+  "weekNames": {
+    "afterPascha": "%{count}. nedelja po Vaskrsu",
+    "afterPentecost": "%{count}. nedelja po Duhovima"
   },
   "more": {
     "title": "Više"
@@ -106,5 +112,13 @@
     "III John": "III Poslanica Jovanova",
     "Jude": "Poslanica Apostola Jude",
     "Revelation of John": "Otkrovenje Jovanovo"
+  },
+  "prayerBook": {
+    "title": "Molitvenik",
+    "morningPrayers": "Jutarnje molitve",
+    "eveningPrayers": "Večernje molitve",
+    "everydayPrayers": "Svakodnevne molitve",
+    "prayerRules": "Molitvena pravila",
+    "stSeraphimOfSarovPrayerRule": "Molitveno pravilo Sv. Serafima Sarovskog"
   }
 }

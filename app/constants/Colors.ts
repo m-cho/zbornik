@@ -5,23 +5,23 @@
 
 export const Colors = Object.freeze({
   light: {
-    primary: '#66966b', // Tamno smaragdno zelena
-    secondary: '#b29d76', // Topla zlatno-oker
-    background: '#f8f5eb', // Blago krem bela
-    backgroundLight: '#fcf9ef', // Malo svetlija krem bela
-    text: '#2A2A2A', // Skoro crna
-    textSecondary: '#7A7A7A', // Srednje siva
-    border: '#cab498', // Svetlo siva
-    icon: '#b49e6e', // Topla zlatno-oker
+    primary: '#578b57',
+    secondary: '#b29d76',
+    background: '#f5f2eb',
+    backgroundLight: '#fbfbfb',
+    text: '#282826',
+    textSecondary: '#7A7A7A',
+    border: '#ebe8df',
+    icon: '#8c8c8c',
   },
   dark: {
-    primary: '#66966b', // Svetlija smaragdno zelena
-    secondary: '#c5b59d', // Svetlija zlatno-oker
-    background: '#3d3c3c', // Tamno siva
-    backgroundLight: '#424343', // Malo svetlija tamno siva: 
-    text: '#eeeeee', // Skoro bela
-    textSecondary: '#727477', // Srednje siva
-    border: '#454649', // Tamnije siva
-    icon: '#b49e6e', // Svetlija zlatno-oker
+    primary: '#acf9a9',
+    secondary: '#bea26e',
+    background: '#313236',
+    backgroundLight: '#393d40',
+    text: '#fcfdfe',
+    textSecondary: '#a2a3a5',
+    border: '#454649',
+    icon: '#88898b',
   },
 });

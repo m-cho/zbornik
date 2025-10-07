@@ -33,6 +33,7 @@
     "expo-web-browser": "~15.0.7",
     "fuse.js": "^7.1.0",
     "i18n-js": "^4.5.1",
+    "ortodox-utils": "file:ortodox-utils-0.1.0.tgz",
     "react": "19.1.0",
     "react-dom": "19.1.0",
     "react-native": "0.81.4",

@@ -30,7 +30,7 @@ export default function BibleChapterPicker({ book, chapters }: BibleChapterPicke
               borderWidth: 1,
               borderStyle: 'solid',
             }}>
-              <ThemedText lightColor={Colors.light.secondary} darkColor={Colors.dark.secondary}>{chapter}</ThemedText>
+              <ThemedText lightColor={Colors.light.text} darkColor={Colors.dark.text}>{chapter}</ThemedText>
             </View>
           </Link>
         ))}

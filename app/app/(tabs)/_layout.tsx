@@ -25,9 +25,6 @@ export default function TabLayout() {
           borderTopColor: Colors[colorScheme ?? 'light'].border,
           borderTopWidth: 1,
         },
-        tabBarLabelStyle: {
-          color: Colors[colorScheme ?? 'light'].icon,
-        },
       }}>
       <Tabs.Screen
         name="index"
@@ -44,6 +41,13 @@ export default function TabLayout() {
         options={{
           title: i18n.t('bibleReader.title'),
           tabBarIcon: ({ color }) => <Icon size={28} name="book-bible" color={color} />,
+        }}
+      />
+      <Tabs.Screen
+        name="prayer-book"
+        options={{
+          title: i18n.t('prayerBook.title'),
+          tabBarIcon: ({ color }) => <Icon size={28} name="candle" color={color} />,
         }}
       />
       <Tabs.Screen
