@@ -1,0 +1,43 @@
+[
+  {
+    "id": "everyday-prayers",
+    "title": "Свакодневне молитве",
+    "prayers": [
+      "jutarnje",
+      "vecernje"
+    ]
+  },
+  {
+    "id": "general-prayers",
+    "title": "Опште молитве",
+    "prayers": [
+      "oce-nas",
+      "bogorodice-djevo",
+      "simbol-vere",
+      "isusova-molitva"
+    ]
+  },
+  {
+    "id": "prayer-rules",
+    "title": "Молитвенa правилa",
+    "prayers": [
+      "pravilo-svetog-serafima"
+    ]
+  },
+  {
+    "id": "saints-prayers",
+    "title": "Молитве Светитељима",
+    "prayers": [
+      "sv-jovanu-krstitelju",
+      "sv-savi-srpskom"
+    ]
+  },
+  {
+    "id": "prayers-for-various-needs",
+    "title": "Молитве за разне потребе",
+    "prayers": [
+      "za-boziju-zastitu",
+      "za-duhovnu-obnovu"
+    ]
+  }
+]

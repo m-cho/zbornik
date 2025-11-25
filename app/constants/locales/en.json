@@ -3,7 +3,14 @@
   "home": {
     "title": "Home",
     "headerTitle": "Zbornik",
-    "todayIs": "Today is"
+    "todayIs": "Today is",
+    "prologue": "Prologue",
+    "saints": "Lives of the Saints",
+    "prayers": "Prayers",
+    "morningPrayers": "Morning",
+    "eveningPrayers": "Evening",
+    "reading": "Reading",
+    "readingSource": "Source: svetosavlje.org"
   },
   "weekdays": ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
   "weekNames": {

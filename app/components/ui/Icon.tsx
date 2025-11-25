@@ -16,10 +16,14 @@ export default function Icon({ name, size, color }: IconProps) {
     'arrow-back': <Ionicons name='arrow-back' size={size} color={color} />,
 
     'book-bible': <FontAwesome6 name='book-bible' size={size} color={color} />,
+    'book-open-page-variant': <MaterialIcons name='book-open-page-variant' size={size} color={color} />,
 
     'menu': <MaterialIcons name='menu' size={size} color={color} />,
     'candle': <MaterialIcons name='candle' size={size} color={color} />,
     'chevron-right': <MaterialIcons name='chevron-right' size={size} color={color} />,
+
+    'sunny-outline': <Ionicons name='sunny-outline' size={size} color={color} />,
+    'moon-outline': <Ionicons name='moon-outline' size={size} color={color} />,
   }[name] ?? (
     <MaterialIcons name='help-circle' size={size} color={color} />
   );

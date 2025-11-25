@@ -3,7 +3,14 @@
   "home": {
     "title": "Početna",
     "headerTitle": "Zbornik",
-    "todayIs": "Danas je"
+    "todayIs": "Danas je",
+    "prologue": "Prolog",
+    "saints": "Žitija Svetih",
+    "prayers": "Molitve",
+    "morningPrayers": "Jutarnje",
+    "eveningPrayers": "Večernje",
+    "reading": "Čitanje",
+    "readingSource": "Izvor: svetosavlje.org"
   },
   "weekdays": ["Nedelja", "Ponedeljak", "Utorak", "Sreda", "Četvrtak", "Petak", "Subota"],
   "weekNames": {

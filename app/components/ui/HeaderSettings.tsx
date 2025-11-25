@@ -1,10 +1,13 @@
 import { Colors } from "@/constants/Colors";
-import { ColorSchemeName } from "react-native";
+import { ColorSchemeName, Dimensions } from "react-native";
 
 export default function getHeaderSettings(colorScheme: ColorSchemeName, options: Record<string, any>): any {
+  const screenWidth = Dimensions.get('window').width;
+  const isLargeScreen = screenWidth >= 768; // tablet/desktop breakpoint
+  
   return {
     headerShown: true,
-    headerTitleAlign: "left",
+    headerTitleAlign: isLargeScreen ? "center" : "left",
     headerTitleStyle: {
       fontWeight: "bold",
     },
