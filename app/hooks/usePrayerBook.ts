@@ -81,6 +81,7 @@ export default function usePrayerBook() {
       'sv-savi-srpskom': require(`../assets/prayer-book/${locale}/prayers/sv-savi-srpskom.md`),
       'za-boziju-zastitu': require(`../assets/prayer-book/${locale}/prayers/za-boziju-zastitu.md`),
       'za-duhovnu-obnovu': require(`../assets/prayer-book/${locale}/prayers/za-duhovnu-obnovu.md`),
+      'svetome-duhu': require(`../assets/prayer-book/${locale}/prayers/svetome-duhu.md`),
       'jutarnje': require(`../assets/prayer-book/${locale}/prayers/jutarnje.md`),
       'vecernje': require(`../assets/prayer-book/${locale}/prayers/vecernje.md`),
       'pravilo-svetog-serafima': require(`../assets/prayer-book/${locale}/prayers/pravilo-svetog-serafima.md`),
