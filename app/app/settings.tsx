@@ -7,7 +7,7 @@ import SettingsOption from "@/components/ui/SettingsOption";
 import i18n from "@/constants/i18n";
 import { StyleSheet } from "react-native";
 
-export default function BibleSettingsScreen() {
+export default function SettingsScreen() {
   return (
     <ThemedContainer>
       <ThemedScrollView contentContainerStyle={styles.container}>
@@ -15,7 +15,7 @@ export default function BibleSettingsScreen() {
           {/* Settings Group: Appearance */}
           {/* @TODO */}
           {/* <ThemedView style={styles.section}>
-            <ThemedText style={styles.sectionTitle}>{i18n.t('bibleSettings.appearance')}</ThemedText>
+            <ThemedText style={styles.sectionTitle}>{i18n.t('settings.appearance')}</ThemedText>
             <ThemedView style={styles.settingsGroup}>
               <ThemeSelector />
             </ThemedView>
@@ -23,7 +23,7 @@ export default function BibleSettingsScreen() {
 
           {/* Settings Group: Bible */}
           <ThemedView style={styles.section}>
-            <ThemedText style={styles.sectionTitle}>{i18n.t('bibleSettings.bible')}</ThemedText>
+            <ThemedText style={styles.sectionTitle}>{i18n.t('settings.bible')}</ThemedText>
             <ThemedView style={styles.settingsGroup}>
               <BibleSelector />
             </ThemedView>
@@ -31,16 +31,12 @@ export default function BibleSettingsScreen() {
 
           {/* Settings Group: About */}
           <ThemedView style={styles.section}>
-            <ThemedText style={styles.sectionTitle}>{i18n.t('bibleSettings.about')}</ThemedText>
+            <ThemedText style={styles.sectionTitle}>{i18n.t('settings.about')}</ThemedText>
             <ThemedView style={styles.settingsGroup}>
               <SettingsOption
-                title={i18n.t('bibleSettings.version')}
+                title={i18n.t('settings.version')}
                 description="1.0.0"
-                disabled
-              />
-              <SettingsOption
-                title={i18n.t('bibleSettings.appInfo')}
-                description={i18n.t('bibleSettings.appInfoDescription')}
+                rightComponent="none"
                 disabled
               />
             </ThemedView>

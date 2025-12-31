@@ -6,15 +6,15 @@ import { Chip } from "@/components/ui/Chip";
 import { PrimaryButton } from "@/components/ui/PrimaryButton";
 import { Colors } from "@/constants/Colors";
 import i18n from "@/constants/i18n";
+import useBox from "@/hooks/useBox";
 import { useLiturgicalCalendar } from "@/hooks/useLiturgicalCalendar";
 import { useLocalSearchParams, useRouter } from "expo-router";
-import * as WebBrowser from 'expo-web-browser';
 import { useMemo } from "react";
-import { Platform } from "react-native";
 
 export default function HomeScreen() {
   const router = useRouter();
   const params = useLocalSearchParams();
+  const { openWebPage } = useBox();
 
   const today = useMemo(() => {
     // Date override only in dev mode
@@ -43,16 +43,6 @@ export default function HomeScreen() {
   }, [today, todayJulian, locale]);
 
   const liturgicalInfo = useLiturgicalCalendar(today);
-
-  const openWebPage = async (url: string) => {
-    console.log('Opening URL:', url);
-
-    if (Platform.OS === 'web') {
-      window.open(url, '_blank');
-    } else {
-      await WebBrowser.openBrowserAsync(url);
-    }
-  }
 
   const openPrologueForToday = async () => {
     const url = `https://www.svetosavlje.org/prolog-${todayJulian.getMonth() + 2}/${todayJulian.getDate() + 1}`;
@@ -115,7 +105,7 @@ export default function HomeScreen() {
             {liturgicalInfo.specialDay && (
               <Chip
                 label={liturgicalInfo.specialDay}
-                variant="neutral"
+                variant="primary"
                 style={{ marginTop: 4, marginBottom: 8, alignSelf: 'flex-start' }}
               />
             )}

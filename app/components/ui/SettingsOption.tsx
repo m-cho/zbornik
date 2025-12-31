@@ -3,17 +3,21 @@ import { ThemedView } from "@/components/ThemedView";
 import { useThemeColor } from "@/hooks/useThemeColor";
 import { ReactNode } from "react";
 import { Pressable, StyleSheet } from "react-native";
+import Icon from "./Icon";
+import RightArrowOptionIcon from "./RightArrowOptionIcon";
 
 interface SettingsOptionProps {
   title: string;
+  leftIcon?: string;
   description?: string;
   onPress?: () => void;
-  rightComponent?: ReactNode;
+  rightComponent?: ReactNode | 'none';
   disabled?: boolean;
 }
 
 export default function SettingsOption({ 
-  title, 
+  title,
+  leftIcon,
   description, 
   onPress, 
   rightComponent, 
@@ -21,6 +25,7 @@ export default function SettingsOption({
 }: SettingsOptionProps) {
   const borderColor = useThemeColor({}, 'border');
   const disabledColor = useThemeColor({}, 'textSecondary');
+  const iconColor = useThemeColor({}, 'icon');
 
   return (
     <Pressable 
@@ -34,6 +39,11 @@ export default function SettingsOption({
       ]}
     >
       <ThemedView style={styles.content}>
+        {leftIcon && (
+          <ThemedView style={{ marginRight: 10, marginTop: 2 }}>
+            <Icon name={leftIcon} size={20} color={iconColor} />
+          </ThemedView>
+        )}
         <ThemedView style={styles.textContainer}>
           <ThemedText 
             style={[
@@ -54,9 +64,13 @@ export default function SettingsOption({
             </ThemedText>
           )}
         </ThemedView>
-        {rightComponent && (
+        {rightComponent === 'none' ? null : rightComponent ? (
           <ThemedView style={styles.rightContainer}>
             {rightComponent}
+          </ThemedView>
+        ) : (
+          <ThemedView style={styles.rightContainer}>
+            <RightArrowOptionIcon />
           </ThemedView>
         )}
       </ThemedView>

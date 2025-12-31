@@ -17,6 +17,51 @@
     "afterPascha": "%{count}. nedelja po Vaskrsu",
     "afterPentecost": "%{count}. nedelja po Duhovima"
   },
+  "charity": {
+    "title": "Dobročinstvo",
+    "items": {
+      "vds": {
+        "title": "Versko dobrotvorno starateljstvo",
+        "description": "Dobrotvorna organizacija SPC, Arhiepiskopije beogradsko-karlovačke"
+      },
+      "vdsNis": {
+        "title": "VDS Eparhije Niške “Dobri Samarjanin“",
+        "description": "Dobrotvorna organizacija koja deluje u okviru SPC Eparhije niške"
+      },
+      "vdsSumadija": {
+        "title": "VDS Eparhije šumadijske “Sveti Jovan Milostivi“",
+        "description": "Dobrotvorna organizacija koja deluje u okviru Eparhije šumadijske SPC"
+      },
+      "freskopisanjeCrkvaSvCaraKonstantinaICariceJelene": {
+        "title": "Hram Sv. cara Konstantina i carice Jelene",
+        "description": "Pomozimo oslikavanje živopisa hrama Svetog cara Konstantina i carice Jelene u Nišu"
+      },
+      "crkvaRtanj": {
+        "title": "Crkva Sv. Đorđa na Rtnju",
+        "description": "Pomoć obnovi svetinje na planini Rtanj"
+      },
+      "ziveReci": {
+        "title": "“Žive Reči“ - podrška",
+        "description": "Kanal i portal sveštenika protojereja Ivana Cvetkovića, stalnog člana misionarskog odeljenja SPC"
+      }
+    },
+    "card": {
+      "charityPrimaryBtnText": "Doniraj",
+      "churchPrimaryBtnText": "Pomozi",
+      "mediaPrimaryBtnText": "Podrži"
+    }
+  },
+  "settings": {
+    "title": "Podešavanja",
+    "appearance": "Izgled",
+    "bible": "Sveto Pismo",
+    "about": "O aplikaciji",
+    "version": "Verzija",
+    "appInfo": "Informacije o aplikaciji",
+    "appInfoDescription": "Aplikacija za čitanje Biblije",
+    "bibleTranslation": "Prevod Biblije",
+    "selectBible": "Izaberite prevod Biblije"
+  },
   "more": {
     "title": "Više"
   },
@@ -28,17 +73,6 @@
       "few": "{{count}} poglavlja",
       "other": "{{count}} poglavlja"
     }
-  },
-  "bibleSettings": {
-    "title": "Podešavanja",    
-    "appearance": "Izgled",
-    "bible": "Sveto Pismo",
-    "about": "O aplikaciji",
-    "version": "Verzija",
-    "appInfo": "Informacije o aplikaciji",
-    "appInfoDescription": "Aplikacija za čitanje Biblije",
-    "bibleTranslation": "Prevod Biblije",
-    "selectBible": "Izaberite prevod Biblije"
   },
   "books": {
     "Genesis": "Postanje",

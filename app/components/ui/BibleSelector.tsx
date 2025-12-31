@@ -32,12 +32,9 @@ export default function BibleSelector({ onBibleChange }: BibleSelectorProps) {
   return (
     <>
       <SettingsOption
-        title={i18n.t('bibleSettings.bibleTranslation')}
-        description={selectedBible?.name || i18n.t('bibleSettings.selectBible')}
+        title={i18n.t('settings.bibleTranslation')}
+        description={selectedBible?.name || i18n.t('settings.selectBible')}
         onPress={() => setModalVisible(true)}
-        rightComponent={
-          <ThemedText style={styles.arrowText}>›</ThemedText>
-        }
       />
       
       <Modal
@@ -50,7 +47,7 @@ export default function BibleSelector({ onBibleChange }: BibleSelectorProps) {
           <ThemedView style={[styles.modalContent, { backgroundColor, borderColor }]}>
             <ThemedView style={styles.modalHeader}>
               <ThemedText style={styles.modalTitle}>
-                {i18n.t('bibleSettings.selectBible')}
+                {i18n.t('settings.selectBible')}
               </ThemedText>
               <Pressable 
                 onPress={() => setModalVisible(false)}
@@ -90,10 +87,6 @@ export default function BibleSelector({ onBibleChange }: BibleSelectorProps) {
 }
 
 const styles = StyleSheet.create({
-  arrowText: {
-    fontSize: 18,
-    fontWeight: '300',
-  },
   modalOverlay: {
     flex: 1,
     justifyContent: 'center',

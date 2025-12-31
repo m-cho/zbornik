@@ -50,6 +50,7 @@ export function useLiturgicalCalendar(date: Date = new Date()): LiturgicalInfo {
     // Dobavi brojeve nedelja posle Vaskrsa i Duhova
     const weekPentecost = periods.getWeekAfterPentecost(todayISO, 'new');
     const weekPascha = periods.getWeekAfterPascha(todayISO, 'new');
+
     
     // Odredi naziv nedelje
     let weekName = '';
@@ -114,14 +115,26 @@ export function useLiturgicalCalendar(date: Date = new Date()): LiturgicalInfo {
     } else if (weekPentecost.week !== null && weekPentecost.week >= 0) {
       weekAfterPentecost = weekPentecost.week;
     } else if (weekPentecost.week !== null && weekPentecost.week < 0) {
-      // Nedelje od 1. januara do početka Trioda nastavljaju brojanje iz prošle godine
-      // Izračunaj koliko nedelja je prošlo od Duhova prošle godine
-      if (prevYearDates.pentecost && isDate(prevYearDates.pentecost)) {
-        const pentecostPrevYear = toLocalDateForWeek(prevYearDates.pentecost);
-        const daysSincePentecost = Math.floor((sundayLocal.getTime() - pentecostPrevYear.getTime()) / (1000 * 60 * 60 * 24));
-        const weeksSincePentecost = Math.floor(daysSincePentecost / 7);
-        if (weeksSincePentecost > 0) {
-          weekAfterPentecost = weeksSincePentecost;
+      // Nedelje od 1. januara do Duhova tekuće godine nastavljaju brojanje iz prošle godine
+      if (dates.pentecost && isDate(dates.pentecost)) {
+        const pentecostCurrentYear = toLocalDateForWeek(dates.pentecost);
+        if (sundayLocal.getTime() < pentecostCurrentYear.getTime()) {
+          // Pre Duhova tekuće godine: broj od Duhova prethodne godine
+          if (prevYearDates.pentecost && isDate(prevYearDates.pentecost)) {
+            const pentecostPrevYear = toLocalDateForWeek(prevYearDates.pentecost);
+            const daysSincePentecost = Math.floor((sundayLocal.getTime() - pentecostPrevYear.getTime()) / (1000 * 60 * 60 * 24));
+            const weeksSincePentecost = Math.floor(daysSincePentecost / 7);
+            if (weeksSincePentecost > 0) {
+              weekAfterPentecost = weeksSincePentecost;
+            }
+          }
+        } else {
+          // Na ili posle Duhova tekuće godine: broj od Duhova tekuće godine
+          const daysSincePentecost = Math.floor((sundayLocal.getTime() - pentecostCurrentYear.getTime()) / (1000 * 60 * 60 * 24));
+          const weeksSincePentecost = Math.floor(daysSincePentecost / 7);
+          if (weeksSincePentecost >= 0) {
+            weekAfterPentecost = weeksSincePentecost;
+          }
         }
       }
     }
@@ -367,6 +380,7 @@ export function useLiturgicalCalendar(date: Date = new Date()): LiturgicalInfo {
         }
       }
     }
+
     
     return {
       weekAfterPascha,

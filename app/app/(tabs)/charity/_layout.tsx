@@ -1,11 +1,11 @@
-import BackButton from "@/components/ui/BackButton";
 import getHeaderSettings from "@/components/ui/HeaderSettings";
 import i18n from "@/constants/i18n";
 import useBox from "@/hooks/useBox";
 import { useColorScheme } from '@/hooks/useColorScheme';
 import { Stack } from "expo-router";
 
-export default function BibleLayout() {
+
+export default function CharityLayout() {
   const colorScheme = useColorScheme();
   const { isLargeScreen } = useBox();
 
@@ -18,22 +18,8 @@ export default function BibleLayout() {
       <Stack.Screen
         name="index"
         options={{
-          title: i18n.t('bibleReader.title'),
+          title: i18n.t('charity.title'),
           headerLeft: () => null,
-        }}
-      />
-      <Stack.Screen
-        name="[book]/index"
-        options={{
-          title: i18n.t('bibleReader.title'),
-          headerLeft: () => <BackButton href="/bible" />,
-        }}
-      />
-      <Stack.Screen
-        name="[book]/[chapter]"
-        options={{
-          title: i18n.t('bibleReader.title'),
-          headerLeft: () => <BackButton href="/bible/[book]/index"/>,
         }}
       />
     </Stack>

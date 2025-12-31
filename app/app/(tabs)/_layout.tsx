@@ -7,10 +7,12 @@ import Icon from '@/components/ui/Icon';
 import TabBarBackground from '@/components/ui/TabBarBackground';
 import { Colors } from '@/constants/Colors';
 import i18n from '@/constants/i18n';
+import useBox from '@/hooks/useBox';
 import { useColorScheme } from '@/hooks/useColorScheme';
 
 export default function TabLayout() {
   const colorScheme = useColorScheme();
+  const { isLargeScreen } = useBox();
 
   return (
     <Tabs
@@ -25,11 +27,14 @@ export default function TabLayout() {
           borderTopColor: Colors[colorScheme ?? 'light'].border,
           borderTopWidth: 1,
         },
+        tabBarPosition: isLargeScreen ? 'left' : 'bottom',
+        tabBarVariant: isLargeScreen ? 'material' : 'uikit',
+        tabBarLabelPosition: 'below-icon',
       }}>
       <Tabs.Screen
         name="index"
         options={{
-          ...getHeaderSettings(colorScheme, {}),
+          ...getHeaderSettings(colorScheme, {}, { isLargeScreen }),
           title: i18n.t('home.title'),
           tabBarIcon: ({ color }) => <Icon size={28} name="home" color={color} />,
           headerShown: true,
@@ -48,6 +53,13 @@ export default function TabLayout() {
         options={{
           title: i18n.t('prayerBook.title'),
           tabBarIcon: ({ color }) => <Icon size={28} name="candle" color={color} />,
+        }}
+      />
+      <Tabs.Screen
+        name="charity"
+        options={{
+          title: i18n.t('charity.title'),
+          tabBarIcon: ({ color }) => <Icon size={28} name="hand-heart" color={color} />,
         }}
       />
       <Tabs.Screen

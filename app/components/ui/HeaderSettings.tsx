@@ -1,9 +1,12 @@
 import { Colors } from "@/constants/Colors";
-import { ColorSchemeName, Dimensions } from "react-native";
+import { ColorSchemeName } from "react-native";
 
-export default function getHeaderSettings(colorScheme: ColorSchemeName, options: Record<string, any>): any {
-  const screenWidth = Dimensions.get('window').width;
-  const isLargeScreen = screenWidth >= 768; // tablet/desktop breakpoint
+type ScreenOptions = {
+  isLargeScreen: boolean;
+}
+
+export default function getHeaderSettings(colorScheme: ColorSchemeName, options: Record<string, any>, screenOptions: ScreenOptions): any {
+  const { isLargeScreen } = screenOptions;
   
   return {
     headerShown: true,

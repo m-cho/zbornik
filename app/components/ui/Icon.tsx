@@ -21,6 +21,11 @@ export default function Icon({ name, size, color }: IconProps) {
     'menu': <MaterialIcons name='menu' size={size} color={color} />,
     'candle': <MaterialIcons name='candle' size={size} color={color} />,
     'chevron-right': <MaterialIcons name='chevron-right' size={size} color={color} />,
+    'hand-heart': <MaterialIcons name='hand-heart' size={size} color={color} />,
+    'charity': <MaterialIcons name="charity" size={size} color={color} />,
+    'info': <MaterialIcons name='information-variant' size={size} color={color} />,
+    'church': <MaterialIcons name='church' size={size} color={color} />,
+    'media': <MaterialIcons name='podcast' size={size} color={color} />,
 
     'sunny-outline': <Ionicons name='sunny-outline' size={size} color={color} />,
     'moon-outline': <Ionicons name='moon-outline' size={size} color={color} />,

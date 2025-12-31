@@ -17,6 +17,51 @@
     "afterPascha": "%{count}. week after Pascha",
     "afterPentecost": "%{count}. week after Pentecost"
   },
+  "charity": {
+    "title": "Charity",
+    "items": {
+      "vds": {
+        "title": "Church Charity Stewardship",
+        "description": "Charitable organization of the Serbian Orthodox Church, Archdiocese of Belgrade-Karlovci"
+      },
+      "vdsNis": {
+        "title": "Charity of the Diocese of Niš 'Good Samaritan'",
+        "description": "Charitable organization operating within the Serbian Orthodox Church, Diocese of Niš"
+      },
+      "vdsSumadija": {
+        "title": "Charity of the Diocese of Šumadija 'St. John the Merciful'",
+        "description": "Charitable organization operating within the Diocese of Šumadija, Serbian Orthodox Church"
+      },
+      "freskopisanjeCrkvaSvCaraKonstantinaICariceJelene": {
+        "title": "Church of St. Constantine and Empress Helena",
+        "description": "Support the fresco painting of the Church of St. Constantine and Empress Helena in Niš."
+      },
+      "crkvaRtanj": {
+        "title": "Church of St. George on Rtanj Mountain",
+        "description": "Support the restoration of the holy site on Mt. Rtanj."
+      },
+      "ziveReci": {
+        "title": "'Living Words' - support",
+        "description": "Channel and portal of priest Protoiereus Ivan Cvetković, a permanent member of the missionary department of the Serbian Orthodox Church."
+      }
+    },
+    "card": {
+      "charityPrimaryBtnText": "Donate",
+      "churchPrimaryBtnText": "Support",
+      "mediaPrimaryBtnText": "Contribute"
+    }
+  },
+  "settings": {
+    "title": "Settings",
+    "appearance": "Appearance",
+    "bible": "Bible",
+    "about": "About",
+    "version": "Version",
+    "appInfo": "App Info",
+    "appInfoDescription": "Bible reading app",
+    "bibleTranslation": "Bible Translation",
+    "selectBible": "Select a bible translation"
+  },
   "more": {
     "title": "More"
   },
@@ -27,17 +72,6 @@
       "one": "1 chapter",
       "other": "%{count} chapters"
     }
-  },
-  "bibleSettings": {
-    "title": "Settings",
-    "appearance": "Appearance",
-    "bible": "Bible",
-    "about": "About",
-    "version": "Version",
-    "appInfo": "App Info",
-    "appInfoDescription": "Bible reading app",
-    "bibleTranslation": "Bible Translation",
-    "selectBible": "Select a bible translation"
   },
   "books": {
     "Genesis": "Genesis",

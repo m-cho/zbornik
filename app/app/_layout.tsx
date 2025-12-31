@@ -7,6 +7,7 @@ import 'react-native-reanimated';
 import BackButton from '@/components/ui/BackButton';
 import getHeaderSettings from '@/components/ui/HeaderSettings';
 import i18n from '@/constants/i18n';
+import useBox from '@/hooks/useBox';
 import { useColorScheme } from '@/hooks/useColorScheme';
 import { Platform } from 'react-native';
 
@@ -16,6 +17,8 @@ if (Platform.OS === 'web') {
 
 export default function RootLayout() {
   const colorScheme = useColorScheme();
+  const { isLargeScreen } = useBox();
+
   const [loaded] = useFonts({
     SpaceMono: require('../assets/fonts/SpaceMono-Regular.ttf'),
     'Triodion-Regular': require('../assets/fonts/Triodion-Regular.ttf'),
@@ -30,14 +33,13 @@ export default function RootLayout() {
     <ThemeProvider value={colorScheme === 'dark' ? DarkTheme : DefaultTheme}>
       <Stack 
         screenOptions={
-          getHeaderSettings(colorScheme, {})
+          getHeaderSettings(colorScheme, {}, { isLargeScreen })
         }
       >
         <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
         <Stack.Screen name="+not-found" />
-        <Stack.Screen name="bible-settings" options={{
-          presentation: 'modal',
-          title: i18n.t('bibleSettings.title'),
+        <Stack.Screen name="settings" options={{
+          title: i18n.t('settings.title'),
           headerLeft: () => <BackButton />
         }} />
       </Stack>
