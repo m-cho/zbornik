@@ -86,6 +86,10 @@ export default function usePrayerBook() {
       'jutarnje': require(`../assets/prayer-book/${locale}/prayers/jutarnje.md`),
       'vecernje': require(`../assets/prayer-book/${locale}/prayers/vecernje.md`),
       'pravilo-svetog-serafima': require(`../assets/prayer-book/${locale}/prayers/pravilo-svetog-serafima.md`),
+      'bozicni-tropar': require(`../assets/prayer-book/${locale}/prayers/bozicni-tropar.md`),
+      'vaskrsnji-tropar': require(`../assets/prayer-book/${locale}/prayers/vaskrsnji-tropar.md`),
+      'casnome-krstu': require(`../assets/prayer-book/${locale}/prayers/casnome-krstu.md`),
+      'za-putnike-i-vozace': require(`../assets/prayer-book/${locale}/prayers/za-putnike-i-vozace.md`),
     };
     
     return prayersContentMap[prayerId] || '';

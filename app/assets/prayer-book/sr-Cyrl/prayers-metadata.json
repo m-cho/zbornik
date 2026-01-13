@@ -49,6 +49,22 @@
   },
   {
     "id": "u-svako-doba",
-    "title": "Молитва у свако доба"
+    "title": "У свако доба"
+  },
+  {
+    "id": "bozicni-tropar",
+    "title": "Божићни тропар (Глас 4)"
+  },
+  {
+    "id": "vaskrsnji-tropar",
+    "title": "Васкршњи тропар (Глас 5)"
+  },
+  {
+    "id": "casnome-krstu",
+    "title": "Часноме Крсту"
+  },
+  {
+    "id": "za-putnike-i-vozace",
+    "title": "За све путнике и возаче"
   }
 ]

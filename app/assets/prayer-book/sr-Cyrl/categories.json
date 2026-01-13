@@ -15,7 +15,16 @@
       "bogorodice-djevo",
       "simbol-vere",
       "isusova-molitva",
-      "svetome-duhu"
+      "svetome-duhu",
+      "casnome-krstu"
+    ]
+  },
+  {
+    "id": "troparion",
+    "title": "Тропари",
+    "prayers": [
+      "bozicni-tropar",
+      "vaskrsnji-tropar"
     ]
   },
   {
@@ -39,7 +48,8 @@
     "prayers": [
       "za-boziju-zastitu",
       "za-duhovnu-obnovu",
-      "u-svako-doba"
+      "u-svako-doba",
+      "za-putnike-i-vozace"
     ]
   }
 ]

@@ -43,6 +43,10 @@
       "ziveReci": {
         "title": "'Living Words' - support",
         "description": "Channel and portal of priest Protoiereus Ivan Cvetković, a permanent member of the missionary department of the Serbian Orthodox Church."
+      },
+      "otacPredragPopovic": {
+        "title": "Support for Father Predrag Popović",
+        "description": "Support for the missionary work of Father Predrag Popović"
       }
     },
     "card": {
@@ -50,6 +54,8 @@
       "churchPrimaryBtnText": "Support",
       "mediaPrimaryBtnText": "Contribute"
     }
+    ,
+    "disclaimer": "The projects and organizations listed here are provided for information. No organization requested to be listed."
   },
   "settings": {
     "title": "Settings",
@@ -159,6 +165,7 @@
     "eveningPrayers": "Evening Prayers",
     "everydayPrayers": "Everyday Prayers",
     "prayerRules": "Prayer Rules",
-    "stSeraphimOfSarovPrayerRule": "Prayer Rule of St. Seraphim of Sarov"
+    "stSeraphimOfSarovPrayerRule": "Prayer Rule of St. Seraphim of Sarov",
+    "troparion": "Troparion"
   }
 }

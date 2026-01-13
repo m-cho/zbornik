@@ -1,5 +1,6 @@
 import ThemedContainer from "@/components/ThemedContainer";
 import { ThemedScrollView } from "@/components/ThemedScrollView";
+import { ThemedText } from '@/components/ThemedText';
 import { ThemedView } from "@/components/ThemedView";
 import CharityCard from "@/components/ui/CharityCard";
 import i18n from "@/constants/i18n";
@@ -46,6 +47,11 @@ export default function CharityScreen() {
     title: i18n.t('charity.items.ziveReci.title'),
     description: i18n.t('charity.items.ziveReci.description'),
     link: 'https://zivereci.com/podrzhite',
+  }, {
+    type: 'media',
+    title: i18n.t('charity.items.otacPredragPopovic.title'),
+    description: i18n.t('charity.items.otacPredragPopovic.description'),
+    link: 'https://otacpredrag.com/donacije',
   // }]), [shuffle]);
   }];
 
@@ -54,6 +60,9 @@ export default function CharityScreen() {
     <ThemedContainer>
       <ThemedScrollView contentContainerStyle={styles.container}>
         <ThemedView style={[styles.content, isLargeScreen && styles.contentLarge]}>
+          <ThemedView style={styles.disclaimerWrap}>
+            <ThemedText style={styles.disclaimerText}>{i18n.t('charity.disclaimer')}</ThemedText>
+          </ThemedView>
           {items.map((item) => (
             <ThemedView key={item.title} style={isLargeScreen ? styles.cardWrapperLarge : undefined}>
               <CharityCard
@@ -85,6 +94,15 @@ const styles = StyleSheet.create({
     flex: 1,
     paddingTop: 20,
   },
+  disclaimerWrap: {
+    width: '100%',
+    marginBottom: 12,
+    paddingHorizontal: 8,
+  },
+  disclaimerText: {
+    fontSize: 12,
+    color: '#bdbdbd'
+  },
   contentLarge: {
     flexDirection: 'row',
     flexWrap: 'wrap',
@@ -94,7 +112,6 @@ const styles = StyleSheet.create({
   },
   cardWrapperLarge: {
     width: '48%',
-    marginBottom: 16,
     alignSelf: 'stretch',
     display: 'flex',
   },

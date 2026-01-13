@@ -43,6 +43,10 @@
       "ziveReci": {
         "title": "“Žive Reči“ - podrška",
         "description": "Kanal i portal sveštenika protojereja Ivana Cvetkovića, stalnog člana misionarskog odeljenja SPC"
+      },
+      "otacPredragPopovic": {
+        "title": "Otac Predrag Popović - Podrška",
+        "description": "Podrška misionarskom radu Oca Predraga Popovića"
       }
     },
     "card": {
@@ -50,6 +54,8 @@
       "churchPrimaryBtnText": "Pomozi",
       "mediaPrimaryBtnText": "Podrži"
     }
+    ,
+    "disclaimer": "Projekti i organizacije navedeni ovde služe za informisanje. Nije zatraženo da bilo koja organizacija bude navedena."
   },
   "settings": {
     "title": "Podešavanja",
@@ -160,6 +166,7 @@
     "eveningPrayers": "Večernje molitve",
     "everydayPrayers": "Svakodnevne molitve",
     "prayerRules": "Molitvena pravila",
-    "stSeraphimOfSarovPrayerRule": "Molitveno pravilo Sv. Serafima Sarovskog"
+    "stSeraphimOfSarovPrayerRule": "Molitveno pravilo Sv. Serafima Sarovskog",
+    "troparion": "Tropari"
   }
 }
