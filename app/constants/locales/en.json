@@ -55,18 +55,25 @@
       "mediaPrimaryBtnText": "Contribute"
     }
     ,
-    "disclaimer": "The projects and organizations listed here are provided for information. No organization requested to be listed."
+    "disclaimer": "The projects and organizations listed here are provided for information and have been selected by the app author. Their listing does not represent an endorsement or guarantee that this app is on the right spiritual path. No organization requested to be listed."
   },
   "settings": {
     "title": "Settings",
     "appearance": "Appearance",
     "bible": "Bible",
-    "about": "About",
+    "bibleTranslation": "Bible Translation",
+    "selectBible": "Select a bible translation"
+  },
+  "about": {
+    "title": "About the App",
     "version": "Version",
     "appInfo": "App Info",
     "appInfoDescription": "Bible reading app",
-    "bibleTranslation": "Bible Translation",
-    "selectBible": "Select a bible translation"
+    "privacy": "Privacy policy",
+    "terms": "Terms of Service",
+    "license": "License",
+    "sourceCode": "Source code",
+    "reportIssue": "Report a problem"
   },
   "more": {
     "title": "More"

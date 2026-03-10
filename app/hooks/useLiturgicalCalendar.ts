@@ -42,8 +42,12 @@ function isDate(value: any): value is Date | string {
 
 export function useLiturgicalCalendar(date: Date = new Date()): LiturgicalInfo {
   return useMemo(() => {
-    const todayISO = date.toISOString().split('T')[0];
+    try {
+      const todayISO = date.toISOString().split('T')[0];
     const year = date.getFullYear();
+    console.log('date', date, typeof date, date instanceof Date);
+    console.log('todayISO', todayISO);
+    console.log('year', year);
     const dates = datesModule.getForYear(year, 'new');
     const prevYearDates = datesModule.getForYear(year - 1, 'new');
     
@@ -392,6 +396,19 @@ export function useLiturgicalCalendar(date: Date = new Date()): LiturgicalInfo {
       upcomingFeast,
       specialDay,
     };
+    } catch (err) {
+      console.error('Error in useLiturgicalCalendar:', err);
+      return {
+        weekAfterPascha: null,
+        weekAfterPentecost: null,
+        weekName: '',
+        isFasting: false,
+        fastingPeriod: null,
+        currentPeriod: null,
+        upcomingFeast: null,
+        specialDay: null,
+      };
+    }
   }, [date]);
 }
 

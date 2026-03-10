@@ -42,6 +42,10 @@ export default function RootLayout() {
           title: i18n.t('settings.title'),
           headerLeft: () => <BackButton />
         }} />
+        <Stack.Screen name="about" options={{
+          title: i18n.t('about.title'),
+          headerLeft: () => <BackButton />
+        }} />
       </Stack>
       <StatusBar style="auto" />
     </ThemeProvider>

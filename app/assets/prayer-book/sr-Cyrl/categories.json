@@ -2,10 +2,7 @@
   {
     "id": "everyday-prayers",
     "title": "Свакодневне молитве",
-    "prayers": [
-      "jutarnje",
-      "vecernje"
-    ]
+    "prayers": ["jutarnje", "vecernje"]
   },
   {
     "id": "general-prayers",
@@ -16,31 +13,24 @@
       "simbol-vere",
       "isusova-molitva",
       "svetome-duhu",
-      "casnome-krstu"
+      "casnome-krstu",
+      "velikoposna-molitva"
     ]
   },
   {
     "id": "troparion",
     "title": "Тропари",
-    "prayers": [
-      "bozicni-tropar",
-      "vaskrsnji-tropar"
-    ]
+    "prayers": ["bozicni-tropar", "vaskrsnji-tropar"]
   },
   {
     "id": "prayer-rules",
     "title": "Молитвенa правилa",
-    "prayers": [
-      "pravilo-svetog-serafima"
-    ]
+    "prayers": ["pravilo-svetog-serafima"]
   },
   {
     "id": "saints-prayers",
     "title": "Молитве Светитељима",
-    "prayers": [
-      "sv-jovanu-krstitelju",
-      "sv-savi-srpskom"
-    ]
+    "prayers": ["sv-jovanu-krstitelju", "sv-savi-srpskom"]
   },
   {
     "id": "prayers-for-various-needs",

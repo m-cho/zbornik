@@ -29,16 +29,18 @@ export default function PrayersGroup({ title, items }: PrayersGroupProps) {
       </ThemedText>
 
       {items.map((item, index) => (
-        <Link key={item.label} href={item.href} style={{ paddingVertical: 8, marginBottom: index === items.length - 1 ? 0 : 8 }}>
-          <ThemedText
-            style={{ fontWeight: '500', fontSize: 16, paddingRight: 24 }}
-            lightColor={Colors.light.text}
-            darkColor={Colors.dark.text}
-          >
-            {item.label}
-          </ThemedText>
-          <View style={{ position: 'absolute', right: -8, top: 10 }}>
-            <Icon name="chevron-right" size={24} color={textColor} />
+        <Link key={item.label} href={item.href} style={{ display: 'flex', flex: 1, paddingVertical: 8, marginBottom: index === items.length - 1 ? 0 : 8 }} asChild>
+          <View>
+            <ThemedText
+              style={{ fontWeight: '500', fontSize: 16, paddingRight: 24 }}
+              lightColor={Colors.light.text}
+              darkColor={Colors.dark.text}
+            >
+              {item.label}
+            </ThemedText>
+            <View style={{ position: 'absolute', right: -8, top: 10 }}>
+              <Icon name="chevron-right" size={24} color={textColor} />
+            </View>
           </View>
         </Link>
       ))}

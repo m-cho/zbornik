@@ -3,7 +3,6 @@ import { ThemedScrollView } from "@/components/ThemedScrollView";
 import { ThemedText } from "@/components/ThemedText";
 import { ThemedView } from "@/components/ThemedView";
 import BibleSelector from "@/components/ui/BibleSelector";
-import SettingsOption from "@/components/ui/SettingsOption";
 import i18n from "@/constants/i18n";
 import { StyleSheet } from "react-native";
 
@@ -26,19 +25,6 @@ export default function SettingsScreen() {
             <ThemedText style={styles.sectionTitle}>{i18n.t('settings.bible')}</ThemedText>
             <ThemedView style={styles.settingsGroup}>
               <BibleSelector />
-            </ThemedView>
-          </ThemedView>
-
-          {/* Settings Group: About */}
-          <ThemedView style={styles.section}>
-            <ThemedText style={styles.sectionTitle}>{i18n.t('settings.about')}</ThemedText>
-            <ThemedView style={styles.settingsGroup}>
-              <SettingsOption
-                title={i18n.t('settings.version')}
-                description="1.0.0"
-                rightComponent="none"
-                disabled
-              />
             </ThemedView>
           </ThemedView>
         </ThemedView>

@@ -23,14 +23,16 @@ type State = {
 
   prayersMetadata: PrayerMetadataMap;
   setPrayersMetadata: (prayers: PrayerMetadataMap) => void;
-}
+};
 
 const useStore = create<State>()((set) => ({
   categories: [],
-  setCategories: (categories: PrayerCategory[] | EmptyArray) => set({ categories }),
+  setCategories: (categories: PrayerCategory[] | EmptyArray) =>
+    set({ categories }),
 
   prayersMetadata: {},
-  setPrayersMetadata: (prayersMetadata: PrayerMetadataMap) => set({ prayersMetadata }),
+  setPrayersMetadata: (prayersMetadata: PrayerMetadataMap) =>
+    set({ prayersMetadata }),
 }));
 
 export default function usePrayerBook() {
@@ -41,22 +43,23 @@ export default function usePrayerBook() {
   const setPrayersMetadataMap = useStore((state) => state.setPrayersMetadata);
 
   useEffect(() => {
-    fetchPrayerBookData()
-      .then(({ categories, prayersMetadata }) => {
-        setCategoriesList(categories);
-        setPrayersMetadataMap(prayersMetadata);
-      });
+    fetchPrayerBookData().then(({ categories, prayersMetadata }) => {
+      setCategoriesList(categories);
+      setPrayersMetadataMap(prayersMetadata);
+    });
   }, [setCategoriesList, setPrayersMetadataMap]);
 
   async function fetchPrayerBookData() {
     // const locale = i18n.locale;
-    const locale = 'sr-Cyrl';
+    const locale = "sr-Cyrl";
 
     const [categories, prayersMetadata] = await Promise.all([
-      import(`../assets/prayer-book/${locale}/categories.json`)
-        .then(module => module.default as PrayerCategory[]),
-      import(`../assets/prayer-book/${locale}/prayers-metadata.json`)
-        .then(module => module.default as PrayerMetadata[]),
+      import(`../assets/prayer-book/${locale}/categories.json`).then(
+        (module) => module.default as PrayerCategory[],
+      ),
+      import(`../assets/prayer-book/${locale}/prayers-metadata.json`).then(
+        (module) => module.default as PrayerMetadata[],
+      ),
     ]);
 
     return {
@@ -70,29 +73,60 @@ export default function usePrayerBook() {
 
   function getPrayerContent(prayerId: string): string {
     // const locale = i18n.locale;
-    const locale = 'sr-Cyrl';
-    
+    const locale = "sr-Cyrl";
+
     const prayersContentMap: Record<string, any> = {
-      'oce-nas': require(`../assets/prayer-book/${locale}/prayers/oce-nas.md`),
-      'bogorodice-djevo': require(`../assets/prayer-book/${locale}/prayers/bogorodice-djevo.md`),
-      'simbol-vere': require(`../assets/prayer-book/${locale}/prayers/simbol-vere.md`),
-      'isusova-molitva': require(`../assets/prayer-book/${locale}/prayers/isusova-molitva.md`),
-      'sv-jovanu-krstitelju': require(`../assets/prayer-book/${locale}/prayers/sv-jovanu-krstitelju.md`),
-      'sv-savi-srpskom': require(`../assets/prayer-book/${locale}/prayers/sv-savi-srpskom.md`),
-      'za-boziju-zastitu': require(`../assets/prayer-book/${locale}/prayers/za-boziju-zastitu.md`),
-      'za-duhovnu-obnovu': require(`../assets/prayer-book/${locale}/prayers/za-duhovnu-obnovu.md`),
-      'u-svako-doba': require(`../assets/prayer-book/${locale}/prayers/u-svako-doba.md`),
-      'svetome-duhu': require(`../assets/prayer-book/${locale}/prayers/svetome-duhu.md`),
-      'jutarnje': require(`../assets/prayer-book/${locale}/prayers/jutarnje.md`),
-      'vecernje': require(`../assets/prayer-book/${locale}/prayers/vecernje.md`),
-      'pravilo-svetog-serafima': require(`../assets/prayer-book/${locale}/prayers/pravilo-svetog-serafima.md`),
-      'bozicni-tropar': require(`../assets/prayer-book/${locale}/prayers/bozicni-tropar.md`),
-      'vaskrsnji-tropar': require(`../assets/prayer-book/${locale}/prayers/vaskrsnji-tropar.md`),
-      'casnome-krstu': require(`../assets/prayer-book/${locale}/prayers/casnome-krstu.md`),
-      'za-putnike-i-vozace': require(`../assets/prayer-book/${locale}/prayers/za-putnike-i-vozace.md`),
+      "oce-nas": require(`../assets/prayer-book/${locale}/prayers/oce-nas.md`),
+      "bogorodice-djevo": require(
+        `../assets/prayer-book/${locale}/prayers/bogorodice-djevo.md`,
+      ),
+      "simbol-vere": require(
+        `../assets/prayer-book/${locale}/prayers/simbol-vere.md`,
+      ),
+      "isusova-molitva": require(
+        `../assets/prayer-book/${locale}/prayers/isusova-molitva.md`,
+      ),
+      "sv-jovanu-krstitelju": require(
+        `../assets/prayer-book/${locale}/prayers/sv-jovanu-krstitelju.md`,
+      ),
+      "sv-savi-srpskom": require(
+        `../assets/prayer-book/${locale}/prayers/sv-savi-srpskom.md`,
+      ),
+      "za-boziju-zastitu": require(
+        `../assets/prayer-book/${locale}/prayers/za-boziju-zastitu.md`,
+      ),
+      "za-duhovnu-obnovu": require(
+        `../assets/prayer-book/${locale}/prayers/za-duhovnu-obnovu.md`,
+      ),
+      "u-svako-doba": require(
+        `../assets/prayer-book/${locale}/prayers/u-svako-doba.md`,
+      ),
+      "svetome-duhu": require(
+        `../assets/prayer-book/${locale}/prayers/svetome-duhu.md`,
+      ),
+      jutarnje: require(`../assets/prayer-book/${locale}/prayers/jutarnje.md`),
+      vecernje: require(`../assets/prayer-book/${locale}/prayers/vecernje.md`),
+      "pravilo-svetog-serafima": require(
+        `../assets/prayer-book/${locale}/prayers/pravilo-svetog-serafima.md`,
+      ),
+      "bozicni-tropar": require(
+        `../assets/prayer-book/${locale}/prayers/bozicni-tropar.md`,
+      ),
+      "vaskrsnji-tropar": require(
+        `../assets/prayer-book/${locale}/prayers/vaskrsnji-tropar.md`,
+      ),
+      "casnome-krstu": require(
+        `../assets/prayer-book/${locale}/prayers/casnome-krstu.md`,
+      ),
+      "za-putnike-i-vozace": require(
+        `../assets/prayer-book/${locale}/prayers/za-putnike-i-vozace.md`,
+      ),
+      "velikoposna-molitva": require(
+        `../assets/prayer-book/${locale}/prayers/velikoposna-molitva.md`,
+      ),
     };
-    
-    return prayersContentMap[prayerId] || '';
+
+    return prayersContentMap[prayerId] || "";
   }
 
   return {

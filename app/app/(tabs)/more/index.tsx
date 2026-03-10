@@ -21,6 +21,15 @@ export default function MoreScreen() {
             }}
           />
         </ThemedView>
+        <ThemedView style={styles.content}>
+          <SettingsOption
+            leftIcon="info"
+            title={i18n.t('about.title')}
+            onPress={() => {
+              router.push('/about');
+            }}
+          />
+        </ThemedView>
       </ThemedScrollView>
     </ThemedContainer>
   );
@@ -31,8 +40,6 @@ const styles = StyleSheet.create({
     flexGrow: 1,
   },
   content: {
-    flex: 1,
-    paddingTop: 20,
   },
   title: {
     textAlign: 'center',

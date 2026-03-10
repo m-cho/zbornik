@@ -58,7 +58,7 @@ export default function CharityScreen() {
   const { isLargeScreen } = useBox();
   return (
     <ThemedContainer>
-      <ThemedScrollView contentContainerStyle={styles.container}>
+      <ThemedScrollView style={{ padding: 20 }} contentContainerStyle={styles.container}>
         <ThemedView style={[styles.content, isLargeScreen && styles.contentLarge]}>
           <ThemedView style={styles.disclaimerWrap}>
             <ThemedText style={styles.disclaimerText}>{i18n.t('charity.disclaimer')}</ThemedText>

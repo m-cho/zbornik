@@ -55,18 +55,25 @@
       "mediaPrimaryBtnText": "Podrži"
     }
     ,
-    "disclaimer": "Projekti i organizacije navedeni ovde služe za informisanje. Nije zatraženo da bilo koja organizacija bude navedena."
+    "disclaimer": "Projekti i organizacije navedeni ovde služe za informisanje i izabrane su od strane autora aplikacije. Njihovo navođenje ne predstavlja potvrdu niti garanciju da je ova aplikacija na ispravnom duhovnom putu. Nije zatraženo da bilo koja organizacija bude navedena."
   },
   "settings": {
     "title": "Podešavanja",
     "appearance": "Izgled",
     "bible": "Sveto Pismo",
-    "about": "O aplikaciji",
+    "bibleTranslation": "Prevod Biblije",
+    "selectBible": "Izaberite prevod Biblije"
+  },
+  "about": {
+    "title": "O aplikaciji",
     "version": "Verzija",
     "appInfo": "Informacije o aplikaciji",
     "appInfoDescription": "Aplikacija za čitanje Biblije",
-    "bibleTranslation": "Prevod Biblije",
-    "selectBible": "Izaberite prevod Biblije"
+    "privacy": "Politika privatnosti",
+    "terms": "Uslovi korišćenja",
+    "license": "Licenca",
+    "sourceCode": "Izvorni kod",
+    "reportIssue": "Prijavi problem"
   },
   "more": {
     "title": "Više"

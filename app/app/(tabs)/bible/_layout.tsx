@@ -1,5 +1,6 @@
 import BackButton from "@/components/ui/BackButton";
 import getHeaderSettings from "@/components/ui/HeaderSettings";
+import SettingsHeaderButton from "@/components/ui/SettingsHeaderButton";
 import i18n from "@/constants/i18n";
 import useBox from "@/hooks/useBox";
 import { useColorScheme } from '@/hooks/useColorScheme';
@@ -20,6 +21,7 @@ export default function BibleLayout() {
         options={{
           title: i18n.t('bibleReader.title'),
           headerLeft: () => null,
+          headerRight: () => <SettingsHeaderButton />,
         }}
       />
       <Stack.Screen
@@ -27,6 +29,7 @@ export default function BibleLayout() {
         options={{
           title: i18n.t('bibleReader.title'),
           headerLeft: () => <BackButton href="/bible" />,
+          headerRight: () => <SettingsHeaderButton />,
         }}
       />
       <Stack.Screen
@@ -34,6 +37,7 @@ export default function BibleLayout() {
         options={{
           title: i18n.t('bibleReader.title'),
           headerLeft: () => <BackButton href="/bible/[book]/index"/>,
+          headerRight: () => <SettingsHeaderButton />,
         }}
       />
     </Stack>

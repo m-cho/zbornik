@@ -18,6 +18,12 @@ export default function Icon({ name, size, color }: IconProps) {
     'book-bible': <FontAwesome6 name='book-bible' size={size} color={color} />,
     'book-open-page-variant': <MaterialIcons name='book-open-page-variant' size={size} color={color} />,
 
+    'version': <MaterialIcons name='update' size={size} color={color} />,
+    'license': <MaterialIcons name='license' size={size} color={color} />,
+    'privacy': <MaterialIcons name='shield-account-outline' size={size} color={color} />,
+    'terms': <MaterialIcons name='file-document-check-outline' size={size} color={color} />,
+    'source-code': <MaterialIcons name='code-braces' size={size} color={color} />, 
+    'bug-report': <MaterialIcons name='bug-outline' size={size} color={color} />, 
     'menu': <MaterialIcons name='menu' size={size} color={color} />,
     'candle': <MaterialIcons name='candle' size={size} color={color} />,
     'chevron-right': <MaterialIcons name='chevron-right' size={size} color={color} />,

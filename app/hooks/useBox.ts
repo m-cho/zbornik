@@ -7,6 +7,10 @@ export default function useBox() {
 
   const isLargeScreen = screenWidth >= 768; // tablet/desktop breakpoint
 
+  const githubRepoBaseUrl = 'https://github.com/m-cho/zbornik';
+
+  const appVersion = '1.0.0';
+
   const containerMaxWidth = useMemo(() => {
     if (screenWidth > 1200) {
       return 900;
@@ -37,8 +41,10 @@ export default function useBox() {
 
   return {
     isLargeScreen,
+    containerMaxWidth,
+    githubRepoBaseUrl,
+    appVersion,
     openWebPage,
     shuffle,
-    containerMaxWidth,
   }
 }

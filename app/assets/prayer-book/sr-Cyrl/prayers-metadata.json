@@ -9,7 +9,7 @@
   },
   {
     "id": "simbol-vere",
-    "title": "Символ вере"
+    "title": "Симбол вере"
   },
   {
     "id": "isusova-molitva",
@@ -66,5 +66,9 @@
   {
     "id": "za-putnike-i-vozace",
     "title": "За све путнике и возаче"
+  },
+  {
+    "id": "velikoposna-molitva",
+    "title": "Великопосна молитва Св. Јефрема Сирина"
   }
 ]
