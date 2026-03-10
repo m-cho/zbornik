@@ -17,42 +17,71 @@ export default function AboutTheAppScreen() {
           <ThemedView style={styles.section}>
             <ThemedView style={styles.settingsGroup}>
               <SettingsOption
-                title={i18n.t('about.sourceCode')}
+                title={i18n.t("about.sourceCode")}
                 leftIcon="source-code"
-                rightComponent={<ThemedText style={styles.arrowText}>›</ThemedText>}
+                rightComponent={
+                  <ThemedText style={styles.arrowText}>›</ThemedText>
+                }
                 onPress={() => openWebPage(githubRepoBaseUrl)}
               />
-                <SettingsOption
-                  title="Prijavi problem"
-                  leftIcon="bug-report"
-                  rightComponent={<ThemedText style={styles.arrowText}>›</ThemedText>}
-                  onPress={() => openWebPage(`${githubRepoBaseUrl}/issues`)}
-                />
               <SettingsOption
-                title={i18n.t('about.license')}
+                title="Prijavi problem"
+                leftIcon="bug-report"
+                rightComponent={
+                  <ThemedText style={styles.arrowText}>›</ThemedText>
+                }
+                onPress={() => openWebPage(`${githubRepoBaseUrl}/issues`)}
+              />
+              <SettingsOption
+                title={i18n.t("about.license")}
                 description="GNU General Public License v3.0"
                 leftIcon="license"
-                rightComponent={<ThemedText style={styles.arrowText}>›</ThemedText>}
-                onPress={() => openWebPage(`${githubRepoBaseUrl}/blob/main/LICENSE`)}
+                rightComponent={
+                  <ThemedText style={styles.arrowText}>›</ThemedText>
+                }
+                onPress={() =>
+                  openWebPage(`${githubRepoBaseUrl}/blob/main/LICENSE`)
+                }
               />
               <SettingsOption
-                title={i18n.t('about.terms')}
+                title={i18n.t("about.dependencyLicenses")}
+                description={i18n.t("about.dependencyLicensesDesc")}
+                leftIcon="dependency-licenses"
+                rightComponent={
+                  <ThemedText style={styles.arrowText}>›</ThemedText>
+                }
+                onPress={() =>
+                  openWebPage(
+                    `${githubRepoBaseUrl}/blob/main/DEPENDENCIES-LICENSES.md`,
+                  )
+                }
+              />
+              <SettingsOption
+                title={i18n.t("about.terms")}
                 leftIcon="terms"
-                rightComponent={<ThemedText style={styles.arrowText}>›</ThemedText>}
-                onPress={() => openWebPage(`${githubRepoBaseUrl}/blob/main/TERMS`)}
+                rightComponent={
+                  <ThemedText style={styles.arrowText}>›</ThemedText>
+                }
+                onPress={() =>
+                  openWebPage(`${githubRepoBaseUrl}/blob/main/TERMS`)
+                }
               />
               <SettingsOption
-                title={i18n.t('about.privacy')}
+                title={i18n.t("about.privacy")}
                 leftIcon="privacy"
-                rightComponent={<ThemedText style={styles.arrowText}>›</ThemedText>}
-                onPress={() => openWebPage(`${githubRepoBaseUrl}/blob/main/PRIVACY`)}
+                rightComponent={
+                  <ThemedText style={styles.arrowText}>›</ThemedText>
+                }
+                onPress={() =>
+                  openWebPage(`${githubRepoBaseUrl}/blob/main/PRIVACY`)
+                }
               />
               <SettingsOption
-                title={i18n.t('about.version')}
+                title={i18n.t("about.version")}
                 leftIcon="version"
-                rightComponent={(
+                rightComponent={
                   <ThemedText style={styles.arrowText}>{appVersion}</ThemedText>
-                )}
+                }
                 disabled
               />
             </ThemedView>
@@ -72,7 +101,7 @@ const styles = StyleSheet.create({
     paddingTop: 20,
   },
   title: {
-    textAlign: 'center',
+    textAlign: "center",
     marginBottom: 30,
   },
   section: {
@@ -80,7 +109,7 @@ const styles = StyleSheet.create({
   },
   sectionTitle: {
     fontSize: 18,
-    fontWeight: '600',
+    fontWeight: "600",
     marginBottom: 12,
     marginHorizontal: 16,
     opacity: 0.8,
@@ -88,10 +117,10 @@ const styles = StyleSheet.create({
   settingsGroup: {
     marginHorizontal: 16,
     borderRadius: 12,
-    overflow: 'hidden',
+    overflow: "hidden",
   },
   arrowText: {
     fontSize: 18,
-    fontWeight: '300',
+    fontWeight: "300",
   },
 });

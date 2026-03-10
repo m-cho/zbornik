@@ -10,9 +10,19 @@
     "morningPrayers": "Jutarnje",
     "eveningPrayers": "Večernje",
     "reading": "Čitanje",
-    "readingSource": "Izvor: svetosavlje.org"
+    "readingSource": "Izvor: svetosavlje.org",
+    "dependencyLicenses": "Spisak korišćenih biblioteka",
+    "dependencyLicensesDesc": "Spisak i licence svih biblioteka koje koristi aplikacija"
   },
-  "weekdays": ["Nedelja", "Ponedeljak", "Utorak", "Sreda", "Četvrtak", "Petak", "Subota"],
+  "weekdays": [
+    "Nedelja",
+    "Ponedeljak",
+    "Utorak",
+    "Sreda",
+    "Četvrtak",
+    "Petak",
+    "Subota"
+  ],
   "weekNames": {
     "afterPascha": "%{count}. nedelja po Vaskrsu",
     "afterPentecost": "%{count}. nedelja po Duhovima"
@@ -53,8 +63,7 @@
       "charityPrimaryBtnText": "Doniraj",
       "churchPrimaryBtnText": "Pomozi",
       "mediaPrimaryBtnText": "Podrži"
-    }
-    ,
+    },
     "disclaimer": "Projekti i organizacije navedeni ovde služe za informisanje i izabrane su od strane autora aplikacije. Njihovo navođenje ne predstavlja potvrdu niti garanciju da je ova aplikacija na ispravnom duhovnom putu. Nije zatraženo da bilo koja organizacija bude navedena."
   },
   "settings": {

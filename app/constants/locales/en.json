@@ -12,7 +12,15 @@
     "reading": "Reading",
     "readingSource": "Source: svetosavlje.org"
   },
-  "weekdays": ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+  "weekdays": [
+    "Sunday",
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday"
+  ],
   "weekNames": {
     "afterPascha": "%{count}. week after Pascha",
     "afterPentecost": "%{count}. week after Pentecost"
@@ -53,8 +61,7 @@
       "charityPrimaryBtnText": "Donate",
       "churchPrimaryBtnText": "Support",
       "mediaPrimaryBtnText": "Contribute"
-    }
-    ,
+    },
     "disclaimer": "The projects and organizations listed here are provided for information and have been selected by the app author. Their listing does not represent an endorsement or guarantee that this app is on the right spiritual path. No organization requested to be listed."
   },
   "settings": {
@@ -73,7 +80,9 @@
     "terms": "Terms of Service",
     "license": "License",
     "sourceCode": "Source code",
-    "reportIssue": "Report a problem"
+    "reportIssue": "Report a problem",
+    "dependencyLicenses": "Licenses of dependencies",
+    "dependencyLicensesDesc": "Third-party modules used in this app"
   },
   "more": {
     "title": "More"
