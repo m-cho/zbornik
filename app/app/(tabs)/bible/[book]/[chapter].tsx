@@ -19,12 +19,16 @@ export default function ChapterReaderScreen() {
   if (!book) return <ThemedText>No book selected.</ThemedText>;
   if (!chapter) return <ThemedText>No chapter selected.</ThemedText>;
 
-  const selectedBook = bible.books.find(b => b.name === book);
-  if (!selectedBook) return <ThemedText>Book not found: {String(book)}</ThemedText>;
+  const selectedBook = bible.books.find((b) => b.name === book);
+  if (!selectedBook)
+    return <ThemedText>Book not found: {String(book)}</ThemedText>;
 
   const chapterNumber = parseInt(chapter as string, 10);
-  const selectedChapter = selectedBook.chapters.find(c => c.chapter === chapterNumber);
-  if (!selectedChapter) return <ThemedText>Chapter not found: {chapter}</ThemedText>;
+  const selectedChapter = selectedBook.chapters.find(
+    (c) => c.chapter === chapterNumber,
+  );
+  if (!selectedChapter)
+    return <ThemedText>Chapter not found: {chapter}</ThemedText>;
 
   return (
     <ThemedContainer>
@@ -33,6 +37,7 @@ export default function ChapterReaderScreen() {
         chapter={selectedChapter.chapter}
         verses={selectedChapter.verses}
         bibleId={bibleId || undefined}
+        totalChapters={selectedBook.chapters.length}
       />
     </ThemedContainer>
   );

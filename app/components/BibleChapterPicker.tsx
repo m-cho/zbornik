@@ -8,33 +8,57 @@ import { ThemedText } from "./ThemedText";
 type BibleChapterPickerProps = {
   book: string;
   chapters: number[];
-}
+};
 
-export default function BibleChapterPicker({ book, chapters }: BibleChapterPickerProps) {
-  const borderColor = useThemeColor({}, 'secondary');
+export default function BibleChapterPicker({
+  book,
+  chapters,
+}: BibleChapterPickerProps) {
+  const borderColor = useThemeColor({}, "secondary");
+  const cardBg = useThemeColor(
+    { light: Colors.light.backgroundLight, dark: Colors.dark.backgroundLight },
+    "backgroundLight",
+  );
 
   return (
-    <ThemedScrollView contentContainerStyle={{ flexGrow: 1, padding: 20 }}>
-      <View style={{ flexDirection: 'row', flexWrap: 'wrap', justifyContent: 'center', gap: 12 }}>
+    <ThemedScrollView contentContainerStyle={{ flexGrow: 1, padding: 16 }}>
+      <View
+        style={{
+          backgroundColor: cardBg,
+          borderRadius: 20,
+          padding: 16,
+          flexDirection: "row",
+          flexWrap: "wrap",
+          justifyContent: "center",
+          gap: 4,
+        }}
+      >
         {chapters.map((chapter) => (
           <Link key={chapter} href={`/bible/${book}/${chapter}`}>
-            <View style={{
-              borderRadius: 48,
-              width: 48,
-              height: 48,
-              margin: 8,
-              display: 'flex',
-              justifyContent: 'center',
-              alignItems: 'center',
-              borderColor,
-              borderWidth: 1,
-              borderStyle: 'solid',
-            }}>
-              <ThemedText lightColor={Colors.light.text} darkColor={Colors.dark.text}>{chapter}</ThemedText>
+            <View
+              style={{
+                borderRadius: 48,
+                width: 48,
+                height: 48,
+                margin: 6,
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "center",
+                borderColor,
+                borderWidth: 1,
+                borderStyle: "solid",
+              }}
+            >
+              <ThemedText
+                lightColor={Colors.light.text}
+                darkColor={Colors.dark.text}
+              >
+                {chapter}
+              </ThemedText>
             </View>
           </Link>
         ))}
       </View>
     </ThemedScrollView>
-  )
+  );
 }
