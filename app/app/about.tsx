@@ -8,7 +8,8 @@ import useBox from "@/hooks/useBox";
 import { StyleSheet } from "react-native";
 
 export default function AboutTheAppScreen() {
-  const { appVersion, githubRepoBaseUrl, openWebPage } = useBox();
+  const { appVersion, githubRepoBaseUrl, jsDelivrBaseUrl, openWebPage } =
+    useBox();
 
   return (
     <ThemedContainer>
@@ -39,9 +40,7 @@ export default function AboutTheAppScreen() {
                 rightComponent={
                   <ThemedText style={styles.arrowText}>›</ThemedText>
                 }
-                onPress={() =>
-                  openWebPage(`${githubRepoBaseUrl}/blob/main/LICENSE`)
-                }
+                onPress={() => openWebPage(`${jsDelivrBaseUrl}/LICENSE`)}
               />
               <SettingsOption
                 title={i18n.t("about.dependencyLicenses")}
@@ -51,9 +50,7 @@ export default function AboutTheAppScreen() {
                   <ThemedText style={styles.arrowText}>›</ThemedText>
                 }
                 onPress={() =>
-                  openWebPage(
-                    `${githubRepoBaseUrl}/blob/main/DEPENDENCIES-LICENSES.md`,
-                  )
+                  openWebPage(`${jsDelivrBaseUrl}/DEPENDENCIES-LICENSES.md`)
                 }
               />
               <SettingsOption
@@ -62,9 +59,7 @@ export default function AboutTheAppScreen() {
                 rightComponent={
                   <ThemedText style={styles.arrowText}>›</ThemedText>
                 }
-                onPress={() =>
-                  openWebPage(`${githubRepoBaseUrl}/blob/main/TERMS`)
-                }
+                onPress={() => openWebPage(`${jsDelivrBaseUrl}/TERMS`)}
               />
               <SettingsOption
                 title={i18n.t("about.privacy")}
@@ -72,9 +67,7 @@ export default function AboutTheAppScreen() {
                 rightComponent={
                   <ThemedText style={styles.arrowText}>›</ThemedText>
                 }
-                onPress={() =>
-                  openWebPage(`${githubRepoBaseUrl}/blob/main/PRIVACY`)
-                }
+                onPress={() => openWebPage(`${jsDelivrBaseUrl}/PRIVACY`)}
               />
               <SettingsOption
                 title={i18n.t("about.version")}

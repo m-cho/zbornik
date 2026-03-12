@@ -162,7 +162,14 @@
       "one": "{{count}} поглавље",
       "few": "{{count}} поглавља",
       "other": "{{count}} поглавља"
-    }
+    },
+    "loading": "Учитавање...",
+    "errorLoading": "Грешка при учитавању података.",
+    "retry": "Покушај поново",
+    "noBookSelected": "Није изабрана књига.",
+    "bookNotFound": "Књига није пронађена: %{book}",
+    "noChapterSelected": "Није изабрано поглавље.",
+    "chapterNotFound": "Поглавље није пронађено: %{chapter}"
   },
   "books": {
     "Genesis": "Постање",

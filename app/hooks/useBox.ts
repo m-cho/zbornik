@@ -1,5 +1,5 @@
-import * as WebBrowser from 'expo-web-browser';
-import { useMemo } from 'react';
+import * as WebBrowser from "expo-web-browser";
+import { useMemo } from "react";
 import { Platform, useWindowDimensions } from "react-native";
 
 export default function useBox() {
@@ -7,9 +7,10 @@ export default function useBox() {
 
   const isLargeScreen = screenWidth >= 768; // tablet/desktop breakpoint
 
-  const githubRepoBaseUrl = 'https://github.com/m-cho/zbornik';
+  const githubRepoBaseUrl = "https://github.com/m-cho/zbornik";
+  const jsDelivrBaseUrl = "https://cdn.jsdelivr.net/gh/m-cho/zbornik@main";
 
-  const appVersion = '1.0.0';
+  const appVersion = "1.0.0";
 
   const containerMaxWidth = useMemo(() => {
     if (screenWidth > 1200) {
@@ -21,30 +22,31 @@ export default function useBox() {
   }, [screenWidth]);
 
   const openWebPage = async (url: string) => {
-    console.log('Opening URL:', url);
+    console.log("Opening URL:", url);
 
-    if (Platform.OS === 'web') {
-      window.open(url, '_blank');
+    if (Platform.OS === "web") {
+      window.open(url, "_blank");
     } else {
       await WebBrowser.openBrowserAsync(url);
     }
-  }
+  };
 
-  const shuffle = <T,>(array: T[]): T[] => {
+  const shuffle = <T>(array: T[]): T[] => {
     const shuffled = array.slice();
     for (let i = shuffled.length - 1; i > 0; i--) {
       const j = Math.floor(Math.random() * (i + 1));
       [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
     }
     return shuffled;
-  }
+  };
 
   return {
     isLargeScreen,
     containerMaxWidth,
     githubRepoBaseUrl,
+    jsDelivrBaseUrl,
     appVersion,
     openWebPage,
     shuffle,
-  }
+  };
 }

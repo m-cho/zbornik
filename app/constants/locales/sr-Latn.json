@@ -94,7 +94,14 @@
       "one": "{{count}} poglavlje",
       "few": "{{count}} poglavlja",
       "other": "{{count}} poglavlja"
-    }
+    },
+    "loading": "Učitavanje...",
+    "errorLoading": "Greška pri učitavanju podataka.",
+    "retry": "Pokušaj ponovo",
+    "noBookSelected": "Nije izabrana knjiga.",
+    "bookNotFound": "Knjiga nije pronađena: %{book}",
+    "noChapterSelected": "Nije izabrano poglavlje.",
+    "chapterNotFound": "Poglavlje nije pronađeno: %{chapter}"
   },
   "books": {
     "Genesis": "Postanje",

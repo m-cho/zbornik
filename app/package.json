@@ -10,7 +10,9 @@
     "ios": "expo start --ios",
     "web": "expo start --web",
     "lint": "expo lint",
-    "postinstall": "node ./scripts/generate-licenses-md.mjs"
+    "postinstall": "node ./scripts/generate-licenses-md.mjs",
+    "build:web": "expo export -p web",
+    "serve:web": "expo serve"
   },
   "dependencies": {
     "@expo/vector-icons": "^15.0.2",

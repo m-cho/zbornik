@@ -93,7 +93,14 @@
     "numberOfChapters": {
       "one": "1 chapter",
       "other": "%{count} chapters"
-    }
+    },
+    "loading": "Loading...",
+    "errorLoading": "Error loading Bible data.",
+    "retry": "Retry",
+    "noBookSelected": "No book selected.",
+    "bookNotFound": "Book not found: %{book}",
+    "noChapterSelected": "No chapter selected.",
+    "chapterNotFound": "Chapter not found: %{chapter}"
   },
   "books": {
     "Genesis": "Genesis",

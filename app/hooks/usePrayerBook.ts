@@ -124,6 +124,12 @@ export default function usePrayerBook() {
       "velikoposna-molitva": require(
         `../assets/prayer-book/${locale}/prayers/velikoposna-molitva.md`,
       ),
+      "za-upokojene": require(
+        `../assets/prayer-book/${locale}/prayers/za-upokojene.md`,
+      ),
+      // TODO:
+      // molitve-pre-pricesca
+      // molitva-posle-pricesca
     };
 
     return prayersContentMap[prayerId] || "";

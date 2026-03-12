@@ -7,6 +7,7 @@ import {
   Animated,
   NativeScrollEvent,
   NativeSyntheticEvent,
+  Platform,
   Pressable,
   StyleSheet,
   TouchableOpacity,
@@ -25,6 +26,8 @@ type BibleReaderProps = {
 };
 
 const BUTTONS_HEIGHT = 36;
+
+const useNativeDriver = Platform.OS !== "web";
 
 export function BibleReader({
   book,
@@ -55,12 +58,12 @@ export function BibleReader({
       Animated.timing(translateY, {
         toValue: 0,
         duration: 200,
-        useNativeDriver: true,
+        useNativeDriver,
       }),
       Animated.timing(opacity, {
         toValue: 0.96,
         duration: 150,
-        useNativeDriver: true,
+        useNativeDriver,
       }),
     ]).start();
   };
@@ -73,12 +76,12 @@ export function BibleReader({
         Animated.timing(translateY, {
           toValue: BUTTONS_HEIGHT,
           duration: 200,
-          useNativeDriver: true,
+          useNativeDriver,
         }),
         Animated.timing(opacity, {
           toValue: 0,
           duration: 150,
-          useNativeDriver: true,
+          useNativeDriver,
         }),
       ]).start();
     }, 200);
