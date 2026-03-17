@@ -1,7 +1,7 @@
-const upstreamTransformer = require('@expo/metro-config/babel-transformer');
+const upstreamTransformer = require("@expo/metro-config/babel-transformer");
 
 module.exports.transform = async ({ src, filename, options }) => {
-  if (filename.endsWith('.md')) {
+  if (filename.endsWith(".md")) {
     return upstreamTransformer.transform({
       src: `module.exports = ${JSON.stringify(src)};`,
       filename,

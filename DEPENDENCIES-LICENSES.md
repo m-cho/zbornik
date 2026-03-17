@@ -14,13 +14,13 @@ This file lists the licenses of dependencies used in this project.
   - Repository: https://github.com/babel/babel
   - License File: /node_modules/@expo/config/node_modules/@babel/code-frame/LICENSE
 
-- **@babel/code-frame@7.27.1**
+- **@babel/code-frame@7.29.0**
   - Publisher: The Babel Team
   - License: MIT
   - Repository: https://github.com/babel/babel
   - License File: /node_modules/@babel/code-frame/LICENSE
 
-- **@babel/compat-data@7.28.4**
+- **@babel/compat-data@7.29.0**
   - Publisher: The Babel Team
   - License: MIT
   - Repository: https://github.com/babel/babel
@@ -32,7 +32,7 @@ This file lists the licenses of dependencies used in this project.
   - Repository: https://github.com/babel/babel
   - License File: /node_modules/@babel/core/LICENSE
 
-- **@babel/generator@7.28.3**
+- **@babel/generator@7.29.1**
   - Publisher: The Babel Team
   - License: MIT
   - Repository: https://github.com/babel/babel
@@ -44,28 +44,34 @@ This file lists the licenses of dependencies used in this project.
   - Repository: https://github.com/babel/babel
   - License File: /node_modules/@babel/helper-annotate-as-pure/LICENSE
 
-- **@babel/helper-compilation-targets@7.27.2**
+- **@babel/helper-compilation-targets@7.28.6**
   - Publisher: The Babel Team
   - License: MIT
   - Repository: https://github.com/babel/babel
   - License File: /node_modules/@babel/helper-compilation-targets/LICENSE
 
-- **@babel/helper-create-class-features-plugin@7.28.3**
+- **@babel/helper-create-class-features-plugin@7.28.6**
   - Publisher: The Babel Team
   - License: MIT
   - Repository: https://github.com/babel/babel
   - License File: /node_modules/@babel/helper-create-class-features-plugin/LICENSE
 
-- **@babel/helper-create-regexp-features-plugin@7.27.1**
+- **@babel/helper-create-regexp-features-plugin@7.28.5**
   - Publisher: The Babel Team
   - License: MIT
   - Repository: https://github.com/babel/babel
   - License File: /node_modules/@babel/helper-create-regexp-features-plugin/LICENSE
 
-- **@babel/helper-define-polyfill-provider@0.6.5**
+- **@babel/helper-define-polyfill-provider@0.6.8**
   - License: MIT
   - Repository: https://github.com/babel/babel-polyfills
   - License File: /node_modules/@babel/helper-define-polyfill-provider/LICENSE
+
+- **@babel/helper-environment-visitor@7.24.7**
+  - Publisher: The Babel Team
+  - License: MIT
+  - Repository: https://github.com/babel/babel
+  - License File: /node_modules/@babel/helper-environment-visitor/LICENSE
 
 - **@babel/helper-globals@7.28.0**
   - Publisher: The Babel Team
@@ -73,13 +79,13 @@ This file lists the licenses of dependencies used in this project.
   - Repository: https://github.com/babel/babel
   - License File: /node_modules/@babel/helper-globals/LICENSE
 
-- **@babel/helper-member-expression-to-functions@7.27.1**
+- **@babel/helper-member-expression-to-functions@7.28.5**
   - Publisher: The Babel Team
   - License: MIT
   - Repository: https://github.com/babel/babel
   - License File: /node_modules/@babel/helper-member-expression-to-functions/LICENSE
 
-- **@babel/helper-module-imports@7.27.1**
+- **@babel/helper-module-imports@7.28.6**
   - Publisher: The Babel Team
   - License: MIT
   - Repository: https://github.com/babel/babel
@@ -97,7 +103,7 @@ This file lists the licenses of dependencies used in this project.
   - Repository: https://github.com/babel/babel
   - License File: /node_modules/@babel/helper-optimise-call-expression/LICENSE
 
-- **@babel/helper-plugin-utils@7.27.1**
+- **@babel/helper-plugin-utils@7.28.6**
   - Publisher: The Babel Team
   - License: MIT
   - Repository: https://github.com/babel/babel
@@ -109,7 +115,7 @@ This file lists the licenses of dependencies used in this project.
   - Repository: https://github.com/babel/babel
   - License File: /node_modules/@babel/helper-remap-async-to-generator/LICENSE
 
-- **@babel/helper-replace-supers@7.27.1**
+- **@babel/helper-replace-supers@7.28.6**
   - Publisher: The Babel Team
   - License: MIT
   - Repository: https://github.com/babel/babel
@@ -127,7 +133,7 @@ This file lists the licenses of dependencies used in this project.
   - Repository: https://github.com/babel/babel
   - License File: /node_modules/@babel/helper-string-parser/LICENSE
 
-- **@babel/helper-validator-identifier@7.27.1**
+- **@babel/helper-validator-identifier@7.28.5**
   - Publisher: The Babel Team
   - License: MIT
   - Repository: https://github.com/babel/babel
@@ -139,7 +145,7 @@ This file lists the licenses of dependencies used in this project.
   - Repository: https://github.com/babel/babel
   - License File: /node_modules/@babel/helper-validator-option/LICENSE
 
-- **@babel/helper-wrap-function@7.28.3**
+- **@babel/helper-wrap-function@7.28.6**
   - Publisher: The Babel Team
   - License: MIT
   - Repository: https://github.com/babel/babel
@@ -157,13 +163,25 @@ This file lists the licenses of dependencies used in this project.
   - Repository: https://github.com/babel/babel
   - License File: /node_modules/@babel/highlight/LICENSE
 
-- **@babel/parser@7.28.4**
+- **@babel/parser@7.29.2**
   - Publisher: The Babel Team
   - License: MIT
   - Repository: https://github.com/babel/babel
   - License File: /node_modules/@babel/parser/LICENSE
 
-- **@babel/plugin-proposal-decorators@7.28.0**
+- **@babel/plugin-proposal-async-generator-functions@7.20.7**
+  - Publisher: The Babel Team
+  - License: MIT
+  - Repository: https://github.com/babel/babel
+  - License File: /node_modules/@babel/plugin-proposal-async-generator-functions/LICENSE
+
+- **@babel/plugin-proposal-class-properties@7.18.6**
+  - Publisher: The Babel Team
+  - License: MIT
+  - Repository: https://github.com/babel/babel
+  - License File: /node_modules/@babel/plugin-proposal-class-properties/LICENSE
+
+- **@babel/plugin-proposal-decorators@7.29.0**
   - Publisher: The Babel Team
   - License: MIT
   - Repository: https://github.com/babel/babel
@@ -174,6 +192,36 @@ This file lists the licenses of dependencies used in this project.
   - License: MIT
   - Repository: https://github.com/babel/babel
   - License File: /node_modules/@babel/plugin-proposal-export-default-from/LICENSE
+
+- **@babel/plugin-proposal-nullish-coalescing-operator@7.18.6**
+  - Publisher: The Babel Team
+  - License: MIT
+  - Repository: https://github.com/babel/babel
+  - License File: /node_modules/@babel/plugin-proposal-nullish-coalescing-operator/LICENSE
+
+- **@babel/plugin-proposal-numeric-separator@7.18.6**
+  - Publisher: The Babel Team
+  - License: MIT
+  - Repository: https://github.com/babel/babel
+  - License File: /node_modules/@babel/plugin-proposal-numeric-separator/LICENSE
+
+- **@babel/plugin-proposal-object-rest-spread@7.20.7**
+  - Publisher: The Babel Team
+  - License: MIT
+  - Repository: https://github.com/babel/babel
+  - License File: /node_modules/@babel/plugin-proposal-object-rest-spread/LICENSE
+
+- **@babel/plugin-proposal-optional-catch-binding@7.18.6**
+  - Publisher: The Babel Team
+  - License: MIT
+  - Repository: https://github.com/babel/babel
+  - License File: /node_modules/@babel/plugin-proposal-optional-catch-binding/LICENSE
+
+- **@babel/plugin-proposal-optional-chaining@7.21.0**
+  - Publisher: The Babel Team
+  - License: MIT
+  - Repository: https://github.com/babel/babel
+  - License File: /node_modules/@babel/plugin-proposal-optional-chaining/LICENSE
 
 - **@babel/plugin-syntax-async-generators@7.8.4**
   - License: MIT
@@ -196,7 +244,7 @@ This file lists the licenses of dependencies used in this project.
   - Repository: https://github.com/babel/babel
   - License File: /node_modules/@babel/plugin-syntax-class-static-block/LICENSE
 
-- **@babel/plugin-syntax-decorators@7.27.1**
+- **@babel/plugin-syntax-decorators@7.28.6**
   - Publisher: The Babel Team
   - License: MIT
   - Repository: https://github.com/babel/babel
@@ -207,13 +255,13 @@ This file lists the licenses of dependencies used in this project.
   - Repository: https://github.com/babel/babel/tree/master/packages/babel-plugin-syntax-dynamic-import
   - License File: /node_modules/@babel/plugin-syntax-dynamic-import/LICENSE
 
-- **@babel/plugin-syntax-export-default-from@7.27.1**
+- **@babel/plugin-syntax-export-default-from@7.28.6**
   - Publisher: The Babel Team
   - License: MIT
   - Repository: https://github.com/babel/babel
   - License File: /node_modules/@babel/plugin-syntax-export-default-from/LICENSE
 
-- **@babel/plugin-syntax-flow@7.27.1**
+- **@babel/plugin-syntax-flow@7.28.6**
   - Publisher: The Babel Team
   - License: MIT
   - Repository: https://github.com/babel/babel
@@ -235,7 +283,7 @@ This file lists the licenses of dependencies used in this project.
   - Repository: https://github.com/babel/babel/tree/master/packages/babel-plugin-syntax-json-strings
   - License File: /node_modules/@babel/plugin-syntax-json-strings/LICENSE
 
-- **@babel/plugin-syntax-jsx@7.27.1**
+- **@babel/plugin-syntax-jsx@7.28.6**
   - Publisher: The Babel Team
   - License: MIT
   - Repository: https://github.com/babel/babel
@@ -295,19 +343,25 @@ This file lists the licenses of dependencies used in this project.
   - Repository: https://github.com/babel/babel
   - License File: /node_modules/@babel/plugin-transform-arrow-functions/LICENSE
 
-- **@babel/plugin-transform-async-generator-functions@7.28.0**
+- **@babel/plugin-transform-async-generator-functions@7.29.0**
   - Publisher: The Babel Team
   - License: MIT
   - Repository: https://github.com/babel/babel
   - License File: /node_modules/@babel/plugin-transform-async-generator-functions/LICENSE
 
-- **@babel/plugin-transform-async-to-generator@7.27.1**
+- **@babel/plugin-transform-async-to-generator@7.28.6**
   - Publisher: The Babel Team
   - License: MIT
   - Repository: https://github.com/babel/babel
   - License File: /node_modules/@babel/plugin-transform-async-to-generator/LICENSE
 
-- **@babel/plugin-transform-block-scoping@7.28.4**
+- **@babel/plugin-transform-block-scoped-functions@7.27.1**
+  - Publisher: The Babel Team
+  - License: MIT
+  - Repository: https://github.com/babel/babel
+  - License File: /node_modules/@babel/plugin-transform-block-scoped-functions/LICENSE
+
+- **@babel/plugin-transform-block-scoping@7.28.6**
   - Publisher: The Babel Team
   - License: MIT
   - Repository: https://github.com/babel/babel
@@ -319,7 +373,7 @@ This file lists the licenses of dependencies used in this project.
   - Repository: https://github.com/babel/babel
   - License File: /node_modules/@babel/plugin-transform-class-properties/LICENSE
 
-- **@babel/plugin-transform-class-static-block@7.28.3**
+- **@babel/plugin-transform-class-static-block@7.28.6**
   - Publisher: The Babel Team
   - License: MIT
   - Repository: https://github.com/babel/babel
@@ -331,13 +385,13 @@ This file lists the licenses of dependencies used in this project.
   - Repository: https://github.com/babel/babel
   - License File: /node_modules/@babel/plugin-transform-classes/LICENSE
 
-- **@babel/plugin-transform-computed-properties@7.27.1**
+- **@babel/plugin-transform-computed-properties@7.28.6**
   - Publisher: The Babel Team
   - License: MIT
   - Repository: https://github.com/babel/babel
   - License File: /node_modules/@babel/plugin-transform-computed-properties/LICENSE
 
-- **@babel/plugin-transform-destructuring@7.28.0**
+- **@babel/plugin-transform-destructuring@7.28.5**
   - Publisher: The Babel Team
   - License: MIT
   - Repository: https://github.com/babel/babel
@@ -373,11 +427,17 @@ This file lists the licenses of dependencies used in this project.
   - Repository: https://github.com/babel/babel
   - License File: /node_modules/@babel/plugin-transform-literals/LICENSE
 
-- **@babel/plugin-transform-logical-assignment-operators@7.27.1**
+- **@babel/plugin-transform-logical-assignment-operators@7.28.6**
   - Publisher: The Babel Team
   - License: MIT
   - Repository: https://github.com/babel/babel
   - License File: /node_modules/@babel/plugin-transform-logical-assignment-operators/LICENSE
+
+- **@babel/plugin-transform-member-expression-literals@7.27.1**
+  - Publisher: The Babel Team
+  - License: MIT
+  - Repository: https://github.com/babel/babel
+  - License File: /node_modules/@babel/plugin-transform-member-expression-literals/LICENSE
 
 - **@babel/plugin-transform-modules-commonjs@7.27.1**
   - Publisher: The Babel Team
@@ -385,7 +445,7 @@ This file lists the licenses of dependencies used in this project.
   - Repository: https://github.com/babel/babel
   - License File: /node_modules/@babel/plugin-transform-modules-commonjs/LICENSE
 
-- **@babel/plugin-transform-named-capturing-groups-regex@7.27.1**
+- **@babel/plugin-transform-named-capturing-groups-regex@7.29.0**
   - Publisher: The Babel Team
   - License: MIT
   - Repository: https://github.com/babel/babel
@@ -397,19 +457,25 @@ This file lists the licenses of dependencies used in this project.
   - Repository: https://github.com/babel/babel
   - License File: /node_modules/@babel/plugin-transform-nullish-coalescing-operator/LICENSE
 
-- **@babel/plugin-transform-numeric-separator@7.27.1**
+- **@babel/plugin-transform-numeric-separator@7.28.6**
   - Publisher: The Babel Team
   - License: MIT
   - Repository: https://github.com/babel/babel
   - License File: /node_modules/@babel/plugin-transform-numeric-separator/LICENSE
 
-- **@babel/plugin-transform-object-rest-spread@7.28.4**
+- **@babel/plugin-transform-object-rest-spread@7.28.6**
   - Publisher: The Babel Team
   - License: MIT
   - Repository: https://github.com/babel/babel
   - License File: /node_modules/@babel/plugin-transform-object-rest-spread/LICENSE
 
-- **@babel/plugin-transform-optional-catch-binding@7.27.1**
+- **@babel/plugin-transform-object-super@7.27.1**
+  - Publisher: The Babel Team
+  - License: MIT
+  - Repository: https://github.com/babel/babel
+  - License File: /node_modules/@babel/plugin-transform-object-super/LICENSE
+
+- **@babel/plugin-transform-optional-catch-binding@7.28.6**
   - Publisher: The Babel Team
   - License: MIT
   - Repository: https://github.com/babel/babel
@@ -427,17 +493,23 @@ This file lists the licenses of dependencies used in this project.
   - Repository: https://github.com/babel/babel
   - License File: /node_modules/@babel/plugin-transform-parameters/LICENSE
 
-- **@babel/plugin-transform-private-methods@7.27.1**
+- **@babel/plugin-transform-private-methods@7.28.6**
   - Publisher: The Babel Team
   - License: MIT
   - Repository: https://github.com/babel/babel
   - License File: /node_modules/@babel/plugin-transform-private-methods/LICENSE
 
-- **@babel/plugin-transform-private-property-in-object@7.27.1**
+- **@babel/plugin-transform-private-property-in-object@7.28.6**
   - Publisher: The Babel Team
   - License: MIT
   - Repository: https://github.com/babel/babel
   - License File: /node_modules/@babel/plugin-transform-private-property-in-object/LICENSE
+
+- **@babel/plugin-transform-property-literals@7.27.1**
+  - Publisher: The Babel Team
+  - License: MIT
+  - Repository: https://github.com/babel/babel
+  - License File: /node_modules/@babel/plugin-transform-property-literals/LICENSE
 
 - **@babel/plugin-transform-react-display-name@7.28.0**
   - Publisher: The Babel Team
@@ -463,7 +535,7 @@ This file lists the licenses of dependencies used in this project.
   - Repository: https://github.com/babel/babel
   - License File: /node_modules/@babel/plugin-transform-react-jsx-source/LICENSE
 
-- **@babel/plugin-transform-react-jsx@7.27.1**
+- **@babel/plugin-transform-react-jsx@7.28.6**
   - Publisher: The Babel Team
   - License: MIT
   - Repository: https://github.com/babel/babel
@@ -475,13 +547,13 @@ This file lists the licenses of dependencies used in this project.
   - Repository: https://github.com/babel/babel
   - License File: /node_modules/@babel/plugin-transform-react-pure-annotations/LICENSE
 
-- **@babel/plugin-transform-regenerator@7.28.4**
+- **@babel/plugin-transform-regenerator@7.29.0**
   - Publisher: The Babel Team
   - License: MIT
   - Repository: https://github.com/babel/babel
   - License File: /node_modules/@babel/plugin-transform-regenerator/LICENSE
 
-- **@babel/plugin-transform-runtime@7.28.3**
+- **@babel/plugin-transform-runtime@7.29.0**
   - Publisher: The Babel Team
   - License: MIT
   - Repository: https://github.com/babel/babel
@@ -493,7 +565,7 @@ This file lists the licenses of dependencies used in this project.
   - Repository: https://github.com/babel/babel
   - License File: /node_modules/@babel/plugin-transform-shorthand-properties/LICENSE
 
-- **@babel/plugin-transform-spread@7.27.1**
+- **@babel/plugin-transform-spread@7.28.6**
   - Publisher: The Babel Team
   - License: MIT
   - Repository: https://github.com/babel/babel
@@ -523,7 +595,7 @@ This file lists the licenses of dependencies used in this project.
   - Repository: https://github.com/babel/babel
   - License File: /node_modules/@babel/plugin-transform-unicode-regex/LICENSE
 
-- **@babel/preset-react@7.27.1**
+- **@babel/preset-react@7.28.5**
   - Publisher: The Babel Team
   - License: MIT
   - Repository: https://github.com/babel/babel
@@ -541,7 +613,7 @@ This file lists the licenses of dependencies used in this project.
   - Repository: https://github.com/babel/babel
   - License File: /node_modules/@babel/runtime/LICENSE
 
-- **@babel/template@7.27.2**
+- **@babel/template@7.28.6**
   - Publisher: The Babel Team
   - License: MIT
   - Repository: https://github.com/babel/babel
@@ -551,9 +623,15 @@ This file lists the licenses of dependencies used in this project.
   - Publisher: The Babel Team
   - License: MIT
   - Repository: https://github.com/babel/babel
+  - License File: /node_modules/@babel/traverse--for-generate-function-map/LICENSE
+
+- **@babel/traverse@7.29.0**
+  - Publisher: The Babel Team
+  - License: MIT
+  - Repository: https://github.com/babel/babel
   - License File: /node_modules/@babel/traverse/LICENSE
 
-- **@babel/types@7.28.4**
+- **@babel/types@7.29.0**
   - Publisher: The Babel Team
   - License: MIT
   - Repository: https://github.com/babel/babel
@@ -564,75 +642,69 @@ This file lists the licenses of dependencies used in this project.
   - Repository: https://github.com/naver/hammer.js
   - License File: /node_modules/@egjs/hammerjs/LICENSE.md
 
-- **@expo/cli@54.0.7**
+- **@expo/cli@54.0.23**
   - Publisher: Expo
   - License: MIT
   - Repository: https://github.com/expo/expo
   - License File: /node_modules/expo/node_modules/@expo/cli/README.md
 
-- **@expo/code-signing-certificates@0.0.5**
+- **@expo/code-signing-certificates@0.0.6**
   - Publisher: Expo
   - License: MIT
   - Repository: https://github.com/expo/code-signing-certificates
   - License File: /node_modules/@expo/code-signing-certificates/LICENSE
 
-- **@expo/config-plugins@54.0.2**
+- **@expo/config-plugins@54.0.4**
   - License: MIT
   - Repository: https://github.com/expo/expo
   - License File: /node_modules/@expo/config-plugins/LICENSE
 
-- **@expo/config-types@54.0.8**
+- **@expo/config-types@54.0.10**
   - License: MIT
   - Repository: https://github.com/expo/expo
   - License File: /node_modules/@expo/config-types/LICENSE
 
-- **@expo/config@12.0.10**
+- **@expo/config@12.0.13**
   - License: MIT
   - Repository: https://github.com/expo/expo
   - License File: /node_modules/@expo/config/LICENSE
 
-- **@expo/devcert@1.2.0**
+- **@expo/devcert@1.2.1**
   - Publisher: Dave Wasmer
   - License: MIT
   - Repository: https://github.com/expo/devcert
   - License File: /node_modules/@expo/devcert/README.md
 
-- **@expo/devtools@0.1.7**
+- **@expo/devtools@0.1.8**
   - License: MIT
   - Repository: https://github.com/expo/expo
   - License File: /node_modules/@expo/devtools/LICENSE
 
-- **@expo/env@2.0.7**
+- **@expo/env@2.0.11**
   - License: MIT
   - Repository: https://github.com/expo/expo
   - License File: /node_modules/@expo/env/LICENSE
 
-- **@expo/fingerprint@0.15.1**
+- **@expo/fingerprint@0.15.4**
   - Publisher: 650 Industries, Inc.
   - License: MIT
   - Repository: https://github.com/expo/expo
   - License File: /node_modules/@expo/fingerprint/LICENSE
 
-- **@expo/image-utils@0.8.7**
+- **@expo/image-utils@0.8.12**
   - License: MIT
   - Repository: https://github.com/expo/expo
   - License File: /node_modules/@expo/image-utils/LICENSE
 
-- **@expo/json-file@10.0.7**
+- **@expo/json-file@10.0.12**
   - License: MIT
   - Repository: https://github.com/expo/expo
   - License File: /node_modules/@expo/json-file/LICENSE
 
-- **@expo/mcp-tunnel@0.0.7**
-  - Publisher: 650 Industries, Inc.
-  - License: MIT
-  - Repository: https://github.com/expo/expo-mcp
-  - License File: N/A
-
-- **@expo/metro-config@54.0.4**
+- **@expo/metro-config@54.0.14**
   - License: MIT
   - Repository: https://github.com/expo/expo
-  - License File: /node_modules/expo/node_modules/@expo/metro-config/LICENSE
+  - License File: /node_modules/@expo/metro-config/LICENSE
 
 - **@expo/metro-runtime@6.1.2**
   - Publisher: 650 Industries, Inc.
@@ -640,33 +712,33 @@ This file lists the licenses of dependencies used in this project.
   - Repository: https://github.com/expo/expo
   - License File: /node_modules/@expo/metro-runtime/README.md
 
-- **@expo/metro@54.0.0**
+- **@expo/metro@54.2.0**
   - Publisher: Expo
   - License: MIT
   - Repository: https://github.com/expo/expo-metro
   - License File: /node_modules/@expo/metro/LICENSE
 
-- **@expo/osascript@2.3.7**
+- **@expo/osascript@2.4.2**
   - License: MIT
   - Repository: https://github.com/expo/expo
   - License File: /node_modules/@expo/osascript/LICENSE
 
-- **@expo/package-manager@1.9.8**
+- **@expo/package-manager@1.10.3**
   - License: MIT
   - Repository: https://github.com/expo/expo
   - License File: /node_modules/@expo/package-manager/LICENSE
 
-- **@expo/plist@0.4.7**
+- **@expo/plist@0.4.8**
   - License: MIT
   - Repository: https://github.com/expo/expo
   - License File: /node_modules/@expo/plist/README.md
 
-- **@expo/prebuild-config@54.0.3**
+- **@expo/prebuild-config@54.0.8**
   - License: MIT
   - Repository: https://github.com/expo/expo
   - License File: /node_modules/@expo/prebuild-config/LICENSE
 
-- **@expo/schema-utils@0.1.7**
+- **@expo/schema-utils@0.1.8**
   - License: MIT
   - Repository: https://github.com/expo/expo
   - License File: /node_modules/@expo/schema-utils/LICENSE
@@ -676,11 +748,6 @@ This file lists the licenses of dependencies used in this project.
   - License: MIT
   - Repository: N/A
   - License File: /node_modules/@expo/sdk-runtime-versions/README.md
-
-- **@expo/server@0.7.4**
-  - License: MIT
-  - Repository: https://github.com/expo/expo
-  - License File: /node_modules/@expo/server/README.md
 
 - **@expo/spawn-async@1.7.2**
   - Publisher: Expo
@@ -694,7 +761,7 @@ This file lists the licenses of dependencies used in this project.
   - Repository: https://github.com/expo/sudo-prompt
   - License File: /node_modules/@expo/sudo-prompt/LICENSE
 
-- **@expo/vector-icons@15.0.2**
+- **@expo/vector-icons@15.1.1**
   - Publisher: Brent Vatne
   - License: MIT
   - Repository: https://github.com/expo/vector-icons
@@ -705,17 +772,11 @@ This file lists the licenses of dependencies used in this project.
   - Repository: N/A
   - License File: N/A
 
-- **@expo/xcpretty@4.3.2**
+- **@expo/xcpretty@4.4.1**
   - Publisher: Evan Bacon
   - License: BSD-3-Clause
   - Repository: https://github.com/expo/expo-cli
   - License File: /node_modules/@expo/xcpretty/README.md
-
-- **@isaacs/cliui@8.0.2**
-  - Publisher: Ben Coe
-  - License: ISC
-  - Repository: https://github.com/yargs/cliui
-  - License File: /node_modules/@isaacs/cliui/LICENSE.txt
 
 - **@isaacs/fs-minipass@4.0.1**
   - Publisher: Isaac Z. Schlueter
@@ -805,11 +866,6 @@ This file lists the licenses of dependencies used in this project.
   - License: MIT
   - Repository: https://github.com/jridgewell/sourcemaps
   - License File: /node_modules/@jridgewell/trace-mapping/LICENSE
-
-- **@pkgjs/parseargs@0.11.0**
-  - License: MIT
-  - Repository: https://github.com/pkgjs/parseargs
-  - License File: /node_modules/@pkgjs/parseargs/LICENSE
 
 - **@radix-ui/primitive@1.1.3**
   - License: MIT
@@ -927,47 +983,47 @@ This file lists the licenses of dependencies used in this project.
   - Repository: https://github.com/react-native-async-storage/async-storage
   - License File: /node_modules/@react-native-async-storage/async-storage/LICENSE
 
-- **@react-native/assets-registry@0.81.4**
+- **@react-native/assets-registry@0.81.5**
   - License: MIT
   - Repository: https://github.com/facebook/react-native
   - License File: /node_modules/@react-native/assets-registry/README.md
 
-- **@react-native/babel-plugin-codegen@0.81.4**
+- **@react-native/babel-plugin-codegen@0.81.5**
   - License: MIT
   - Repository: https://github.com/facebook/react-native
   - License File: /node_modules/@react-native/babel-plugin-codegen/README.md
 
-- **@react-native/babel-preset@0.81.4**
+- **@react-native/babel-preset@0.81.5**
   - License: MIT
   - Repository: https://github.com/facebook/react-native
   - License File: /node_modules/@react-native/babel-preset/README.md
 
-- **@react-native/codegen@0.81.4**
+- **@react-native/codegen@0.81.5**
   - License: MIT
   - Repository: https://github.com/facebook/react-native
   - License File: /node_modules/@react-native/codegen/README.md
 
-- **@react-native/community-cli-plugin@0.81.4**
+- **@react-native/community-cli-plugin@0.81.5**
   - License: MIT
   - Repository: https://github.com/facebook/react-native
   - License File: /node_modules/@react-native/community-cli-plugin/README.md
 
-- **@react-native/debugger-frontend@0.81.4**
+- **@react-native/debugger-frontend@0.81.5**
   - License: BSD-3-Clause
   - Repository: https://github.com/facebook/react-native
   - License File: /node_modules/@react-native/debugger-frontend/README.md
 
-- **@react-native/dev-middleware@0.81.4**
+- **@react-native/dev-middleware@0.81.5**
   - License: MIT
   - Repository: https://github.com/facebook/react-native
   - License File: /node_modules/@react-native/dev-middleware/README.md
 
-- **@react-native/gradle-plugin@0.81.4**
+- **@react-native/gradle-plugin@0.81.5**
   - License: MIT
   - Repository: https://github.com/facebook/react-native
   - License File: /node_modules/@react-native/gradle-plugin/README.md
 
-- **@react-native/js-polyfills@0.81.4**
+- **@react-native/js-polyfills@0.81.5**
   - License: MIT
   - Repository: https://github.com/facebook/react-native
   - License File: /node_modules/@react-native/js-polyfills/README.md
@@ -977,15 +1033,15 @@ This file lists the licenses of dependencies used in this project.
   - Repository: https://github.com/facebook/react-native
   - License File: /node_modules/react-native-web/node_modules/@react-native/normalize-colors/README.md
 
-- **@react-native/normalize-colors@0.81.4**
+- **@react-native/normalize-colors@0.81.5**
   - License: MIT
   - Repository: https://github.com/facebook/react-native
   - License File: /node_modules/@react-native/normalize-colors/README.md
 
-- **@react-native/virtualized-lists@0.81.4**
+- **@react-native/virtualized-lists@0.81.5**
   - License: MIT
   - Repository: https://github.com/facebook/react-native
-  - License File: /node_modules/@react-native/virtualized-lists/README.md
+  - License File: /node_modules/react-native/node_modules/@react-native/virtualized-lists/README.md
 
 - **@react-navigation/bottom-tabs@7.4.7**
   - License: MIT
@@ -1138,6 +1194,11 @@ This file lists the licenses of dependencies used in this project.
   - Repository: https://github.com/jshttp/accepts
   - License File: /node_modules/accepts/LICENSE
 
+- **accepts@2.0.0**
+  - License: MIT
+  - Repository: https://github.com/jshttp/accepts
+  - License File: /node_modules/metro/node_modules/accepts/LICENSE
+
 - **acorn@8.15.0**
   - License: MIT
   - Repository: https://github.com/acornjs/acorn
@@ -1148,6 +1209,12 @@ This file lists the licenses of dependencies used in this project.
   - License: MIT
   - Repository: https://github.com/TooTallNate/proxy-agents
   - License File: /node_modules/agent-base/LICENSE
+
+- **ajv@8.18.0**
+  - Publisher: Evgeny Poberezkin
+  - License: MIT
+  - Repository: https://github.com/ajv-validator/ajv
+  - License File: /node_modules/expo-dev-launcher/node_modules/ajv/LICENSE
 
 - **anser@1.4.10**
   - Publisher: Ionică Bizău
@@ -1165,19 +1232,13 @@ This file lists the licenses of dependencies used in this project.
   - Publisher: Sindre Sorhus
   - License: MIT
   - Repository: https://github.com/chalk/ansi-regex
-  - License File: /node_modules/ora/node_modules/ansi-regex/license
+  - License File: /node_modules/strip-ansi/node_modules/ansi-regex/license
 
 - **ansi-regex@5.0.1**
   - Publisher: Sindre Sorhus
   - License: MIT
   - Repository: https://github.com/chalk/ansi-regex
   - License File: /node_modules/ansi-regex/license
-
-- **ansi-regex@6.2.2**
-  - Publisher: Sindre Sorhus
-  - License: MIT
-  - Repository: https://github.com/chalk/ansi-regex
-  - License File: /node_modules/strip-ansi/node_modules/ansi-regex/license
 
 - **ansi-styles@3.2.1**
   - Publisher: Sindre Sorhus
@@ -1196,12 +1257,6 @@ This file lists the licenses of dependencies used in this project.
   - License: MIT
   - Repository: https://github.com/chalk/ansi-styles
   - License File: /node_modules/pretty-format/node_modules/ansi-styles/license
-
-- **ansi-styles@6.2.3**
-  - Publisher: Sindre Sorhus
-  - License: MIT
-  - Repository: https://github.com/chalk/ansi-styles
-  - License File: /node_modules/wrap-ansi/node_modules/ansi-styles/license
 
 - **any-promise@1.3.0**
   - Publisher: Kevin Beaty
@@ -1224,7 +1279,7 @@ This file lists the licenses of dependencies used in this project.
 - **argparse@1.0.10**
   - License: MIT
   - Repository: https://github.com/nodeca/argparse
-  - License File: /node_modules/cosmiconfig/node_modules/argparse/LICENSE
+  - License File: /node_modules/@istanbuljs/load-nyc-config/node_modules/argparse/LICENSE
 
 - **argparse@2.0.1**
   - License: Python-2.0
@@ -1264,7 +1319,7 @@ This file lists the licenses of dependencies used in this project.
   - Repository: https://github.com/jestjs/jest
   - License File: /node_modules/babel-plugin-jest-hoist/LICENSE
 
-- **babel-plugin-polyfill-corejs2@0.4.14**
+- **babel-plugin-polyfill-corejs2@0.4.17**
   - License: MIT
   - Repository: https://github.com/babel/babel-polyfills
   - License File: /node_modules/babel-plugin-polyfill-corejs2/LICENSE
@@ -1274,17 +1329,17 @@ This file lists the licenses of dependencies used in this project.
   - Repository: https://github.com/babel/babel-polyfills
   - License File: /node_modules/babel-plugin-polyfill-corejs3/LICENSE
 
-- **babel-plugin-polyfill-regenerator@0.6.5**
+- **babel-plugin-polyfill-regenerator@0.6.8**
   - License: MIT
   - Repository: https://github.com/babel/babel-polyfills
   - License File: /node_modules/babel-plugin-polyfill-regenerator/LICENSE
 
-- **babel-plugin-react-compiler@19.1.0-rc.3**
+- **babel-plugin-react-compiler@1.0.0**
   - License: MIT
   - Repository: https://github.com/facebook/react
   - License File: /node_modules/babel-plugin-react-compiler/README.md
 
-- **babel-plugin-react-native-web@0.21.1**
+- **babel-plugin-react-native-web@0.21.2**
   - Publisher: Nicolas Gallagher
   - License: MIT
   - Repository: https://github.com/necolas/react-native-web
@@ -1294,6 +1349,11 @@ This file lists the licenses of dependencies used in this project.
   - License: MIT
   - Repository: https://github.com/facebook/hermes
   - License File: /node_modules/babel-plugin-syntax-hermes-parser/LICENSE
+
+- **babel-plugin-syntax-trailing-function-commas@7.0.0-beta.0**
+  - License: MIT
+  - Repository: https://github.com/babel/babel/tree/master/packages/babel-plugin-syntax-trailing-function-commas
+  - License File: /node_modules/babel-plugin-syntax-trailing-function-commas/README.md
 
 - **babel-plugin-transform-flow-enums@0.0.2**
   - License: MIT
@@ -1306,11 +1366,16 @@ This file lists the licenses of dependencies used in this project.
   - Repository: https://github.com/nicolo-ribaudo/babel-preset-current-node-syntax
   - License File: /node_modules/babel-preset-current-node-syntax/LICENSE
 
-- **babel-preset-expo@54.0.2**
+- **babel-preset-expo@54.0.10**
   - Publisher: Expo
   - License: MIT
   - Repository: https://github.com/expo/expo
   - License File: /node_modules/babel-preset-expo/README.md
+
+- **babel-preset-fbjs@3.4.0**
+  - License: MIT
+  - Repository: https://github.com/facebook/fbjs
+  - License File: /node_modules/babel-preset-fbjs/LICENSE
 
 - **babel-preset-jest@29.6.3**
   - License: MIT
@@ -1323,13 +1388,18 @@ This file lists the licenses of dependencies used in this project.
   - Repository: https://github.com/juliangruber/balanced-match
   - License File: /node_modules/balanced-match/LICENSE.md
 
+- **balanced-match@4.0.4**
+  - License: MIT
+  - Repository: https://github.com/juliangruber/balanced-match
+  - License File: /node_modules/glob/node_modules/balanced-match/LICENSE.md
+
 - **base64-js@1.5.1**
   - Publisher: T. Jameson Little
   - License: MIT
   - Repository: https://github.com/beatgammit/base64-js
   - License File: /node_modules/base64-js/LICENSE
 
-- **baseline-browser-mapping@2.8.6**
+- **baseline-browser-mapping@2.10.8**
   - License: Apache-2.0
   - Repository: https://github.com/web-platform-dx/baseline-browser-mapping
   - License File: /node_modules/baseline-browser-mapping/LICENSE.txt
@@ -1374,6 +1444,11 @@ This file lists the licenses of dependencies used in this project.
   - Publisher: Julian Gruber
   - License: MIT
   - Repository: https://github.com/juliangruber/brace-expansion
+  - License File: /node_modules/@expo/metro-config/node_modules/brace-expansion/LICENSE
+
+- **brace-expansion@5.0.4**
+  - License: MIT
+  - Repository: https://github.com/juliangruber/brace-expansion
   - License File: /node_modules/glob/node_modules/brace-expansion/LICENSE
 
 - **braces@3.0.3**
@@ -1382,7 +1457,7 @@ This file lists the licenses of dependencies used in this project.
   - Repository: https://github.com/micromatch/braces
   - License File: /node_modules/braces/LICENSE
 
-- **browserslist@4.26.2**
+- **browserslist@4.28.1**
   - Publisher: Andrey Sitnik
   - License: MIT
   - Repository: https://github.com/browserslist/browserslist
@@ -1411,24 +1486,6 @@ This file lists the licenses of dependencies used in this project.
   - Repository: https://github.com/visionmedia/bytes.js
   - License File: /node_modules/bytes/LICENSE
 
-- **caller-callsite@2.0.0**
-  - Publisher: Sindre Sorhus
-  - License: MIT
-  - Repository: https://github.com/sindresorhus/caller-callsite
-  - License File: /node_modules/caller-callsite/license
-
-- **caller-path@2.0.0**
-  - Publisher: Sindre Sorhus
-  - License: MIT
-  - Repository: https://github.com/sindresorhus/caller-path
-  - License File: /node_modules/caller-path/license
-
-- **callsites@2.0.0**
-  - Publisher: Sindre Sorhus
-  - License: MIT
-  - Repository: https://github.com/sindresorhus/callsites
-  - License File: /node_modules/caller-callsite/node_modules/callsites/license
-
 - **camelcase@5.3.1**
   - Publisher: Sindre Sorhus
   - License: MIT
@@ -1447,7 +1504,7 @@ This file lists the licenses of dependencies used in this project.
   - Repository: https://github.com/ljharb/camelize
   - License File: /node_modules/camelize/LICENSE
 
-- **caniuse-lite@1.0.30001743**
+- **caniuse-lite@1.0.30001780**
   - Publisher: Ben Briggs
   - License: CC-BY-4.0
   - Repository: https://github.com/browserslist/caniuse-lite
@@ -1609,17 +1666,11 @@ This file lists the licenses of dependencies used in this project.
   - Repository: https://github.com/thlorenz/convert-source-map
   - License File: /node_modules/convert-source-map/LICENSE
 
-- **core-js-compat@3.45.1**
+- **core-js-compat@3.49.0**
   - Publisher: Denis Pushkarev
   - License: MIT
   - Repository: https://github.com/zloirock/core-js
   - License File: /node_modules/core-js-compat/LICENSE
-
-- **cosmiconfig@5.2.1**
-  - Publisher: David Clark
-  - License: MIT
-  - Repository: https://github.com/davidtheclark/cosmiconfig
-  - License File: /node_modules/cosmiconfig/LICENSE
 
 - **cross-fetch@3.2.0**
   - Publisher: Leonardo Quixada
@@ -1632,12 +1683,6 @@ This file lists the licenses of dependencies used in this project.
   - License: MIT
   - Repository: https://github.com/moxystudio/node-cross-spawn
   - License File: /node_modules/cross-spawn/LICENSE
-
-- **crypto-random-string@2.0.0**
-  - Publisher: Sindre Sorhus
-  - License: MIT
-  - Repository: https://github.com/sindresorhus/crypto-random-string
-  - License File: /node_modules/crypto-random-string/license
 
 - **css-color-keywords@1.0.0**
   - Publisher: Jakob Krigovsky
@@ -1751,31 +1796,19 @@ This file lists the licenses of dependencies used in this project.
   - Repository: https://github.com/motdotla/dotenv
   - License File: /node_modules/dotenv/LICENSE
 
-- **eastasianwidth@0.2.0**
-  - Publisher: Masaki Komagata
-  - License: MIT
-  - Repository: https://github.com/komagata/eastasianwidth
-  - License File: /node_modules/eastasianwidth/README.md
-
 - **ee-first@1.1.1**
   - Publisher: Jonathan Ong
   - License: MIT
   - Repository: https://github.com/jonathanong/ee-first
   - License File: /node_modules/ee-first/LICENSE
 
-- **electron-to-chromium@1.5.222**
+- **electron-to-chromium@1.5.313**
   - Publisher: Kilian Valkhof
   - License: ISC
   - Repository: https://github.com/kilian/electron-to-chromium
   - License File: /node_modules/electron-to-chromium/LICENSE
 
 - **emoji-regex@8.0.0**
-  - Publisher: Mathias Bynens
-  - License: MIT
-  - Repository: https://github.com/mathiasbynens/emoji-regex
-  - License File: /node_modules/string-width-cjs/node_modules/emoji-regex/LICENSE-MIT.txt
-
-- **emoji-regex@9.2.2**
   - Publisher: Mathias Bynens
   - License: MIT
   - Repository: https://github.com/mathiasbynens/emoji-regex
@@ -1802,11 +1835,6 @@ This file lists the licenses of dependencies used in this project.
   - License: MIT
   - Repository: https://github.com/sindresorhus/env-editor
   - License File: /node_modules/env-editor/license
-
-- **error-ex@1.3.4**
-  - License: MIT
-  - Repository: https://github.com/qix-/node-error-ex
-  - License File: /node_modules/error-ex/LICENSE
 
 - **error-stack-parser@2.1.4**
   - License: MIT
@@ -1859,13 +1887,7 @@ This file lists the licenses of dependencies used in this project.
   - Repository: https://github.com/mysticatea/event-target-shim
   - License File: /node_modules/event-target-shim/LICENSE
 
-- **exec-async@2.2.0**
-  - Publisher: Charlie Cheever
-  - License: MIT
-  - Repository: https://github.com/ccheever/exec-async
-  - License File: /node_modules/exec-async/LICENSE
-
-- **expo-asset@12.0.9**
+- **expo-asset@12.0.12**
   - Publisher: 650 Industries, Inc.
   - License: MIT
   - Repository: https://github.com/expo/expo
@@ -1877,103 +1899,150 @@ This file lists the licenses of dependencies used in this project.
   - Repository: https://github.com/expo/expo
   - License File: /node_modules/expo-blur/README.md
 
-- **expo-constants@18.0.9**
+- **expo-constants@18.0.13**
   - Publisher: 650 Industries, Inc.
   - License: MIT
   - Repository: https://github.com/expo/expo
   - License File: /node_modules/expo-constants/README.md
 
-- **expo-file-system@19.0.14**
+- **expo-dev-client@6.0.20**
+  - Publisher: 650 Industries, Inc.
+  - License: MIT
+  - Repository: https://github.com/expo/expo
+  - License File: /node_modules/expo-dev-client/README.md
+
+- **expo-dev-launcher@6.0.20**
+  - Publisher: 650 Industries, Inc.
+  - License: MIT
+  - Repository: https://github.com/expo/expo
+  - License File: /node_modules/expo-dev-launcher/README.md
+
+- **expo-dev-menu-interface@2.0.0**
+  - Publisher: 650 Industries, Inc.
+  - License: MIT
+  - Repository: https://github.com/expo/expo
+  - License File: /node_modules/expo-dev-menu-interface/README.md
+
+- **expo-dev-menu@7.0.18**
+  - Publisher: 650 Industries, Inc.
+  - License: MIT
+  - Repository: https://github.com/expo/expo
+  - License File: /node_modules/expo-dev-menu/README.md
+
+- **expo-file-system@19.0.21**
   - Publisher: 650 Industries, Inc.
   - License: MIT
   - Repository: https://github.com/expo/expo
   - License File: /node_modules/expo-file-system/README.md
 
-- **expo-font@14.0.8**
+- **expo-font@14.0.11**
   - Publisher: 650 Industries, Inc.
   - License: MIT
   - Repository: https://github.com/expo/expo
   - License File: /node_modules/expo-font/README.md
 
-- **expo-haptics@15.0.7**
+- **expo-haptics@15.0.8**
   - Publisher: 650 Industries, Inc.
   - License: MIT
   - Repository: https://github.com/expo/expo
   - License File: /node_modules/expo-haptics/README.md
 
-- **expo-image@3.0.8**
+- **expo-image@3.0.11**
   - Publisher: 650 Industries, Inc.
   - License: MIT
   - Repository: https://github.com/expo/expo
   - License File: /node_modules/expo-image/README.md
 
-- **expo-keep-awake@15.0.7**
+- **expo-json-utils@0.15.0**
+  - Publisher: 650 Industries, Inc.
+  - License: MIT
+  - Repository: https://github.com/expo/expo
+  - License File: /node_modules/expo-json-utils/README.md
+
+- **expo-keep-awake@15.0.8**
   - Publisher: 650 Industries, Inc.
   - License: MIT
   - Repository: https://github.com/expo/expo
   - License File: /node_modules/expo-keep-awake/README.md
 
-- **expo-linking@8.0.8**
+- **expo-linking@8.0.11**
   - Publisher: 650 Industries, Inc.
   - License: MIT
   - Repository: https://github.com/expo/expo
   - License File: /node_modules/expo-linking/README.md
 
-- **expo-localization@17.0.7**
+- **expo-localization@17.0.8**
   - Publisher: 650 Industries, Inc.
   - License: MIT
   - Repository: https://github.com/expo/expo
   - License File: /node_modules/expo-localization/README.md
 
-- **expo-modules-autolinking@3.0.12**
+- **expo-manifests@1.0.10**
+  - Publisher: 650 Industries, Inc.
+  - License: MIT
+  - Repository: https://github.com/expo/expo
+  - License File: /node_modules/expo-manifests/README.md
+
+- **expo-modules-autolinking@3.0.24**
   - Publisher: 650 Industries, Inc.
   - License: MIT
   - Repository: https://github.com/expo/expo
   - License File: /node_modules/expo-modules-autolinking/README.md
 
-- **expo-modules-core@3.0.17**
+- **expo-modules-core@3.0.29**
   - Publisher: 650 Industries, Inc.
   - License: MIT
   - Repository: https://github.com/expo/expo
   - License File: /node_modules/expo-modules-core/README.md
 
-- **expo-router@6.0.7**
+- **expo-router@6.0.23**
   - Publisher: 650 Industries, Inc.
   - License: MIT
   - Repository: https://github.com/expo/expo
   - License File: /node_modules/expo-router/README.md
 
-- **expo-splash-screen@31.0.10**
+- **expo-server@1.0.5**
+  - License: MIT
+  - Repository: https://github.com/expo/expo
+  - License File: /node_modules/expo-server/README.md
+
+- **expo-splash-screen@31.0.13**
   - Publisher: 650 Industries, Inc.
   - License: MIT
   - Repository: https://github.com/expo/expo
   - License File: /node_modules/expo-splash-screen/README.md
 
-- **expo-status-bar@3.0.8**
+- **expo-status-bar@3.0.9**
   - Publisher: 650 Industries, Inc.
   - License: MIT
   - Repository: https://github.com/expo/expo
   - License File: /node_modules/expo-status-bar/README.md
 
-- **expo-symbols@1.0.7**
+- **expo-symbols@1.0.8**
   - Publisher: 650 Industries, Inc.
   - License: MIT
   - Repository: https://github.com/expo/expo
   - License File: /node_modules/expo-symbols/README.md
 
-- **expo-system-ui@6.0.7**
+- **expo-system-ui@6.0.9**
   - Publisher: 650 Industries, Inc.
   - License: MIT
   - Repository: https://github.com/expo/expo
   - License File: /node_modules/expo-system-ui/README.md
 
-- **expo-web-browser@15.0.7**
+- **expo-updates-interface@2.0.0**
+  - Publisher: 650 Industries, Inc.
+  - License: MIT
+  - Repository: https://github.com/expo/expo
+  - License File: /node_modules/expo-updates-interface/README.md
+
+- **expo-web-browser@15.0.10**
   - Publisher: 650 Industries, Inc.
   - License: MIT
   - Repository: https://github.com/expo/expo
   - License File: /node_modules/expo-web-browser/README.md
 
-- **expo@54.0.9**
+- **expo@54.0.33**
   - Publisher: Expo
   - License: MIT
   - Repository: https://github.com/expo/expo
@@ -1997,6 +2066,12 @@ This file lists the licenses of dependencies used in this project.
   - Repository: https://github.com/epoberezkin/fast-json-stable-stringify
   - License File: /node_modules/fast-json-stable-stringify/LICENSE
 
+- **fast-uri@3.1.0**
+  - Publisher: Vincent Le Goff
+  - License: BSD-3-Clause
+  - Repository: https://github.com/fastify/fast-uri
+  - License File: /node_modules/fast-uri/LICENSE
+
 - **fb-watchman@2.0.2**
   - Publisher: Wez Furlong
   - License: Apache-2.0
@@ -2012,6 +2087,12 @@ This file lists the licenses of dependencies used in this project.
   - License: MIT
   - Repository: https://github.com/facebook/fbjs
   - License File: /node_modules/fbjs/LICENSE
+
+- **fdir@6.5.0**
+  - Publisher: thecodrr
+  - License: MIT
+  - Repository: https://github.com/thecodrr/fdir
+  - License File: /node_modules/tinyglobby/node_modules/fdir/LICENSE
 
 - **fill-range@7.1.1**
   - Publisher: Jon Schlinkert
@@ -2037,12 +2118,6 @@ This file lists the licenses of dependencies used in this project.
   - Repository: https://github.com/sindresorhus/find-up
   - License File: /node_modules/@istanbuljs/load-nyc-config/node_modules/find-up/license
 
-- **find-up@5.0.0**
-  - Publisher: Sindre Sorhus
-  - License: MIT
-  - Repository: https://github.com/sindresorhus/find-up
-  - License File: /node_modules/find-up/license
-
 - **flow-enums-runtime@0.0.6**
   - License: MIT
   - Repository: https://github.com/facebook/flow
@@ -2053,12 +2128,6 @@ This file lists the licenses of dependencies used in this project.
   - License: BSD-2-Clause
   - Repository: https://github.com/bramstein/fontfaceobserver
   - License File: /node_modules/fontfaceobserver/LICENSE
-
-- **foreground-child@3.3.1**
-  - Publisher: Isaac Z. Schlueter
-  - License: ISC
-  - Repository: https://github.com/tapjs/foreground-child
-  - License File: /node_modules/foreground-child/LICENSE
 
 - **freeport-async@2.0.0**
   - Publisher: Expo
@@ -2120,23 +2189,17 @@ This file lists the licenses of dependencies used in this project.
   - Repository: https://github.com/ctavan/node-getenv
   - License File: /node_modules/getenv/LICENSE.md
 
-- **glob@10.5.0**
+- **glob@13.0.6**
   - Publisher: Isaac Z. Schlueter
-  - License: ISC
+  - License: BlueOak-1.0.0
   - Repository: https://github.com/isaacs/node-glob
-  - License File: /node_modules/glob/LICENSE
+  - License File: /node_modules/glob/LICENSE.md
 
 - **glob@7.2.3**
   - Publisher: Isaac Z. Schlueter
   - License: ISC
   - Repository: https://github.com/isaacs/node-glob
   - License File: /node_modules/rimraf/node_modules/glob/LICENSE
-
-- **global-dirs@0.1.1**
-  - Publisher: Sindre Sorhus
-  - License: MIT
-  - Repository: https://github.com/sindresorhus/global-dirs
-  - License File: /node_modules/global-dirs/license
 
 - **graceful-fs@4.2.11**
   - License: ISC
@@ -2161,15 +2224,45 @@ This file lists the licenses of dependencies used in this project.
   - Repository: https://github.com/inspect-js/hasOwn
   - License File: /node_modules/hasown/LICENSE
 
+- **hermes-estree@0.14.0**
+  - License: MIT
+  - Repository: https://github.com/facebook/hermes
+  - License File: /node_modules/metro-react-native-babel-transformer/node_modules/hermes-estree/LICENSE
+
 - **hermes-estree@0.29.1**
   - License: MIT
   - Repository: https://github.com/facebook/hermes
   - License File: /node_modules/hermes-estree/LICENSE
 
+- **hermes-estree@0.32.0**
+  - License: MIT
+  - Repository: https://github.com/facebook/hermes
+  - License File: /node_modules/@expo/metro/node_modules/hermes-estree/LICENSE
+
+- **hermes-estree@0.33.3**
+  - License: MIT
+  - Repository: https://github.com/facebook/hermes
+  - License File: /node_modules/metro/node_modules/hermes-estree/LICENSE
+
+- **hermes-parser@0.14.0**
+  - License: MIT
+  - Repository: https://github.com/facebook/hermes
+  - License File: /node_modules/metro-react-native-babel-transformer/node_modules/hermes-parser/LICENSE
+
 - **hermes-parser@0.29.1**
   - License: MIT
   - Repository: https://github.com/facebook/hermes
   - License File: /node_modules/hermes-parser/LICENSE
+
+- **hermes-parser@0.32.0**
+  - License: MIT
+  - Repository: https://github.com/facebook/hermes
+  - License File: /node_modules/@expo/metro/node_modules/hermes-parser/LICENSE
+
+- **hermes-parser@0.33.3**
+  - License: MIT
+  - Repository: https://github.com/facebook/hermes
+  - License File: /node_modules/metro/node_modules/hermes-parser/LICENSE
 
 - **hoist-non-react-statics@3.3.2**
   - Publisher: Michael Ridgway
@@ -2225,12 +2318,6 @@ This file lists the licenses of dependencies used in this project.
   - Repository: https://github.com/image-size/image-size
   - License File: /node_modules/image-size/LICENSE
 
-- **import-fresh@2.0.0**
-  - Publisher: Sindre Sorhus
-  - License: MIT
-  - Repository: https://github.com/sindresorhus/import-fresh
-  - License File: /node_modules/cosmiconfig/node_modules/import-fresh/license
-
 - **imurmurhash@0.1.4**
   - Publisher: Jens Taylor
   - License: MIT
@@ -2266,12 +2353,6 @@ This file lists the licenses of dependencies used in this project.
   - Repository: https://github.com/zertosh/invariant
   - License File: /node_modules/invariant/LICENSE
 
-- **is-arrayish@0.2.1**
-  - Publisher: Qix
-  - License: MIT
-  - Repository: https://github.com/qix-/node-is-arrayish
-  - License File: /node_modules/is-arrayish/LICENSE
-
 - **is-arrayish@0.3.4**
   - Publisher: Qix
   - License: MIT
@@ -2283,12 +2364,6 @@ This file lists the licenses of dependencies used in this project.
   - License: MIT
   - Repository: https://github.com/inspect-js/is-core-module
   - License File: /node_modules/is-core-module/LICENSE
-
-- **is-directory@0.3.1**
-  - Publisher: Jon Schlinkert
-  - License: MIT
-  - Repository: https://github.com/jonschlinkert/is-directory
-  - License File: /node_modules/is-directory/LICENSE
 
 - **is-docker@2.2.1**
   - Publisher: Sindre Sorhus
@@ -2337,12 +2412,6 @@ This file lists the licenses of dependencies used in this project.
   - License: BSD-3-Clause
   - Repository: https://github.com/istanbuljs/istanbuljs
   - License File: /node_modules/istanbul-lib-instrument/LICENSE
-
-- **jackspeak@3.4.3**
-  - Publisher: Isaac Z. Schlueter
-  - License: BlueOak-1.0.0
-  - Repository: https://github.com/isaacs/jackspeak
-  - License File: /node_modules/jackspeak/LICENSE.md
 
 - **jest-environment-node@29.7.0**
   - License: MIT
@@ -2404,7 +2473,7 @@ This file lists the licenses of dependencies used in this project.
   - Publisher: Vladimir Zapparov
   - License: MIT
   - Repository: https://github.com/nodeca/js-yaml
-  - License File: /node_modules/cosmiconfig/node_modules/js-yaml/LICENSE
+  - License File: /node_modules/@istanbuljs/load-nyc-config/node_modules/js-yaml/LICENSE
 
 - **js-yaml@4.1.1**
   - Publisher: Vladimir Zapparov
@@ -2430,11 +2499,11 @@ This file lists the licenses of dependencies used in this project.
   - Repository: https://github.com/mathiasbynens/jsesc
   - License File: /node_modules/jsesc/LICENSE-MIT.txt
 
-- **json-parse-better-errors@1.0.2**
-  - Publisher: Kat Marchán
+- **json-schema-traverse@1.0.0**
+  - Publisher: Evgeny Poberezkin
   - License: MIT
-  - Repository: https://github.com/zkat/json-parse-better-errors
-  - License File: /node_modules/json-parse-better-errors/LICENSE.md
+  - Repository: https://github.com/epoberezkin/json-schema-traverse
+  - License File: /node_modules/expo-dev-launcher/node_modules/json-schema-traverse/LICENSE
 
 - **json5@2.2.3**
   - Publisher: Aseem Kishore
@@ -2497,12 +2566,6 @@ This file lists the licenses of dependencies used in this project.
   - Repository: https://github.com/sindresorhus/locate-path
   - License File: /node_modules/@istanbuljs/load-nyc-config/node_modules/locate-path/license
 
-- **locate-path@6.0.0**
-  - Publisher: Sindre Sorhus
-  - License: MIT
-  - Repository: https://github.com/sindresorhus/locate-path
-  - License File: /node_modules/locate-path/license
-
 - **lodash.debounce@4.0.8**
   - Publisher: John-David Dalton
   - License: MIT
@@ -2537,7 +2600,13 @@ This file lists the licenses of dependencies used in this project.
   - Publisher: Isaac Z. Schlueter
   - License: ISC
   - Repository: https://github.com/isaacs/node-lru-cache
-  - License File: /node_modules/path-scurry/node_modules/lru-cache/LICENSE
+  - License File: /node_modules/hosted-git-info/node_modules/lru-cache/LICENSE
+
+- **lru-cache@11.2.7**
+  - Publisher: Isaac Z. Schlueter
+  - License: BlueOak-1.0.0
+  - Repository: https://github.com/isaacs/node-lru-cache
+  - License File: /node_modules/path-scurry/node_modules/lru-cache/LICENSE.md
 
 - **lru-cache@5.1.1**
   - Publisher: Isaac Z. Schlueter
@@ -2597,72 +2666,152 @@ This file lists the licenses of dependencies used in this project.
   - Repository: https://github.com/grncdr/merge-stream
   - License File: /node_modules/merge-stream/LICENSE
 
-- **metro-babel-transformer@0.83.1**
+- **metro-babel-transformer@0.83.3**
   - License: MIT
   - Repository: https://github.com/facebook/metro
   - License File: N/A
 
-- **metro-cache-key@0.83.1**
+- **metro-babel-transformer@0.83.5**
   - License: MIT
   - Repository: https://github.com/facebook/metro
   - License File: N/A
 
-- **metro-cache@0.83.1**
+- **metro-cache-key@0.83.3**
   - License: MIT
   - Repository: https://github.com/facebook/metro
   - License File: N/A
 
-- **metro-config@0.83.1**
+- **metro-cache-key@0.83.5**
+  - License: MIT
+  - Repository: https://github.com/facebook/metro
+  - License File: N/A
+
+- **metro-cache@0.83.3**
+  - License: MIT
+  - Repository: https://github.com/facebook/metro
+  - License File: N/A
+
+- **metro-cache@0.83.5**
+  - License: MIT
+  - Repository: https://github.com/facebook/metro
+  - License File: N/A
+
+- **metro-config@0.83.3**
+  - License: MIT
+  - Repository: https://github.com/facebook/metro
+  - License File: /node_modules/@expo/metro/node_modules/metro-config/README.md
+
+- **metro-config@0.83.5**
   - License: MIT
   - Repository: https://github.com/facebook/metro
   - License File: /node_modules/metro-config/README.md
 
-- **metro-core@0.83.1**
+- **metro-core@0.83.3**
+  - License: MIT
+  - Repository: https://github.com/facebook/metro
+  - License File: /node_modules/@expo/metro/node_modules/metro-core/README.md
+
+- **metro-core@0.83.5**
   - License: MIT
   - Repository: https://github.com/facebook/metro
   - License File: /node_modules/metro-core/README.md
 
-- **metro-file-map@0.83.1**
+- **metro-file-map@0.83.3**
+  - License: MIT
+  - Repository: https://github.com/facebook/metro
+  - License File: /node_modules/@expo/metro/node_modules/metro-file-map/README.md
+
+- **metro-file-map@0.83.5**
   - License: MIT
   - Repository: https://github.com/facebook/metro
   - License File: /node_modules/metro-file-map/README.md
 
-- **metro-minify-terser@0.83.1**
+- **metro-minify-terser@0.83.3**
   - License: MIT
   - Repository: https://github.com/facebook/metro
   - License File: N/A
 
-- **metro-resolver@0.83.1**
+- **metro-minify-terser@0.83.5**
+  - License: MIT
+  - Repository: https://github.com/facebook/metro
+  - License File: N/A
+
+- **metro-react-native-babel-preset@0.77.0**
+  - License: MIT
+  - Repository: https://github.com/facebook/metro
+  - License File: /node_modules/metro-react-native-babel-preset/README.md
+
+- **metro-react-native-babel-transformer@0.77.0**
+  - License: MIT
+  - Repository: https://github.com/facebook/metro
+  - License File: N/A
+
+- **metro-resolver@0.83.3**
+  - License: MIT
+  - Repository: https://github.com/facebook/metro
+  - License File: /node_modules/@expo/metro/node_modules/metro-resolver/README.md
+
+- **metro-resolver@0.83.5**
   - License: MIT
   - Repository: https://github.com/facebook/metro
   - License File: /node_modules/metro-resolver/README.md
 
-- **metro-runtime@0.83.1**
+- **metro-runtime@0.83.3**
   - License: MIT
   - Repository: https://github.com/facebook/metro
   - License File: N/A
 
-- **metro-source-map@0.83.1**
+- **metro-runtime@0.83.5**
+  - License: MIT
+  - Repository: https://github.com/facebook/metro
+  - License File: N/A
+
+- **metro-source-map@0.83.3**
+  - License: MIT
+  - Repository: https://github.com/facebook/metro
+  - License File: /node_modules/@expo/metro/node_modules/metro-source-map/README.md
+
+- **metro-source-map@0.83.5**
   - License: MIT
   - Repository: https://github.com/facebook/metro
   - License File: /node_modules/metro-source-map/README.md
 
-- **metro-symbolicate@0.83.1**
+- **metro-symbolicate@0.83.3**
   - License: MIT
   - Repository: https://github.com/facebook/metro
   - License File: N/A
 
-- **metro-transform-plugins@0.83.1**
+- **metro-symbolicate@0.83.5**
   - License: MIT
   - Repository: https://github.com/facebook/metro
   - License File: N/A
 
-- **metro-transform-worker@0.83.1**
+- **metro-transform-plugins@0.83.3**
   - License: MIT
   - Repository: https://github.com/facebook/metro
   - License File: N/A
 
-- **metro@0.83.1**
+- **metro-transform-plugins@0.83.5**
+  - License: MIT
+  - Repository: https://github.com/facebook/metro
+  - License File: N/A
+
+- **metro-transform-worker@0.83.3**
+  - License: MIT
+  - Repository: https://github.com/facebook/metro
+  - License File: N/A
+
+- **metro-transform-worker@0.83.5**
+  - License: MIT
+  - Repository: https://github.com/facebook/metro
+  - License File: N/A
+
+- **metro@0.83.3**
+  - License: MIT
+  - Repository: https://github.com/facebook/metro
+  - License File: /node_modules/@expo/metro/node_modules/metro/README.md
+
+- **metro@0.83.5**
   - License: MIT
   - Repository: https://github.com/facebook/metro
   - License File: /node_modules/metro/README.md
@@ -2678,10 +2827,20 @@ This file lists the licenses of dependencies used in this project.
   - Repository: https://github.com/jshttp/mime-db
   - License File: /node_modules/mime-db/LICENSE
 
+- **mime-db@1.54.0**
+  - License: MIT
+  - Repository: https://github.com/jshttp/mime-db
+  - License File: /node_modules/metro/node_modules/mime-db/LICENSE
+
 - **mime-types@2.1.35**
   - License: MIT
   - Repository: https://github.com/jshttp/mime-types
   - License File: /node_modules/mime-types/LICENSE
+
+- **mime-types@3.0.2**
+  - License: MIT
+  - Repository: https://github.com/jshttp/mime-types
+  - License File: /node_modules/metro/node_modules/mime-types/LICENSE
 
 - **mime@1.6.0**
   - Publisher: Robert Kieffer
@@ -2695,6 +2854,12 @@ This file lists the licenses of dependencies used in this project.
   - Repository: https://github.com/sindresorhus/mimic-fn
   - License File: /node_modules/mimic-fn/license
 
+- **minimatch@10.2.4**
+  - Publisher: Isaac Z. Schlueter
+  - License: BlueOak-1.0.0
+  - Repository: https://github.com/isaacs/minimatch
+  - License File: /node_modules/glob/node_modules/minimatch/LICENSE.md
+
 - **minimatch@3.1.5**
   - Publisher: Isaac Z. Schlueter
   - License: ISC
@@ -2705,7 +2870,7 @@ This file lists the licenses of dependencies used in this project.
   - Publisher: Isaac Z. Schlueter
   - License: ISC
   - Repository: https://github.com/isaacs/minimatch
-  - License File: /node_modules/glob/node_modules/minimatch/LICENSE
+  - License File: /node_modules/@expo/metro-config/node_modules/minimatch/LICENSE
 
 - **minimist@1.2.8**
   - Publisher: James Halliday
@@ -2713,11 +2878,11 @@ This file lists the licenses of dependencies used in this project.
   - Repository: https://github.com/minimistjs/minimist
   - License File: /node_modules/minimist/LICENSE
 
-- **minipass@7.1.2**
+- **minipass@7.1.3**
   - Publisher: Isaac Z. Schlueter
-  - License: ISC
+  - License: BlueOak-1.0.0
   - Repository: https://github.com/isaacs/minipass
-  - License File: /node_modules/minipass/LICENSE
+  - License File: /node_modules/minipass/LICENSE.md
 
 - **minizlib@3.1.0**
   - Publisher: Isaac Z. Schlueter
@@ -2762,6 +2927,11 @@ This file lists the licenses of dependencies used in this project.
   - Repository: https://github.com/jshttp/negotiator
   - License File: /node_modules/compression/node_modules/negotiator/LICENSE
 
+- **negotiator@1.0.0**
+  - License: MIT
+  - Repository: https://github.com/jshttp/negotiator
+  - License File: /node_modules/metro/node_modules/negotiator/LICENSE
+
 - **nested-error-stacks@2.0.1**
   - Publisher: Matt Lavin
   - License: MIT
@@ -2786,7 +2956,7 @@ This file lists the licenses of dependencies used in this project.
   - Repository: https://github.com/broofa/node-int64
   - License File: /node_modules/node-int64/LICENSE
 
-- **node-releases@2.0.21**
+- **node-releases@2.0.36**
   - Publisher: Sergey Rubanov
   - License: MIT
   - Repository: https://github.com/chicoxyzzy/node-releases
@@ -2810,7 +2980,12 @@ This file lists the licenses of dependencies used in this project.
   - Repository: https://github.com/zertosh/nullthrows
   - License File: /node_modules/nullthrows/LICENSE
 
-- **ob1@0.83.1**
+- **ob1@0.83.3**
+  - License: MIT
+  - Repository: https://github.com/facebook/metro
+  - License File: /node_modules/@expo/metro/node_modules/ob1/README.md
+
+- **ob1@0.83.5**
   - License: MIT
   - Repository: https://github.com/facebook/metro
   - License File: /node_modules/ob1/README.md
@@ -2867,7 +3042,7 @@ This file lists the licenses of dependencies used in this project.
   - Repository: https://github.com/sindresorhus/ora
   - License File: /node_modules/ora/license
 
-- **ortodox-utils@0.1.0**
+- **ortodox-utils@0.1.1**
   - License: MIT
   - Repository: https://github.com/m-cho/orthodox-utils
   - License File: /node_modules/ortodox-utils/LICENSE
@@ -2890,29 +3065,11 @@ This file lists the licenses of dependencies used in this project.
   - Repository: https://github.com/sindresorhus/p-locate
   - License File: /node_modules/@istanbuljs/load-nyc-config/node_modules/p-locate/license
 
-- **p-locate@5.0.0**
-  - Publisher: Sindre Sorhus
-  - License: MIT
-  - Repository: https://github.com/sindresorhus/p-locate
-  - License File: /node_modules/p-locate/license
-
 - **p-try@2.2.0**
   - Publisher: Sindre Sorhus
   - License: MIT
   - Repository: https://github.com/sindresorhus/p-try
   - License File: /node_modules/p-try/license
-
-- **package-json-from-dist@1.0.1**
-  - Publisher: Isaac Z. Schlueter
-  - License: BlueOak-1.0.0
-  - Repository: https://github.com/isaacs/package-json-from-dist
-  - License File: /node_modules/package-json-from-dist/LICENSE.md
-
-- **parse-json@4.0.0**
-  - Publisher: Sindre Sorhus
-  - License: MIT
-  - Repository: https://github.com/sindresorhus/parse-json
-  - License File: /node_modules/parse-json/license
 
 - **parse-png@2.1.0**
   - Publisher: Kevin Martensson
@@ -2949,7 +3106,7 @@ This file lists the licenses of dependencies used in this project.
   - Repository: https://github.com/jbgutierrez/path-parse
   - License File: /node_modules/path-parse/LICENSE
 
-- **path-scurry@1.11.1**
+- **path-scurry@2.0.2**
   - Publisher: Isaac Z. Schlueter
   - License: BlueOak-1.0.0
   - Repository: https://github.com/isaacs/path-scurry
@@ -2972,6 +3129,12 @@ This file lists the licenses of dependencies used in this project.
   - License: MIT
   - Repository: https://github.com/micromatch/picomatch
   - License File: /node_modules/expo/node_modules/picomatch/LICENSE
+
+- **picomatch@4.0.3**
+  - Publisher: Jon Schlinkert
+  - License: MIT
+  - Repository: https://github.com/micromatch/picomatch
+  - License File: /node_modules/tinyglobby/node_modules/picomatch/LICENSE
 
 - **pirates@4.0.7**
   - Publisher: Ari Porad
@@ -3144,7 +3307,7 @@ This file lists the licenses of dependencies used in this project.
   - Repository: https://github.com/iamacup/react-native-markdown-display
   - License File: /node_modules/react-native-markdown-display/LICENSE
 
-- **react-native-reanimated@4.1.0**
+- **react-native-reanimated@4.1.6**
   - Publisher: Krzysztof Magiera
   - License: MIT
   - Repository: https://github.com/software-mansion/react-native-reanimated
@@ -3173,7 +3336,7 @@ This file lists the licenses of dependencies used in this project.
   - Repository: https://github.com/software-mansion/react-native-reanimated
   - License File: /node_modules/react-native-worklets/LICENSE
 
-- **react-native@0.81.4**
+- **react-native@0.81.5**
   - License: MIT
   - Repository: https://github.com/facebook/react-native
   - License File: /node_modules/react-native/LICENSE
@@ -3182,6 +3345,11 @@ This file lists the licenses of dependencies used in this project.
   - License: MIT
   - Repository: https://github.com/facebook/react
   - License File: /node_modules/react-refresh/LICENSE
+
+- **react-refresh@0.4.3**
+  - License: MIT
+  - Repository: https://github.com/facebook/react
+  - License File: /node_modules/metro-react-native-babel-preset/node_modules/react-refresh/LICENSE
 
 - **react-remove-scroll-bar@2.3.8**
   - Publisher: Anton Korzunov
@@ -3259,23 +3427,11 @@ This file lists the licenses of dependencies used in this project.
   - Repository: https://github.com/h2non/requireg
   - License File: /node_modules/requireg/LICENSE
 
-- **resolve-from@3.0.0**
-  - Publisher: Sindre Sorhus
-  - License: MIT
-  - Repository: https://github.com/sindresorhus/resolve-from
-  - License File: /node_modules/cosmiconfig/node_modules/resolve-from/license
-
 - **resolve-from@5.0.0**
   - Publisher: Sindre Sorhus
   - License: MIT
   - Repository: https://github.com/sindresorhus/resolve-from
   - License File: /node_modules/resolve-from/license
-
-- **resolve-global@1.0.0**
-  - Publisher: Sindre Sorhus
-  - License: MIT
-  - Repository: https://github.com/sindresorhus/resolve-global
-  - License File: /node_modules/resolve-global/license
 
 - **resolve-workspace-root@2.0.0**
   - Publisher: Cedric van Putten
@@ -3289,7 +3445,7 @@ This file lists the licenses of dependencies used in this project.
   - Repository: https://github.com/lukeed/resolve.exports
   - License File: /node_modules/resolve.exports/license
 
-- **resolve@1.22.10**
+- **resolve@1.22.11**
   - Publisher: James Halliday
   - License: MIT
   - Repository: https://github.com/browserify/resolve
@@ -3353,6 +3509,12 @@ This file lists the licenses of dependencies used in this project.
   - License: ISC
   - Repository: https://github.com/npm/node-semver
   - License File: /node_modules/@expo/config-plugins/node_modules/semver/LICENSE
+
+- **semver@7.7.4**
+  - Publisher: GitHub Inc.
+  - License: ISC
+  - Repository: https://github.com/npm/node-semver
+  - License File: /node_modules/npm-package-arg/node_modules/semver/LICENSE
 
 - **send@0.19.0**
   - Publisher: TJ Holowaychuk
@@ -3420,12 +3582,6 @@ This file lists the licenses of dependencies used in this project.
   - License File: /node_modules/shell-quote/LICENSE
 
 - **signal-exit@3.0.7**
-  - Publisher: Ben Coe
-  - License: ISC
-  - Repository: https://github.com/tapjs/signal-exit
-  - License File: /node_modules/restore-cursor/node_modules/signal-exit/LICENSE.txt
-
-- **signal-exit@4.1.0**
   - Publisher: Ben Coe
   - License: ISC
   - Repository: https://github.com/tapjs/signal-exit
@@ -3539,31 +3695,19 @@ This file lists the licenses of dependencies used in this project.
   - Publisher: Sindre Sorhus
   - License: MIT
   - Repository: https://github.com/sindresorhus/string-width
-  - License File: /node_modules/string-width-cjs/license
-
-- **string-width@5.1.2**
-  - Publisher: Sindre Sorhus
-  - License: MIT
-  - Repository: https://github.com/sindresorhus/string-width
   - License File: /node_modules/string-width/license
 
 - **strip-ansi@5.2.0**
   - Publisher: Sindre Sorhus
   - License: MIT
   - Repository: https://github.com/chalk/strip-ansi
-  - License File: /node_modules/ora/node_modules/strip-ansi/license
+  - License File: /node_modules/strip-ansi/license
 
 - **strip-ansi@6.0.1**
   - Publisher: Sindre Sorhus
   - License: MIT
   - Repository: https://github.com/chalk/strip-ansi
-  - License File: /node_modules/string-width-cjs/node_modules/strip-ansi/license
-
-- **strip-ansi@7.1.2**
-  - Publisher: Sindre Sorhus
-  - License: MIT
-  - Repository: https://github.com/chalk/strip-ansi
-  - License File: /node_modules/strip-ansi/license
+  - License File: /node_modules/string-width/node_modules/strip-ansi/license
 
 - **strip-json-comments@2.0.1**
   - Publisher: Sindre Sorhus
@@ -3583,7 +3727,7 @@ This file lists the licenses of dependencies used in this project.
   - Repository: https://github.com/necolas/styleq
   - License File: /node_modules/styleq/LICENSE
 
-- **sucrase@3.35.0**
+- **sucrase@3.35.1**
   - Publisher: Alan Pierce
   - License: MIT
   - Repository: https://github.com/alangpierce/sucrase
@@ -3625,12 +3769,6 @@ This file lists the licenses of dependencies used in this project.
   - Repository: https://github.com/isaacs/node-tar
   - License File: /node_modules/tar/LICENSE.md
 
-- **temp-dir@2.0.0**
-  - Publisher: Sindre Sorhus
-  - License: MIT
-  - Repository: https://github.com/sindresorhus/temp-dir
-  - License File: /node_modules/temp-dir/license
-
 - **terminal-link@2.1.1**
   - Publisher: Sindre Sorhus
   - License: MIT
@@ -3666,6 +3804,12 @@ This file lists the licenses of dependencies used in this project.
   - License: MIT
   - Repository: https://github.com/ForbesLindesay/throat
   - License File: /node_modules/throat/LICENSE
+
+- **tinyglobby@0.2.15**
+  - Publisher: Superchupu
+  - License: MIT
+  - Repository: https://github.com/SuperchupuDev/tinyglobby
+  - License File: /node_modules/tinyglobby/LICENSE
 
 - **tmpl@1.0.5**
   - Publisher: Naitik Shah
@@ -3737,7 +3881,7 @@ This file lists the licenses of dependencies used in this project.
   - Repository: https://github.com/nodejs/undici
   - License File: /node_modules/undici-types/LICENSE
 
-- **undici@6.23.0**
+- **undici@6.24.1**
   - License: MIT
   - Repository: https://github.com/nodejs/undici
   - License File: /node_modules/undici/LICENSE
@@ -3766,19 +3910,13 @@ This file lists the licenses of dependencies used in this project.
   - Repository: https://github.com/mathiasbynens/unicode-property-aliases-ecmascript
   - License File: /node_modules/unicode-property-aliases-ecmascript/LICENSE-MIT.txt
 
-- **unique-string@2.0.0**
-  - Publisher: Sindre Sorhus
-  - License: MIT
-  - Repository: https://github.com/sindresorhus/unique-string
-  - License File: /node_modules/unique-string/license
-
 - **unpipe@1.0.0**
   - Publisher: Douglas Christopher Wilson
   - License: MIT
   - Repository: https://github.com/stream-utils/unpipe
   - License File: /node_modules/unpipe/LICENSE
 
-- **update-browserslist-db@1.1.3**
+- **update-browserslist-db@1.2.3**
   - Publisher: Andrey Sitnik
   - License: MIT
   - Repository: https://github.com/browserslist/update-db
@@ -3905,12 +4043,6 @@ This file lists the licenses of dependencies used in this project.
   - Publisher: Sindre Sorhus
   - License: MIT
   - Repository: https://github.com/chalk/wrap-ansi
-  - License File: /node_modules/wrap-ansi-cjs/license
-
-- **wrap-ansi@8.1.0**
-  - Publisher: Sindre Sorhus
-  - License: MIT
-  - Repository: https://github.com/chalk/wrap-ansi
   - License File: /node_modules/wrap-ansi/license
 
 - **wrappy@1.0.2**
@@ -3937,11 +4069,11 @@ This file lists the licenses of dependencies used in this project.
   - Repository: https://github.com/websockets/ws
   - License File: /node_modules/ws/LICENSE
 
-- **ws@8.18.3**
+- **ws@8.19.0**
   - Publisher: Einar Otto Stangvik
   - License: MIT
   - Repository: https://github.com/websockets/ws
-  - License File: /node_modules/@expo/mcp-tunnel/node_modules/ws/LICENSE
+  - License File: /node_modules/expo/node_modules/ws/LICENSE
 
 - **xcode@3.0.1**
   - Publisher: Apache Software Foundation
@@ -3985,6 +4117,12 @@ This file lists the licenses of dependencies used in this project.
   - Repository: https://github.com/isaacs/yallist
   - License File: /node_modules/tar/node_modules/yallist/LICENSE.md
 
+- **yaml@2.8.2**
+  - Publisher: Eemeli Aro
+  - License: ISC
+  - Repository: https://github.com/eemeli/yaml
+  - License File: /node_modules/yaml/LICENSE
+
 - **yargs-parser@21.1.1**
   - Publisher: Ben Coe
   - License: ISC
@@ -4001,18 +4139,6 @@ This file lists the licenses of dependencies used in this project.
   - License: MIT
   - Repository: https://github.com/sindresorhus/yocto-queue
   - License File: /node_modules/yocto-queue/license
-
-- **zod-to-json-schema@3.24.6**
-  - Publisher: Stefan Terdell
-  - License: ISC
-  - Repository: https://github.com/StefanTerdell/zod-to-json-schema
-  - License File: /node_modules/zod-to-json-schema/LICENSE
-
-- **zod@3.25.76**
-  - Publisher: Colin McDonnell
-  - License: MIT
-  - Repository: https://github.com/colinhacks/zod
-  - License File: /node_modules/zod/LICENSE
 
 - **zustand@5.0.8**
   - Publisher: Paul Henschel
