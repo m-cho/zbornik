@@ -5,7 +5,7 @@ import i18n from "@/constants/i18n";
 import { useBible } from "@/hooks/useBible";
 import { useThemeColor } from "@/hooks/useThemeColor";
 import { useState } from "react";
-import { Modal, Pressable, StyleSheet } from "react-native";
+import { Modal, Pressable, ScrollView, StyleSheet } from "react-native";
 import SettingsOption from "./SettingsOption";
 
 interface BibleSelectorProps {
@@ -14,16 +14,20 @@ interface BibleSelectorProps {
 
 export default function BibleSelector({ onBibleChange }: BibleSelectorProps) {
   const [modalVisible, setModalVisible] = useState(false);
-  const backgroundColor = useThemeColor({}, 'background');
-  const borderColor = useThemeColor({}, 'border');
+  const [loading, setLoading] = useState(false);
+  const backgroundColor = useThemeColor({}, "background");
+  const borderColor = useThemeColor({}, "border");
   const { bibleId, getBible } = useBible();
 
   const handleBibleSelect = async (bibleId: keyof typeof Bibles) => {
+    setLoading(true);
     try {
-      await getBible(bibleId)
+      await getBible(bibleId);
       setModalVisible(false);
     } catch (error) {
-      console.error('Error saving bible selection:', error);
+      console.error("Error saving bible selection:", error);
+    } finally {
+      setLoading(false);
     }
   };
 
@@ -32,11 +36,11 @@ export default function BibleSelector({ onBibleChange }: BibleSelectorProps) {
   return (
     <>
       <SettingsOption
-        title={i18n.t('settings.bibleTranslation')}
-        description={selectedBible?.name || i18n.t('settings.selectBible')}
+        title={i18n.t("settings.bibleTranslation")}
+        description={selectedBible?.name || i18n.t("settings.selectBible")}
         onPress={() => setModalVisible(true)}
       />
-      
+
       <Modal
         animationType="fade"
         transparent={true}
@@ -44,20 +48,26 @@ export default function BibleSelector({ onBibleChange }: BibleSelectorProps) {
         onRequestClose={() => setModalVisible(false)}
       >
         <ThemedView style={styles.modalOverlay}>
-          <ThemedView style={[styles.modalContent, { backgroundColor, borderColor }]}>
+          <ThemedView
+            style={[styles.modalContent, { backgroundColor, borderColor }]}
+          >
             <ThemedView style={styles.modalHeader}>
               <ThemedText style={styles.modalTitle}>
-                {i18n.t('settings.selectBible')}
+                {i18n.t("settings.selectBible")}
               </ThemedText>
-              <Pressable 
+              <Pressable
                 onPress={() => setModalVisible(false)}
                 style={styles.closeButton}
+                disabled={loading}
               >
                 <ThemedText style={styles.closeButtonText}>✕</ThemedText>
               </Pressable>
             </ThemedView>
-            
-            <ThemedView style={styles.bibleList}>
+
+            <ScrollView
+              style={styles.bibleList}
+              contentContainerStyle={{ paddingBottom: 16 }}
+            >
               {Object.entries(Bibles).map(([id, bible]) => (
                 <Pressable
                   key={id}
@@ -66,19 +76,24 @@ export default function BibleSelector({ onBibleChange }: BibleSelectorProps) {
                     styles.bibleOption,
                     { borderBottomColor: borderColor },
                     pressed && styles.pressed,
-                    bibleId === id && styles.selectedOption
+                    bibleId === id && styles.selectedOption,
                   ]}
+                  disabled={loading}
                 >
                   <ThemedView style={styles.bibleInfo}>
-                    <ThemedText style={styles.bibleName}>{bible.name}</ThemedText>
-                    <ThemedText style={styles.bibleDescription}>{bible.description}</ThemedText>
+                    <ThemedText style={styles.bibleName}>
+                      {bible.name}
+                    </ThemedText>
+                    <ThemedText style={styles.bibleDescription}>
+                      {bible.description}
+                    </ThemedText>
                   </ThemedView>
                   {bibleId === id && (
                     <ThemedText style={styles.checkmark}>✓</ThemedText>
                   )}
                 </Pressable>
               ))}
-            </ThemedView>
+            </ScrollView>
           </ThemedView>
         </ThemedView>
       </Modal>
@@ -89,41 +104,41 @@ export default function BibleSelector({ onBibleChange }: BibleSelectorProps) {
 const styles = StyleSheet.create({
   modalOverlay: {
     flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-    backgroundColor: 'rgba(0, 0, 0, 0.5)',
+    justifyContent: "center",
+    alignItems: "center",
+    backgroundColor: "rgba(0, 0, 0, 0.5)",
   },
   modalContent: {
-    width: '90%',
+    width: "90%",
     maxWidth: 500,
-    maxHeight: '80%',
+    maxHeight: "80%",
     borderRadius: 12,
     borderWidth: StyleSheet.hairlineWidth,
   },
   modalHeader: {
-    flexDirection: 'row',
-    justifyContent: 'space-between',
-    alignItems: 'center',
+    flexDirection: "row",
+    justifyContent: "space-between",
+    alignItems: "center",
     padding: 20,
     borderBottomWidth: StyleSheet.hairlineWidth,
   },
   modalTitle: {
     fontSize: 18,
-    fontWeight: '600',
+    fontWeight: "600",
   },
   closeButton: {
     padding: 4,
   },
   closeButtonText: {
     fontSize: 18,
-    fontWeight: '600',
+    fontWeight: "600",
   },
   bibleList: {
     maxHeight: 400,
   },
   bibleOption: {
-    flexDirection: 'row',
-    alignItems: 'center',
+    flexDirection: "row",
+    alignItems: "center",
     padding: 16,
     borderBottomWidth: StyleSheet.hairlineWidth,
   },
@@ -132,7 +147,7 @@ const styles = StyleSheet.create({
   },
   bibleName: {
     fontSize: 16,
-    fontWeight: '500',
+    fontWeight: "500",
   },
   bibleDescription: {
     fontSize: 14,
@@ -141,7 +156,7 @@ const styles = StyleSheet.create({
   },
   checkmark: {
     fontSize: 16,
-    fontWeight: '600',
+    fontWeight: "600",
     marginLeft: 12,
   },
   pressed: {

@@ -1,5 +1,7 @@
 import { Tabs } from "expo-router";
 import React from "react";
+import { useWindowDimensions } from "react-native";
+import { useSafeAreaInsets } from "react-native-safe-area-context";
 
 import { HapticTab } from "@/components/HapticTab";
 import getHeaderSettings from "@/components/ui/HeaderSettings";
@@ -13,6 +15,11 @@ import { useColorScheme } from "@/hooks/useColorScheme";
 export default function TabLayout() {
   const colorScheme = useColorScheme();
   const { isLargeScreen } = useBox();
+  const insets = useSafeAreaInsets();
+  const { height } = useWindowDimensions();
+
+  // Use left tab only on real tablets (large screen AND enough height)
+  const useLeftTab = isLargeScreen && height >= 600;
 
   return (
     <Tabs
@@ -20,22 +27,35 @@ export default function TabLayout() {
         tabBarActiveTintColor: Colors[colorScheme ?? "light"].secondary,
         tabBarInactiveTintColor: Colors[colorScheme ?? "light"].icon,
         headerShown: false,
+        headerTitleStyle: {
+          userSelect: "none",
+        },
         tabBarButton: HapticTab,
         tabBarBackground: TabBarBackground,
         tabBarStyle: {
           backgroundColor: Colors[colorScheme ?? "light"].backgroundLight,
           borderTopColor: Colors[colorScheme ?? "light"].border,
           borderTopWidth: 1,
+          paddingLeft: insets.left,
+          paddingRight: insets.right,
+          userSelect: "none",
+          ...(useLeftTab
+            ? {
+                paddingTop: insets.top,
+              }
+            : {
+                paddingBottom: insets.bottom,
+              }),
         },
-        tabBarPosition: isLargeScreen ? "left" : "bottom",
-        tabBarVariant: isLargeScreen ? "material" : "uikit",
+        tabBarPosition: useLeftTab ? "left" : "bottom",
+        tabBarVariant: useLeftTab ? "material" : "uikit",
         tabBarLabelPosition: "below-icon",
       }}
     >
       <Tabs.Screen
         name="index"
         options={{
-          ...getHeaderSettings(colorScheme, {}, { isLargeScreen }),
+          ...getHeaderSettings(colorScheme, {}, { isLargeScreen: useLeftTab }),
           title: i18n.t("home.title"),
           tabBarIcon: ({ color }) => (
             <Icon size={28} name="home" color={color} />

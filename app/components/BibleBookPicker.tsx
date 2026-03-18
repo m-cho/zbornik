@@ -77,13 +77,15 @@ export default function BibleBookPicker({ books }: BibleBookPickerProps) {
                     justifyContent: "space-between",
                   }}
                 >
-                  <ThemedText style={{ marginRight: 8, flex: 1 }}>
+                  <ThemedText
+                    style={{ marginRight: 8, flex: 1, userSelect: "none" }}
+                  >
                     {i18n.t(`books.${b.name}`)}
                   </ThemedText>
                   <ThemedText
                     lightColor={Colors.light.textSecondary}
                     darkColor={Colors.dark.textSecondary}
-                    style={{ fontSize: 12 }}
+                    style={{ fontSize: 12, userSelect: "none" }}
                   >
                     {i18n.t("bibleReader.numberOfChapters", {
                       count: b.numOfChapters,

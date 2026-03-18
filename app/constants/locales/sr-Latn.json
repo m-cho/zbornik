@@ -183,6 +183,11 @@
     "Jude": "Poslanica Apostola Jude",
     "Revelation of John": "Otkrovenje Jovanovo"
   },
+  "notFound": {
+    "title": "Stranica nije pronađena",
+    "description": "Stranica koju tražite ne postoji.",
+    "goHome": "Idi na početnu"
+  },
   "prayerBook": {
     "title": "Molitvenik",
     "morningPrayers": "Jutarnje molitve",

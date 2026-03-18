@@ -21,7 +21,10 @@ export default function BibleChapterPicker({
   );
 
   return (
-    <ThemedScrollView contentContainerStyle={{ flexGrow: 1, padding: 16 }}>
+    <ThemedScrollView
+      style={{ flex: 1 }}
+      contentContainerStyle={{ padding: 16 }}
+    >
       <View
         style={{
           backgroundColor: cardBg,
@@ -47,6 +50,7 @@ export default function BibleChapterPicker({
                 borderColor,
                 borderWidth: 1,
                 borderStyle: "solid",
+                userSelect: "none",
               }}
             >
               <ThemedText

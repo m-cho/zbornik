@@ -3,8 +3,8 @@
     "name": "Зборник",
     "slug": "zbornik",
     "version": "1.0.0",
-    "orientation": "portrait",
-    "icon": "./assets/images/iconBig.png",
+    "orientation": "default",
+    "icon": "./assets/images/icon.png",
     "scheme": "zbornik",
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
@@ -13,8 +13,8 @@
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/images/adaptive-icon.png",
-        "backgroundColor": "#ffffff"
+        "foregroundImage": "./assets/images/adaptive-icon/foreground.png",
+        "backgroundImage": "./assets/images/adaptive-icon/background.png"
       },
       "edgeToEdgeEnabled": true,
       "package": "net.zbornik.app"
@@ -22,17 +22,45 @@
     "web": {
       "bundler": "metro",
       "output": "static",
-      "favicon": "./assets/images/favicon-512.png"
+      "favicon": "./assets/images/favicon-512.png",
+      "manifest": {
+        "name": "Зборник",
+        "short_name": "Зборник",
+        "description": "Православни зборник молитава и богослужбених текстова",
+        "lang": "sr",
+        "display": "standalone",
+        "orientation": "any",
+        "background_color": "#fef9f0",
+        "theme_color": "#fef9f0",
+        "icons": [
+          {
+            "src": "./assets/images/pwa/chrome-icon/chrome-icon-144.png",
+            "sizes": "144x144",
+            "type": "image/png"
+          },
+          {
+            "src": "./assets/images/pwa/chrome-icon/chrome-icon-192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+          },
+          {
+            "src": "./assets/images/pwa/chrome-icon/chrome-icon-512.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "any maskable"
+          }
+        ]
+      }
     },
     "plugins": [
       "expo-router",
       [
         "expo-splash-screen",
         {
-          "image": "./assets/images/splash-icon.png",
+          "image": "./assets/images/splash.png",
           "imageWidth": 200,
           "resizeMode": "contain",
-          "backgroundColor": "#ffffff"
+          "backgroundColor": "#fef9f0"
         }
       ],
       "expo-localization",
@@ -40,6 +68,12 @@
     ],
     "experiments": {
       "typedRoutes": true
+    },
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "eb594831-e353-4618-8b54-01d7ceef065d"
+      }
     }
   }
 }
