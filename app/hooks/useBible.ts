@@ -1,7 +1,7 @@
 import { Bibles } from "@/constants/Bibles";
 import AsyncStorage from "@react-native-async-storage/async-storage";
 import { File, Paths } from "expo-file-system";
-import { useEffect } from "react";
+import { useCallback, useEffect } from "react";
 import { Platform } from "react-native";
 import { create } from "zustand";
 
@@ -38,38 +38,59 @@ type State = {
 
   verse: number | null;
   setVerse: (verse: number | null) => void;
+
+  lastReaderPosition: {
+    book: string;
+    chapter: number;
+  } | null;
+  setLastReaderPosition: (
+    position: {
+      book: string;
+      chapter: number;
+    } | null,
+  ) => void;
 };
+
+const LAST_READER_POSITION_KEY = "lastReaderPosition";
+const SELECTED_BIBLE_ID_KEY = "selectedBibleId";
+const BIBLE_DATA_KEY = "bibleData";
 
 const useStore = create<State>()((set) => ({
   selectedBibleId: null,
-  setSelectedBibleId: (bibleId: keyof typeof Bibles) =>
+  setSelectedBibleId: (bibleId: State["selectedBibleId"]) =>
     set({ selectedBibleId: bibleId }),
 
   bible: null,
-  setBible: (bible: Bible) => set({ bible }),
+  setBible: (bible: State["bible"]) => set({ bible }),
   clearBible: () => set({ bible: null }),
 
   loading: true,
-  setLoading: (loading: boolean) => set({ loading }),
+  setLoading: (loading: State["loading"]) => set({ loading }),
 
   errorMsg: null,
-  setErrorMsg: (errorMsg: string | null) => set({ errorMsg }),
+  setErrorMsg: (errorMsg: State["errorMsg"]) => set({ errorMsg }),
 
   book: null,
-  setBook: (book: string | null) => set({ book }),
+  setBook: (book: State["book"]) => set({ book }),
 
   chapter: null,
-  setChapter: (chapter: number | null) => set({ chapter }),
+  setChapter: (chapter: State["chapter"]) => set({ chapter }),
 
   verse: null,
-  setVerse: (verse: number | null) => set({ verse }),
+  setVerse: (verse: State["verse"]) => set({ verse }),
+
+  lastReaderPosition: null,
+  setLastReaderPosition: (position: State["lastReaderPosition"]) =>
+    set({
+      lastReaderPosition: position,
+    }),
 }));
 
 async function getBibleDataFromStorage() {
   if (Platform.OS === "web") {
-    return AsyncStorage.getItem("bibleData");
+    return AsyncStorage.getItem(BIBLE_DATA_KEY);
   } else {
-    const file = new File(Paths.cache, "bibleData.json");
+    const file = new File(Paths.cache, `${BIBLE_DATA_KEY}.json`);
 
     if (!file.exists) {
       file.create();
@@ -81,19 +102,19 @@ async function getBibleDataFromStorage() {
 
 async function setBibleDataToStorage(data: string) {
   if (Platform.OS === "web") {
-    await AsyncStorage.setItem("bibleData", data);
+    await AsyncStorage.setItem(BIBLE_DATA_KEY, data);
   } else {
-    const file = new File(Paths.cache, "bibleData.json");
+    const file = new File(Paths.cache, `${BIBLE_DATA_KEY}.json`);
     file.write(data);
   }
 }
 
 async function clearBibleDataFromStorage() {
-  await AsyncStorage.removeItem("selectedBibleId");
+  await AsyncStorage.removeItem(SELECTED_BIBLE_ID_KEY);
   if (Platform.OS === "web") {
-    await AsyncStorage.removeItem("bibleData");
+    await AsyncStorage.removeItem(BIBLE_DATA_KEY);
   } else {
-    const file = new File(Paths.cache, "bibleData.json");
+    const file = new File(Paths.cache, `${BIBLE_DATA_KEY}.json`);
     if (file.exists) {
       file.delete();
     }
@@ -116,9 +137,46 @@ export function useBible() {
   const setChapter = useStore((state) => state.setChapter);
   const verse = useStore((state) => state.verse);
   const setVerse = useStore((state) => state.setVerse);
+  const lastReaderPosition = useStore((state) => state.lastReaderPosition);
+  const setLastReaderPositionToStore = useStore(
+    (state) => state.setLastReaderPosition,
+  );
+
+  const setLastReaderPosition = useCallback(
+    async (position: State["lastReaderPosition"]) => {
+      if (position) {
+        await AsyncStorage.setItem(
+          LAST_READER_POSITION_KEY,
+          JSON.stringify(position),
+        );
+      } else {
+        await AsyncStorage.removeItem(LAST_READER_POSITION_KEY);
+      }
+      setLastReaderPositionToStore(position);
+    },
+    [setLastReaderPositionToStore],
+  );
 
   useEffect(() => {
-    getBible()
+    AsyncStorage.getItem(LAST_READER_POSITION_KEY)
+      .then((pos) => {
+        if (pos) {
+          setLastReaderPositionToStore(JSON.parse(pos));
+          if (book === null && chapter === null) {
+            try {
+              const { book, chapter } = JSON.parse(pos);
+              setBook(book);
+              setChapter(chapter);
+            } catch (err) {
+              console.error("Error parsing last reader position:", err);
+              setLastReaderPositionToStore(null);
+            }
+          }
+        }
+      })
+      .then(() => {
+        return getBible();
+      })
       .then((data) => {
         if (data) {
           setBible(data);
@@ -136,13 +194,13 @@ export function useBible() {
       if (storedBible && !bibleId) {
         setSelectedBibleId(
           (await AsyncStorage.getItem(
-            "selectedBibleId",
+            SELECTED_BIBLE_ID_KEY,
           )) as keyof typeof Bibles,
         );
         return JSON.parse(storedBible);
       } else {
         const bibleIdToSelect = bibleId ?? "srpski-ekavski-danicic-karadzic";
-        await AsyncStorage.setItem("selectedBibleId", bibleIdToSelect);
+        await AsyncStorage.setItem(SELECTED_BIBLE_ID_KEY, bibleIdToSelect);
         setSelectedBibleId(bibleIdToSelect);
         const response = await fetch(Bibles[bibleIdToSelect].url);
         const data = await response.json();
@@ -185,6 +243,8 @@ export function useBible() {
     setChapter,
     verse,
     setVerse,
+    lastReaderPosition,
+    setLastReaderPosition,
     getBible,
     retry,
   };

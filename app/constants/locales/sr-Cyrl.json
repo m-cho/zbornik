@@ -1,5 +1,7 @@
 {
   "welcome": "Добродошли",
+  "yes": "Да",
+  "no": "Не",
   "home": {
     "title": "Почетна",
     "headerTitle": "Зборник",
@@ -123,6 +125,10 @@
       "otacPredragPopovic": {
         "title": "Отац Предраг Поповић - подршка",
         "description": "Подршка мисионарском раду Оца Предрага Поповића"
+      },
+      "svetaPetkaIzvor": {
+        "title": "Манастир Св. Петка Изворска",
+        "description": "Прилог за обнову манастира и помоћ Дому за женска лица ометена у развоју"
       }
     },
     "card": {
@@ -169,7 +175,8 @@
     "noBookSelected": "Није изабрана књига.",
     "bookNotFound": "Књига није пронађена: %{book}",
     "noChapterSelected": "Није изабрано поглавље.",
-    "chapterNotFound": "Поглавље није пронађено: %{chapter}"
+    "chapterNotFound": "Поглавље није пронађено: %{chapter}",
+    "resumeLastPosition": "Настави?"
   },
   "books": {
     "Genesis": "Постање",

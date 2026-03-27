@@ -4,7 +4,7 @@
   "version": "1.0.0",
   "scripts": {
     "start": "expo start",
-    "start:tunnel": "expo start --tunnel --dev-client",
+    "start:tunnel": "expo start --tunnel --go",
     "reset-project": "node ./scripts/reset-project.js",
     "android": "expo run:android",
     "ios": "expo run:ios",
@@ -12,7 +12,9 @@
     "lint": "expo lint",
     "postinstall": "node ./scripts/generate-licenses-md.mjs",
     "build:web": "expo export -p web",
-    "serve:web": "expo serve"
+    "serve:web": "expo serve",
+    "build:android:preview": "eas build -p android --profile preview",
+    "build:android:preview:local": "eas build -p android --profile preview --local"
   },
   "dependencies": {
     "@expo/vector-icons": "^15.0.2",

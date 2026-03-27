@@ -1,5 +1,7 @@
 {
   "welcome": "Dobrodošli",
+  "yes": "Da",
+  "no": "Ne",
   "home": {
     "title": "Početna",
     "headerTitle": "Zbornik",
@@ -57,6 +59,10 @@
       "otacPredragPopovic": {
         "title": "Otac Predrag Popović - Podrška",
         "description": "Podrška misionarskom radu Oca Predraga Popovića"
+      },
+      "svetaPetkaIzvor": {
+        "title": "Manastir Sv. Petka Izvorska",
+        "description": "Prilog za obnovu manastira i pomoć Domu za ženska lica ometena u razvoju"
       }
     },
     "card": {
@@ -101,7 +107,8 @@
     "noBookSelected": "Nije izabrana knjiga.",
     "bookNotFound": "Knjiga nije pronađena: %{book}",
     "noChapterSelected": "Nije izabrano poglavlje.",
-    "chapterNotFound": "Poglavlje nije pronađeno: %{chapter}"
+    "chapterNotFound": "Poglavlje nije pronađeno: %{chapter}",
+    "resumeLastPosition": "Nastavi?"
   },
   "books": {
     "Genesis": "Postanje",

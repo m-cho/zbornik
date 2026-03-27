@@ -1,5 +1,7 @@
 {
   "welcome": "Welcome",
+  "yes": "Yes",
+  "no": "No",
   "home": {
     "title": "Home",
     "headerTitle": "Zbornik",
@@ -55,6 +57,10 @@
       "otacPredragPopovic": {
         "title": "Support for Father Predrag Popović",
         "description": "Support for the missionary work of Father Predrag Popović"
+      },
+      "svetaPetkaIzvor": {
+        "title": "Monastery of St. Petka of Izvor",
+        "description": "Support for the restoration of the monastery and assistance to the Home for women with developmental disabilities"
       }
     },
     "card": {
@@ -100,7 +106,8 @@
     "noBookSelected": "No book selected.",
     "bookNotFound": "Book not found: %{book}",
     "noChapterSelected": "No chapter selected.",
-    "chapterNotFound": "Chapter not found: %{chapter}"
+    "chapterNotFound": "Chapter not found: %{chapter}",
+    "resumeLastPosition": "Resume?"
   },
   "books": {
     "Genesis": "Genesis",

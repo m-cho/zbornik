@@ -22,12 +22,18 @@ export async function generateStaticParams(): Promise<
 
 export default function ChapterReaderScreen() {
   const { book, chapter } = useLocalSearchParams();
-  const { bible, bibleId } = useBible();
+  const { bible, bibleId, setLastReaderPosition } = useBible();
   const navigation = useNavigation();
 
   useEffect(() => {
     navigation.setOptions({ title: `${i18n.t(`books.${book}`)}: ${chapter}` });
-  }, [navigation, book, chapter]);
+    if (book && chapter) {
+      setLastReaderPosition({
+        book: String(book),
+        chapter: parseInt(String(chapter), 10),
+      });
+    }
+  }, [navigation, book, chapter, setLastReaderPosition]);
 
   if (!bible) return <ThemedText>{i18n.t("bibleReader.loading")}</ThemedText>;
   if (!book)

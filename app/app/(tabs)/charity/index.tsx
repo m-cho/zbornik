@@ -37,6 +37,13 @@ export default function CharityScreen() {
       aboutLink: "https://starateljstvosumadijske.rs/about",
     },
     {
+      type: "charity",
+      title: i18n.t("charity.items.svetaPetkaIzvor.title"),
+      description: i18n.t("charity.items.svetaPetkaIzvor.description"),
+      link: "https://www.svetapetkaizvor.com/kontakt/",
+      aboutLink: "https://www.svetapetkaizvor.com/",
+    },
+    {
       type: "church",
       title: i18n.t(
         "charity.items.freskopisanjeCrkvaSvCaraKonstantinaICariceJelene.title",

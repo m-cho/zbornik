@@ -226,6 +226,8 @@ const styles = StyleSheet.create({
   verseNumber: {
     fontWeight: "bold",
     marginRight: 10,
+    minWidth: 20,
+    textAlign: "right",
   },
   verseText: {
     flex: 1,
