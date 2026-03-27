@@ -59,7 +59,7 @@ export default function AboutTheAppScreen() {
                 rightComponent={
                   <ThemedText style={styles.arrowText}>›</ThemedText>
                 }
-                onPress={() => openWebPage(`${jsDelivrBaseUrl}/TERMS`)}
+                onPress={() => openWebPage(`${jsDelivrBaseUrl}/TERMS.md`)}
               />
               <SettingsOption
                 title={i18n.t("about.privacy")}
@@ -67,7 +67,7 @@ export default function AboutTheAppScreen() {
                 rightComponent={
                   <ThemedText style={styles.arrowText}>›</ThemedText>
                 }
-                onPress={() => openWebPage(`${jsDelivrBaseUrl}/PRIVACY`)}
+                onPress={() => openWebPage(`${jsDelivrBaseUrl}/PRIVACY.md`)}
               />
               <SettingsOption
                 title={i18n.t("about.version")}
