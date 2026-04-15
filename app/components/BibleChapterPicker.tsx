@@ -37,7 +37,7 @@ export default function BibleChapterPicker({
         }}
       >
         {chapters.map((chapter) => (
-          <Link key={chapter} href={`/bible/${book}/${chapter}`}>
+          <Link key={chapter} href={`/app/bible/${book}/${chapter}`}>
             <View
               style={{
                 borderRadius: 48,

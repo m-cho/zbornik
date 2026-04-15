@@ -3,6 +3,7 @@ import { StyleSheet } from "react-native";
 
 import { ThemedText } from "@/components/ThemedText";
 import { ThemedView } from "@/components/ThemedView";
+import { Colors } from "@/constants/Colors";
 import i18n from "@/constants/i18n";
 
 export default function NotFoundScreen() {
@@ -10,10 +11,18 @@ export default function NotFoundScreen() {
     <>
       <Stack.Screen options={{ title: i18n.t("notFound.title") }} />
       <ThemedView style={styles.container}>
-        <ThemedText type="title">{i18n.t("notFound.title")}</ThemedText>
+        <ThemedText type="title" style={{ marginBottom: 15 }}>
+          {i18n.t("notFound.title")}
+        </ThemedText>
         <ThemedText>{i18n.t("notFound.description")}</ThemedText>
         <Link href="/" style={styles.link}>
-          <ThemedText type="link">{i18n.t("notFound.goHome")}</ThemedText>
+          <ThemedText
+            type="link"
+            darkColor={Colors.dark.secondary}
+            lightColor={Colors.light.secondary}
+          >
+            {i18n.t("notFound.goHome")}
+          </ThemedText>
         </Link>
       </ThemedView>
     </>

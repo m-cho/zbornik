@@ -28,7 +28,7 @@ export default function BibleLayout() {
         name="[book]/index"
         options={{
           title: i18n.t('bibleReader.title'),
-          headerLeft: () => <BackButton href="/bible" />,
+          headerLeft: () => <BackButton href="/app/bible" />,
           headerRight: () => <SettingsHeaderButton />,
         }}
       />
@@ -36,7 +36,7 @@ export default function BibleLayout() {
         name="[book]/[chapter]"
         options={{
           title: i18n.t('bibleReader.title'),
-          headerLeft: () => <BackButton href="/bible/[book]/index"/>,
+          headerLeft: () => <BackButton href="/app/bible/[book]/index"/>,
           headerRight: () => <SettingsHeaderButton />,
         }}
       />

@@ -23,7 +23,7 @@ export default function PrayerBookLayout() {
         name="[prayer]/index"
         options={{
           title: i18n.t('prayerBook.title'),
-          headerLeft: () => <BackButton href="/prayer-book" />,
+          headerLeft: () => <BackButton href="/app/prayer-book" />,
         }}
       /> */}
     </Stack>

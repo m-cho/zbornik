@@ -226,14 +226,14 @@ export default function HomeScreen() {
               style={{ flex: 1, minWidth: 150 }}
               textStyle={{ fontSize: 15 }}
               iconLeft="sunny-outline"
-              onPress={() => router.navigate("/prayer-book/jutarnje")}
+              onPress={() => router.navigate("/app/prayer-book/jutarnje")}
             />
             <PrimaryButton
               title={i18n.t("home.eveningPrayers")}
               style={{ flex: 1, minWidth: 150 }}
               textStyle={{ fontSize: 15 }}
               iconLeft="moon-outline"
-              onPress={() => router.navigate("/prayer-book/vecernje")}
+              onPress={() => router.navigate("/app/prayer-book/vecernje")}
             />
           </ThemedView>
           <ThemedView

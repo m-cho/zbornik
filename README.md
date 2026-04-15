@@ -4,7 +4,7 @@
 
 **Zbornik** is an Orthodox Christian mobile and web app (PWA) for daily prayer, Bible reading, and following the liturgical calendar. It provides access to a prayer book, multiple Bible translations, and essential liturgical resources in Serbian (Multilanguage support is planned), all in a simple interface.
 
-🌐 **Live app:** [www.zbornik.net](https://www.zbornik.net) (Soon)
+🌐 **Live app:** [zbornik.net](https://zbornik.net)
 
 ## Screenshots
 

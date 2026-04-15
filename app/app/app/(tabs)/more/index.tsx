@@ -3,7 +3,7 @@ import { ThemedScrollView } from "@/components/ThemedScrollView";
 import { ThemedView } from "@/components/ThemedView";
 import SettingsOption from "@/components/ui/SettingsOption";
 import i18n from "@/constants/i18n";
-import { useRouter } from 'expo-router';
+import { useRouter } from "expo-router";
 import { StyleSheet } from "react-native";
 
 export default function MoreScreen() {
@@ -15,18 +15,18 @@ export default function MoreScreen() {
         <ThemedView style={styles.content}>
           <SettingsOption
             leftIcon="cog-outline"
-            title={i18n.t('settings.title')}
+            title={i18n.t("settings.title")}
             onPress={() => {
-              router.push('/settings');
+              router.push("/app/settings");
             }}
           />
         </ThemedView>
         <ThemedView style={styles.content}>
           <SettingsOption
             leftIcon="info"
-            title={i18n.t('about.title')}
+            title={i18n.t("about.title")}
             onPress={() => {
-              router.push('/about');
+              router.push("/app/about");
             }}
           />
         </ThemedView>
@@ -39,10 +39,9 @@ const styles = StyleSheet.create({
   container: {
     flexGrow: 1,
   },
-  content: {
-  },
+  content: {},
   title: {
-    textAlign: 'center',
+    textAlign: "center",
     marginBottom: 30,
   },
   section: {
@@ -50,7 +49,7 @@ const styles = StyleSheet.create({
   },
   sectionTitle: {
     fontSize: 18,
-    fontWeight: '600',
+    fontWeight: "600",
     marginBottom: 12,
     marginHorizontal: 16,
     opacity: 0.8,
@@ -58,6 +57,6 @@ const styles = StyleSheet.create({
   settingsGroup: {
     marginHorizontal: 16,
     borderRadius: 12,
-    overflow: 'hidden',
+    overflow: "hidden",
   },
 });

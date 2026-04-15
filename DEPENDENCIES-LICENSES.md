@@ -1178,7 +1178,7 @@ This file lists the licenses of dependencies used in this project.
   - Repository: https://github.com/urql-graphql/urql
   - License File: /node_modules/@urql/exchange-retry/LICENSE
 
-- **@xmldom/xmldom@0.8.11**
+- **@xmldom/xmldom@0.8.12**
   - License: MIT
   - Repository: https://github.com/xmldom/xmldom
   - License File: /node_modules/@xmldom/xmldom/LICENSE
@@ -1434,19 +1434,19 @@ This file lists the licenses of dependencies used in this project.
   - Repository: https://github.com/nearinfinity/node-bplist-parser
   - License File: /node_modules/bplist-parser/README.md
 
-- **brace-expansion@1.1.12**
+- **brace-expansion@1.1.14**
   - Publisher: Julian Gruber
   - License: MIT
   - Repository: https://github.com/juliangruber/brace-expansion
   - License File: /node_modules/brace-expansion/LICENSE
 
-- **brace-expansion@2.0.2**
+- **brace-expansion@2.1.0**
   - Publisher: Julian Gruber
   - License: MIT
   - Repository: https://github.com/juliangruber/brace-expansion
   - License File: /node_modules/@expo/metro-config/node_modules/brace-expansion/LICENSE
 
-- **brace-expansion@5.0.4**
+- **brace-expansion@5.0.5**
   - License: MIT
   - Repository: https://github.com/juliangruber/brace-expansion
   - License File: /node_modules/glob/node_modules/brace-expansion/LICENSE
@@ -2578,7 +2578,7 @@ This file lists the licenses of dependencies used in this project.
   - Repository: https://github.com/lodash/lodash
   - License File: /node_modules/lodash.throttle/LICENSE
 
-- **lodash@4.17.23**
+- **lodash@4.18.1**
   - Publisher: John-David Dalton
   - License: MIT
   - Repository: https://github.com/lodash/lodash
@@ -2944,7 +2944,7 @@ This file lists the licenses of dependencies used in this project.
   - Repository: https://github.com/bitinn/node-fetch
   - License File: /node_modules/node-fetch/LICENSE.md
 
-- **node-forge@1.3.3**
+- **node-forge@1.4.0**
   - Publisher: Digital Bazaar, Inc.
   - License: (BSD-3-Clause OR GPL-2.0)
   - Repository: https://github.com/digitalbazaar/forge
@@ -3118,19 +3118,19 @@ This file lists the licenses of dependencies used in this project.
   - Repository: https://github.com/alexeyraspopov/picocolors
   - License File: /node_modules/picocolors/LICENSE
 
-- **picomatch@2.3.1**
+- **picomatch@2.3.2**
   - Publisher: Jon Schlinkert
   - License: MIT
   - Repository: https://github.com/micromatch/picomatch
   - License File: /node_modules/picomatch/LICENSE
 
-- **picomatch@3.0.1**
+- **picomatch@3.0.2**
   - Publisher: Jon Schlinkert
   - License: MIT
   - Repository: https://github.com/micromatch/picomatch
   - License File: /node_modules/expo/node_modules/picomatch/LICENSE
 
-- **picomatch@4.0.3**
+- **picomatch@4.0.4**
   - Publisher: Jon Schlinkert
   - License: MIT
   - Repository: https://github.com/micromatch/picomatch
@@ -4117,7 +4117,7 @@ This file lists the licenses of dependencies used in this project.
   - Repository: https://github.com/isaacs/yallist
   - License File: /node_modules/tar/node_modules/yallist/LICENSE.md
 
-- **yaml@2.8.2**
+- **yaml@2.8.3**
   - Publisher: Eemeli Aro
   - License: ISC
   - Repository: https://github.com/eemeli/yaml

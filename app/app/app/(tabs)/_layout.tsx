@@ -53,7 +53,7 @@ export default function TabLayout() {
       }}
     >
       <Tabs.Screen
-        name="index"
+        name="home"
         options={{
           ...getHeaderSettings(colorScheme, {}, { isLargeScreen: useLeftTab }),
           title: i18n.t("home.title"),

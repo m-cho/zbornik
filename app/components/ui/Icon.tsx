@@ -27,6 +27,10 @@ export default function Icon({ name, size, color }: IconProps) {
           color={color}
         />
       ),
+      calendar: <Ionicons name="calendar-outline" size={size} color={color} />,
+      offline: (
+        <Ionicons name="cloud-offline-outline" size={size} color={color} />
+      ),
 
       version: <MaterialIcons name="update" size={size} color={color} />,
       license: <MaterialIcons name="license" size={size} color={color} />,
@@ -78,6 +82,9 @@ export default function Icon({ name, size, color }: IconProps) {
       "moon-outline": (
         <Ionicons name="moon-outline" size={size} color={color} />
       ),
+      moon: <Ionicons name="moon" size={size} color={color} />,
+
+      heart: <Ionicons name="heart" size={size} color={color} />,
     }[name] ?? <MaterialIcons name="help-circle" size={size} color={color} />
   );
 }

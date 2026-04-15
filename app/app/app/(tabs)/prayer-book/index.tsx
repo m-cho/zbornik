@@ -10,7 +10,7 @@ export default function PrayerBookScreen() {
     <ThemedContainer>
       <ThemedScrollView
         style={{ marginTop: 20 }}
-        contentContainerStyle={{ alignItems: 'center' }}
+        contentContainerStyle={{ alignItems: "center" }}
       >
         {categories.map((category) => (
           <PrayersGroup
@@ -20,7 +20,7 @@ export default function PrayerBookScreen() {
               const prayer = prayers[prayerId];
               return {
                 label: prayer?.title || prayerId,
-                href: `/prayer-book/${prayerId}`,
+                href: `/app/prayer-book/${prayerId}`,
               };
             })}
           />

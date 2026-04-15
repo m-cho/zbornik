@@ -162,7 +162,7 @@ export function BibleReader({
       >
         {hasPrev ? (
           <TouchableOpacity
-            onPress={() => router.replace(`/bible/${book}/${chapter - 1}`)}
+            onPress={() => router.replace(`/app/bible/${book}/${chapter - 1}`)}
             style={styles.navButton}
           >
             <ThemedText
@@ -179,7 +179,7 @@ export function BibleReader({
         )}
 
         <TouchableOpacity
-          onPress={() => router.replace(`/bible/${book}`)}
+          onPress={() => router.replace(`/app/bible/${book}`)}
           style={styles.navButton}
         >
           <ThemedText
@@ -194,7 +194,7 @@ export function BibleReader({
 
         {hasNext ? (
           <TouchableOpacity
-            onPress={() => router.replace(`/bible/${book}/${chapter + 1}`)}
+            onPress={() => router.replace(`/app/bible/${book}/${chapter + 1}`)}
             style={styles.navButton}
           >
             <ThemedText

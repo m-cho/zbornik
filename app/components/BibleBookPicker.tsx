@@ -66,7 +66,7 @@ export default function BibleBookPicker({ books }: BibleBookPickerProps) {
               darkColor={Colors.dark.backgroundLight}
             >
               <Link
-                href={`/bible/${b.name}`}
+                href={`/app/bible/${b.name}`}
                 style={{ padding: 14, paddingHorizontal: 18, display: "flex" }}
               >
                 <View
