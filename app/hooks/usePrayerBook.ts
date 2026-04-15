@@ -109,6 +109,9 @@ export default function usePrayerBook() {
       "pravilo-svetog-serafima": require(
         `../assets/prayer-book/${locale}/prayers/pravilo-svetog-serafima.md`,
       ),
+      "pravilo-od-vaskrsa-do-tomine-nedelje": require(
+        `../assets/prayer-book/${locale}/prayers/pravilo-od-vaskrsa-do-tomine-nedelje.md`,
+      ),
       "bozicni-tropar": require(
         `../assets/prayer-book/${locale}/prayers/bozicni-tropar.md`,
       ),

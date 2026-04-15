@@ -26,7 +26,10 @@
   {
     "id": "prayer-rules",
     "title": "Молитвенa правилa",
-    "prayers": ["pravilo-svetog-serafima"]
+    "prayers": [
+      "pravilo-svetog-serafima",
+      "pravilo-od-vaskrsa-do-tomine-nedelje"
+    ]
   },
   {
     "id": "saints-prayers",

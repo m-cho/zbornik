@@ -24,6 +24,10 @@
     "Субота"
   ],
   "weekNames": {
+    "palmSunday": "Цветна недеља",
+    "pascha": "Светла недеља",
+    "pentecost": "Недеља Педесетнице",
+    "thomasSunday": "Томина недеља",
     "afterPascha": "%{count}. недеља по Васкрсу",
     "afterPentecost": "%{count}. недеља по Духовима",
     "sundayAfterNativity": "Недеља по Божићу",

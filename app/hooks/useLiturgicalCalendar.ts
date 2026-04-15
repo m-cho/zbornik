@@ -162,9 +162,11 @@ export function useLiturgicalCalendar(date: Date = new Date()): LiturgicalInfo {
           if (sundayLocal.getTime() === namedSundayLocal.getTime()) {
             const namedWeek = i18n.t(`weekNames.${sundayKey}`);
             if (weekAfterPascha !== null) {
-              weekName = `${namedWeek} (${i18n.t("weekNames.afterPascha", { count: weekAfterPascha })})`;
+              const weekNameWithNumber = `(${i18n.t("weekNames.afterPascha", { count: weekAfterPascha })})`;
+              weekName = `${namedWeek} ${weekAfterPascha !== 0 ? weekNameWithNumber : ""}`;
             } else if (weekAfterPentecost !== null) {
-              weekName = `${namedWeek} (${i18n.t("weekNames.afterPentecost", { count: weekAfterPentecost })})`;
+              const weekNameWithNumber = `(${i18n.t("weekNames.afterPentecost", { count: weekAfterPentecost })})`;
+              weekName = `${namedWeek} ${weekAfterPentecost !== 0 ? weekNameWithNumber : ""}`;
             } else {
               weekName = namedWeek;
             }
@@ -314,7 +316,7 @@ export function useLiturgicalCalendar(date: Date = new Date()): LiturgicalInfo {
         const startLocal = toLocalDate(dates.brightWeek.start).getTime();
         const endLocal = toLocalDate(dates.brightWeek.end).getTime();
         if (todayTime >= startLocal && todayTime <= endLocal) {
-          currentPeriod = i18n.t("liturgical.brightWeek");
+          // currentPeriod = i18n.t("liturgical.brightWeek");
         }
       } else if (dates.holyWeek && isRange(dates.holyWeek)) {
         const startLocal = toLocalDate(dates.holyWeek.start).getTime();
@@ -368,7 +370,7 @@ export function useLiturgicalCalendar(date: Date = new Date()): LiturgicalInfo {
           key: "forgivenessSunday",
           label: i18n.t("liturgical.forgivenessSunday"),
         },
-        { key: "thomasSunday", label: i18n.t("liturgical.thomasSunday") },
+        // { key: "thomasSunday", label: i18n.t("liturgical.thomasSunday") },
         { key: "eveOfTheophany", label: i18n.t("liturgical.eveOfTheophany") },
         { key: "circumcision", label: i18n.t("liturgical.circumcision") },
         {
